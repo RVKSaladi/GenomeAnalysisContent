@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 277</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft04{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft05{font-size:18px;font-family:ACJJPN+FN;color:#000000;}
+	.ft06{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft07{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page277-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome277.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">264</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">10&#160;Similarity,&#160;Distance,&#160;and&#160;Clustering</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft07">to&#160;analyze&#160;gene&#160;expression&#160;as&#160;measured&#160;by&#160;mRNA&#160;abundances&#160;in&#160;cells.&#160;In&#160;this<br/>case,&#160;the&#160;objects&#160;being&#160;clustered&#160;usually&#160;are&#160;genes,&#160;and&#160;the&#160;characters&#160;are<br/>relative&#160;mRNA&#160;abundances&#160;measured&#160;under&#160;particular&#160;conditions.&#160;In&#160;partic-<br/>ular,&#160;animal&#160;cells&#160;in&#160;tissue&#160;culture&#160;might&#160;be&#160;deprived&#160;of&#160;serum&#160;and&#160;then,&#160;after<br/>serum&#160;is&#160;added&#160;back,&#160;the&#160;levels&#160;of&#160;mRNA&#160;species&#160;(relative&#160;to&#160;levels&#160;in&#160;cells<br/>not&#160;deprived&#160;of&#160;serum)&#160;are&#160;measured&#160;at&#160;diﬀerent&#160;time&#160;points.&#160;Or,&#160;the&#160;objects<br/>might&#160;be&#160;genes&#160;in&#160;human&#160;cells,&#160;and&#160;the&#160;characters&#160;might&#160;be&#160;relative&#160;mRNA<br/>expression&#160;levels&#160;in&#160;normal&#160;cells,&#160;cancer&#160;cells,&#160;or&#160;both&#160;cell&#160;types&#160;treated&#160;with<br/>an&#160;antitumor&#160;agent.&#160;The&#160;purpose&#160;of&#160;clustering&#160;in&#160;this&#160;case&#160;is&#160;to&#160;identify&#160;and<br/>group&#160;together&#160;(cluster)&#160;genes&#160;having&#160;similar&#160;expression&#160;patterns.&#160;Similar&#160;ex-<br/>pression&#160;patterns&#160;may&#160;indicate&#160;that&#160;the&#160;genes&#160;participate&#160;in&#160;similar&#160;biological<br/>processes&#160;or&#160;that&#160;they&#160;respond&#160;to&#160;similar&#160;biological&#160;controls.</p>
+<p style="position:absolute;top:329px;left:103px;white-space:nowrap" class="ft01">Data&#160;in&#160;the&#160;biological&#160;world&#160;are&#160;commonly&#160;multivariate.&#160;This&#160;means&#160;that</p>
+<p style="position:absolute;top:346px;left:80px;white-space:nowrap" class="ft07">biological&#160;objects&#160;and&#160;phenomena&#160;are&#160;associated&#160;with&#160;a&#160;number&#160;of&#160;variables,<br/>each&#160;of&#160;which&#160;contributes&#160;to&#160;the&#160;observed&#160;phenomenon.&#160;In&#160;both&#160;cases&#160;de-<br/>scribed&#160;above,&#160;the&#160;data&#160;consist&#160;of&#160;a&#160;matrix&#160;of</p>
+<p style="position:absolute;top:382px;left:381px;white-space:nowrap" class="ft02">m</p>
+<p style="position:absolute;top:382px;left:399px;white-space:nowrap" class="ft01">rows&#160;of&#160;objects&#160;(convention-</p>
+<p style="position:absolute;top:400px;left:80px;white-space:nowrap" class="ft01">ally&#160;called</p>
+<p style="position:absolute;top:400px;left:148px;white-space:nowrap" class="ft03"><b>operational&#160;taxonomic&#160;units</b></p>
+<p style="position:absolute;top:400px;left:356px;white-space:nowrap" class="ft01">,&#160;or</p>
+<p style="position:absolute;top:400px;left:380px;white-space:nowrap" class="ft03"><b>OTU</b></p>
+<p style="position:absolute;top:400px;left:418px;white-space:nowrap" class="ft01">s,&#160;in&#160;evolutionary&#160;studies)</p>
+<p style="position:absolute;top:418px;left:80px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:418px;left:108px;white-space:nowrap" class="ft02">p</p>
+<p style="position:absolute;top:418px;left:119px;white-space:nowrap" class="ft01">columns&#160;of&#160;characters&#160;describing&#160;those&#160;objects.&#160;The&#160;distinctions&#160;between</p>
+<p style="position:absolute;top:436px;left:80px;white-space:nowrap" class="ft01">diﬀerent</p>
+<p style="position:absolute;top:436px;left:139px;white-space:nowrap" class="ft03"><b>objects</b></p>
+<p style="position:absolute;top:436px;left:196px;white-space:nowrap" class="ft01">or&#160;operational&#160;taxonomic&#160;units&#160;are&#160;based&#160;upon&#160;the&#160;states&#160;of</p>
+<p style="position:absolute;top:454px;left:80px;white-space:nowrap" class="ft01">their&#160;diﬀering&#160;characters.&#160;These</p>
+<p style="position:absolute;top:454px;left:295px;white-space:nowrap" class="ft03"><b>characters</b></p>
+<p style="position:absolute;top:454px;left:377px;white-space:nowrap" class="ft01">are&#160;properties&#160;that&#160;can&#160;take&#160;on</p>
+<p style="position:absolute;top:472px;left:80px;white-space:nowrap" class="ft07">diﬀerent&#160;values&#160;and&#160;can&#160;diﬀer&#160;among&#160;OTUs&#160;(for&#160;example,&#160;fused&#160;metatarsals&#160;or<br/>relative&#160;mRNA&#160;abundance&#160;30&#160;minutes&#160;after&#160;addition&#160;of&#160;serum).&#160;There&#160;may&#160;be<br/>on&#160;the&#160;order&#160;of&#160;10</p>
+<p style="position:absolute;top:506px;left:199px;white-space:nowrap" class="ft04">4</p>
+<p style="position:absolute;top:508px;left:211px;white-space:nowrap" class="ft01">objects&#160;(genes),&#160;each&#160;described&#160;by&#160;states&#160;of&#160;10–100&#160;char-</p>
+<p style="position:absolute;top:526px;left:80px;white-space:nowrap" class="ft07">acters.&#160;The&#160;list&#160;of&#160;states&#160;for&#160;each&#160;character&#160;that&#160;describes&#160;an&#160;object&#160;might<br/>be&#160;thought&#160;of&#160;as&#160;a&#160;vector,&#160;and&#160;thus&#160;clustering&#160;and&#160;classiﬁcation&#160;may&#160;require<br/>descriptions&#160;using&#160;high-dimensional&#160;vector&#160;spaces.&#160;Such&#160;complex&#160;multivariate<br/>data&#160;require&#160;appropriate&#160;quantitative&#160;approaches.</p>
+<p style="position:absolute;top:598px;left:103px;white-space:nowrap" class="ft01">As&#160;an&#160;aside,&#160;note&#160;that&#160;clustering&#160;and&#160;classiﬁcation&#160;are&#160;important&#160;in&#160;ﬁelds</p>
+<p style="position:absolute;top:616px;left:80px;white-space:nowrap" class="ft07">other&#160;than&#160;biology.&#160;For&#160;example,&#160;businesses&#160;as&#160;represented&#160;by&#160;their&#160;stocks<br/>may&#160;be&#160;classiﬁed&#160;into&#160;diﬀerent&#160;“taxa,”&#160;such&#160;as&#160;“small&#160;cap.&#160;value”&#160;or&#160;“large<br/>cap.&#160;growth,”&#160;based&#160;upon&#160;their&#160;asset&#160;base,&#160;business&#160;model,&#160;and&#160;other&#160;factors.<br/>For&#160;ﬁnancial&#160;lending,&#160;criteria&#160;(characters)&#160;pertaining&#160;to&#160;prospective&#160;borrowers<br/>(e.g.,&#160;employment,&#160;income&#160;level,&#160;credit&#160;history)&#160;are&#160;employed&#160;to&#160;generate&#160;a<br/>“credit&#160;score,”&#160;which&#160;determines&#160;the&#160;class&#160;into&#160;which&#160;the&#160;prospective&#160;borrower<br/>will&#160;be&#160;classiﬁed&#160;(credit-worthy&#160;or&#160;not&#160;credit-worthy).</p>
+<p style="position:absolute;top:778px;left:80px;white-space:nowrap" class="ft05"><b>10.2&#160;Characters</b></p>
+<p style="position:absolute;top:816px;left:80px;white-space:nowrap" class="ft07">Before&#160;we&#160;discuss&#160;measures&#160;of&#160;similarity&#160;or&#160;diﬀerence&#160;and&#160;clustering,&#160;we&#160;need<br/>to&#160;examine&#160;diﬀerent&#160;types&#160;of&#160;characters.</p>
+<p style="position:absolute;top:861px;left:87px;white-space:nowrap" class="ft01">1.</p>
+<p style="position:absolute;top:861px;left:106px;white-space:nowrap" class="ft03"><b>Qualitative&#160;or&#160;categorical&#160;characters</b></p>
+<p style="position:absolute;top:861px;left:382px;white-space:nowrap" class="ft01">diﬀer&#160;in</p>
+<p style="position:absolute;top:861px;left:438px;white-space:nowrap" class="ft06">type</p>
+<p style="position:absolute;top:861px;left:464px;white-space:nowrap" class="ft01">.&#160;For&#160;example,&#160;the</p>
+<p style="position:absolute;top:879px;left:106px;white-space:nowrap" class="ft07">coat&#160;color&#160;of&#160;mice&#160;might&#160;be&#160;either&#160;black&#160;(2),&#160;brown&#160;(1),&#160;or&#160;white&#160;(0).<br/>As&#160;a&#160;further&#160;example,&#160;at&#160;any&#160;particular&#160;position&#160;in&#160;a&#160;DNA&#160;sequence,</p>
+</div>
+</body>
+</html>

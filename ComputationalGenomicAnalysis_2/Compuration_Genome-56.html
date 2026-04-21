@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 56</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:10px;font-family:ACJNAH+FB;color:#000000;}
+	.ft04{font-size:18px;font-family:ACJJPN+FN;color:#000000;}
+	.ft05{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft06{font-size:10px;font-family:ACOHGB+Fs;color:#000000;}
+	.ft07{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft08{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft09{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft010{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft011{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft012{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page56-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome056.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">40</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">2&#160;Words</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft01">another&#160;example&#160;of&#160;how&#160;a&#160;relatively&#160;simple&#160;statistic&#160;based&#160;on</p>
+<p style="position:absolute;top:113px;left:495px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:113px;left:503px;white-space:nowrap" class="ft01">-tuples&#160;with</p>
+<p style="position:absolute;top:131px;left:80px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:131px;left:93px;white-space:nowrap" class="ft01">=&#160;1&#160;can&#160;be&#160;informative.</p>
+<p style="position:absolute;top:149px;left:103px;white-space:nowrap" class="ft01">In&#160;the&#160;sections&#160;that&#160;follow,&#160;we&#160;develop&#160;some&#160;probabilistic&#160;and&#160;statistical</p>
+<p style="position:absolute;top:167px;left:80px;white-space:nowrap" class="ft012">approaches&#160;for&#160;describing&#160;the&#160;base&#160;composition,&#160;dinucleotide&#160;composition,&#160;and<br/>other&#160;aspects&#160;of&#160;DNA&#160;sequences.&#160;To&#160;do&#160;this,&#160;it&#160;is&#160;most&#160;convenient&#160;to&#160;describe<br/>the&#160;DNA&#160;in&#160;terms&#160;of&#160;a&#160;single&#160;strand&#160;in&#160;a&#160;given&#160;5</p>
+<p style="position:absolute;top:198px;left:395px;white-space:nowrap" class="ft03"></p>
+<p style="position:absolute;top:203px;left:404px;white-space:nowrap" class="ft01">to&#160;3</p>
+<p style="position:absolute;top:198px;left:429px;white-space:nowrap" class="ft03"></p>
+<p style="position:absolute;top:203px;left:438px;white-space:nowrap" class="ft01">orientation.&#160;The&#160;other</p>
+<p style="position:absolute;top:221px;left:80px;white-space:nowrap" class="ft01">strand&#160;of&#160;the&#160;duplex&#160;is&#160;formed&#160;by&#160;taking&#160;its&#160;complement.</p>
+<p style="position:absolute;top:271px;left:80px;white-space:nowrap" class="ft04"><b>2.3&#160;Introduction&#160;to&#160;Probability</b></p>
+<p style="position:absolute;top:305px;left:80px;white-space:nowrap" class="ft012">This&#160;is&#160;a&#160;good&#160;point&#160;to&#160;introduce&#160;some&#160;necessary&#160;basic&#160;ideas&#160;of&#160;probability.<br/>We&#160;build&#160;on&#160;these&#160;ideas&#160;as&#160;we&#160;progress&#160;through&#160;this&#160;and&#160;later&#160;chapters.&#160;In<br/>this&#160;section,&#160;we&#160;use&#160;the&#160;nucleotide&#160;sequence&#160;on&#160;a&#160;single&#160;strand&#160;as&#160;an&#160;example.<br/>For&#160;deﬁniteness,&#160;we&#160;assume&#160;that&#160;this&#160;sequence&#160;is&#160;written&#160;in&#160;a&#160;given&#160;5</p>
+<p style="position:absolute;top:354px;left:542px;white-space:nowrap" class="ft03"></p>
+<p style="position:absolute;top:359px;left:552px;white-space:nowrap" class="ft01">to&#160;3</p>
+<p style="position:absolute;top:354px;left:578px;white-space:nowrap" class="ft03"></p>
+<p style="position:absolute;top:376px;left:80px;white-space:nowrap" class="ft012">direction.&#160;We&#160;are&#160;often&#160;interested&#160;in&#160;deciding&#160;whether&#160;particular&#160;patterns&#160;of<br/>bases&#160;appear&#160;unusually&#160;often&#160;in&#160;a&#160;given&#160;sequence;&#160;such&#160;sequences&#160;might&#160;be&#160;of<br/>biological&#160;signiﬁcance.&#160;To&#160;address&#160;such&#160;problems,&#160;we&#160;need&#160;a&#160;way&#160;to&#160;measure<br/>our&#160;“surprise”&#160;about&#160;the&#160;frequency&#160;of&#160;particular&#160;patterns,&#160;and&#160;to&#160;do&#160;this&#160;we<br/>use&#160;a&#160;probabilistic&#160;model&#160;for&#160;the&#160;sequence.</p>
+<p style="position:absolute;top:466px;left:103px;white-space:nowrap" class="ft01">One&#160;way&#160;to&#160;specify&#160;such&#160;a&#160;probability&#160;model&#160;is&#160;to&#160;describe&#160;a&#160;method&#160;for</p>
+<p style="position:absolute;top:484px;left:80px;white-space:nowrap" class="ft012">simulating&#160;observations&#160;from&#160;the&#160;model.&#160;This&#160;means&#160;that&#160;we&#160;must&#160;specify&#160;the<br/>probabilistic&#160;rules&#160;the&#160;computer&#160;uses&#160;to&#160;produce&#160;the&#160;next&#160;letter&#160;in&#160;the&#160;simu-<br/>lated&#160;sequence,&#160;given&#160;the&#160;previous&#160;letters.&#160;We&#160;can&#160;then&#160;think&#160;of&#160;the&#160;sequence<br/>as&#160;the&#160;output&#160;of&#160;a&#160;machine&#160;(or&#160;simulation&#160;algorithm).&#160;Here&#160;is&#160;a&#160;simple&#160;set&#160;of<br/>rules&#160;that&#160;specify&#160;a&#160;probability&#160;model:</p>
+<p style="position:absolute;top:580px;left:79px;white-space:nowrap" class="ft01">(a)&#160;The&#160;ﬁrst&#160;base&#160;in&#160;the&#160;sequence&#160;is&#160;either&#160;an</p>
+<p style="position:absolute;top:582px;left:390px;white-space:nowrap" class="ft05">A</p>
+<p style="position:absolute;top:580px;left:398px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:582px;left:408px;white-space:nowrap" class="ft05">C</p>
+<p style="position:absolute;top:580px;left:416px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:582px;left:426px;white-space:nowrap" class="ft05">G</p>
+<p style="position:absolute;top:580px;left:434px;white-space:nowrap" class="ft01">,&#160;or</p>
+<p style="position:absolute;top:582px;left:463px;white-space:nowrap" class="ft05">T</p>
+<p style="position:absolute;top:580px;left:476px;white-space:nowrap" class="ft01">with&#160;probability</p>
+<p style="position:absolute;top:598px;left:106px;white-space:nowrap" class="ft02">p</p>
+<p style="position:absolute;top:601px;left:113px;white-space:nowrap" class="ft06">A</p>
+<p style="position:absolute;top:598px;left:120px;white-space:nowrap" class="ft02">,&#160;p</p>
+<p style="position:absolute;top:601px;left:134px;white-space:nowrap" class="ft06">C</p>
+<p style="position:absolute;top:598px;left:140px;white-space:nowrap" class="ft02">,&#160;p</p>
+<p style="position:absolute;top:601px;left:154px;white-space:nowrap" class="ft06">G</p>
+<p style="position:absolute;top:598px;left:160px;white-space:nowrap" class="ft02">,&#160;p</p>
+<p style="position:absolute;top:601px;left:175px;white-space:nowrap" class="ft06">T</p>
+<p style="position:absolute;top:598px;left:181px;white-space:nowrap" class="ft01">,&#160;respectively.</p>
+<p style="position:absolute;top:616px;left:78px;white-space:nowrap" class="ft01">(b)&#160;Suppose&#160;the&#160;machine&#160;has&#160;generated&#160;the&#160;ﬁrst</p>
+<p style="position:absolute;top:616px;left:415px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:616px;left:430px;white-space:nowrap" class="ft01">bases.&#160;To&#160;generate&#160;the</p>
+<p style="position:absolute;top:634px;left:106px;white-space:nowrap" class="ft01">base&#160;at&#160;position</p>
+<p style="position:absolute;top:634px;left:217px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:634px;left:228px;white-space:nowrap" class="ft01">+&#160;1,&#160;the&#160;machine&#160;pays&#160;no&#160;attention&#160;to&#160;what&#160;has&#160;been</p>
+<p style="position:absolute;top:652px;left:106px;white-space:nowrap" class="ft01">generated&#160;before&#160;and&#160;spits&#160;out</p>
+<p style="position:absolute;top:654px;left:307px;white-space:nowrap" class="ft05">A</p>
+<p style="position:absolute;top:652px;left:315px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:654px;left:324px;white-space:nowrap" class="ft05">C</p>
+<p style="position:absolute;top:652px;left:332px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:654px;left:340px;white-space:nowrap" class="ft05">G</p>
+<p style="position:absolute;top:652px;left:348px;white-space:nowrap" class="ft01">,&#160;or</p>
+<p style="position:absolute;top:654px;left:375px;white-space:nowrap" class="ft05">T</p>
+<p style="position:absolute;top:652px;left:387px;white-space:nowrap" class="ft01">with&#160;the&#160;probabilities&#160;given&#160;in</p>
+<p style="position:absolute;top:670px;left:106px;white-space:nowrap" class="ft01">(a)&#160;above.</p>
+<p style="position:absolute;top:695px;left:103px;white-space:nowrap" class="ft01">A&#160;run&#160;of&#160;the&#160;simulation&#160;algorithm&#160;results&#160;in&#160;a&#160;sequence&#160;of&#160;bases,&#160;and</p>
+<p style="position:absolute;top:713px;left:80px;white-space:nowrap" class="ft012">diﬀerent&#160;runs&#160;will&#160;typically&#160;result&#160;in&#160;diﬀerent&#160;sequences.&#160;The&#160;output&#160;of&#160;a<br/>random&#160;string&#160;of</p>
+<p style="position:absolute;top:731px;left:193px;white-space:nowrap" class="ft02">n</p>
+<p style="position:absolute;top:731px;left:207px;white-space:nowrap" class="ft01">bases&#160;will&#160;be&#160;denoted&#160;by</p>
+<p style="position:absolute;top:731px;left:370px;white-space:nowrap" class="ft02">L</p>
+<p style="position:absolute;top:736px;left:380px;white-space:nowrap" class="ft07">1</p>
+<p style="position:absolute;top:731px;left:387px;white-space:nowrap" class="ft02">,&#160;L</p>
+<p style="position:absolute;top:736px;left:404px;white-space:nowrap" class="ft07">2</p>
+<p style="position:absolute;top:731px;left:411px;white-space:nowrap" class="ft02">,&#160;.&#160;.&#160;.&#160;,&#160;L</p>
+<p style="position:absolute;top:736px;left:454px;white-space:nowrap" class="ft08">n</p>
+<p style="position:absolute;top:731px;left:462px;white-space:nowrap" class="ft01">,&#160;where</p>
+<p style="position:absolute;top:731px;left:514px;white-space:nowrap" class="ft02">L</p>
+<p style="position:absolute;top:736px;left:524px;white-space:nowrap" class="ft08">i</p>
+<p style="position:absolute;top:731px;left:533px;white-space:nowrap" class="ft01">denotes</p>
+<p style="position:absolute;top:749px;left:80px;white-space:nowrap" class="ft01">the&#160;base&#160;inserted&#160;in&#160;position</p>
+<p style="position:absolute;top:749px;left:269px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:749px;left:279px;white-space:nowrap" class="ft01">of&#160;the&#160;sequence.&#160;It&#160;is&#160;conventional&#160;to&#160;use&#160;small</p>
+<p style="position:absolute;top:766px;left:80px;white-space:nowrap" class="ft01">letters&#160;to&#160;denote&#160;the</p>
+<p style="position:absolute;top:766px;left:223px;white-space:nowrap" class="ft09">particular</p>
+<p style="position:absolute;top:766px;left:294px;white-space:nowrap" class="ft01">sequence&#160;that&#160;resulted&#160;from&#160;a&#160;run;&#160;we&#160;may</p>
+<p style="position:absolute;top:784px;left:80px;white-space:nowrap" class="ft01">observe</p>
+<p style="position:absolute;top:784px;left:136px;white-space:nowrap" class="ft02">L</p>
+<p style="position:absolute;top:790px;left:146px;white-space:nowrap" class="ft07">1</p>
+<p style="position:absolute;top:784px;left:160px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:784px;left:180px;white-space:nowrap" class="ft02">l</p>
+<p style="position:absolute;top:790px;left:184px;white-space:nowrap" class="ft07">1</p>
+<p style="position:absolute;top:784px;left:191px;white-space:nowrap" class="ft02">,&#160;L</p>
+<p style="position:absolute;top:790px;left:208px;white-space:nowrap" class="ft07">2</p>
+<p style="position:absolute;top:784px;left:222px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:784px;left:242px;white-space:nowrap" class="ft02">l</p>
+<p style="position:absolute;top:790px;left:246px;white-space:nowrap" class="ft07">2</p>
+<p style="position:absolute;top:784px;left:253px;white-space:nowrap" class="ft02">,&#160;.&#160;.&#160;.&#160;,&#160;L</p>
+<p style="position:absolute;top:790px;left:296px;white-space:nowrap" class="ft08">n</p>
+<p style="position:absolute;top:784px;left:312px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:784px;left:331px;white-space:nowrap" class="ft02">l</p>
+<p style="position:absolute;top:790px;left:336px;white-space:nowrap" class="ft08">n</p>
+<p style="position:absolute;top:784px;left:351px;white-space:nowrap" class="ft01">for&#160;a&#160;particular&#160;simulation.&#160;In&#160;the</p>
+<p style="position:absolute;top:802px;left:80px;white-space:nowrap" class="ft012">next&#160;sections,&#160;we&#160;outline&#160;some&#160;basic&#160;probabilistic&#160;and&#160;statistical&#160;language<br/>that&#160;allows&#160;us&#160;to&#160;analyze&#160;such&#160;sequences.</p>
+<p style="position:absolute;top:859px;left:80px;white-space:nowrap" class="ft010"><b>2.3.1&#160;Probability&#160;Distributions</b></p>
+<p style="position:absolute;top:888px;left:80px;white-space:nowrap" class="ft01">Suppose&#160;that&#160;on&#160;a&#160;single&#160;step&#160;our&#160;machine&#160;produces&#160;an&#160;output</p>
+<p style="position:absolute;top:888px;left:498px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:888px;left:517px;white-space:nowrap" class="ft01">that&#160;takes</p>
+<p style="position:absolute;top:905px;left:80px;white-space:nowrap" class="ft01">exactly&#160;one&#160;of&#160;the</p>
+<p style="position:absolute;top:905px;left:199px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:905px;left:213px;white-space:nowrap" class="ft01">possible&#160;values&#160;in&#160;a&#160;set</p>
+<p style="position:absolute;top:902px;left:363px;white-space:nowrap" class="ft011">X</p>
+<p style="position:absolute;top:905px;left:379px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:902px;left:395px;white-space:nowrap" class="ft011">{</p>
+<p style="position:absolute;top:905px;left:403px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:911px;left:411px;white-space:nowrap" class="ft07">1</p>
+<p style="position:absolute;top:905px;left:418px;white-space:nowrap" class="ft02">,&#160;x</p>
+<p style="position:absolute;top:911px;left:433px;white-space:nowrap" class="ft07">2</p>
+<p style="position:absolute;top:905px;left:440px;white-space:nowrap" class="ft02">,&#160;.&#160;.&#160;.&#160;,&#160;x</p>
+<p style="position:absolute;top:911px;left:481px;white-space:nowrap" class="ft08">J</p>
+<p style="position:absolute;top:902px;left:490px;white-space:nowrap" class="ft011">}</p>
+<p style="position:absolute;top:905px;left:498px;white-space:nowrap" class="ft01">.&#160;In&#160;the&#160;DNA</p>
+</div>
+</body>
+</html>

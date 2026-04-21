@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 285</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:18px;font-family:ACJJPN+FN;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft05{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft06{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft07{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft08{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft09{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page285-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome285.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">272</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">10&#160;Similarity,&#160;Distance,&#160;and&#160;Clustering</p>
+<p style="position:absolute;top:111px;left:80px;white-space:nowrap" class="ft01"><b>10.4&#160;Clustering</b></p>
+<p style="position:absolute;top:149px;left:80px;white-space:nowrap" class="ft02">There&#160;are&#160;two&#160;general&#160;approaches&#160;to&#160;clustering.</p>
+<p style="position:absolute;top:149px;left:410px;white-space:nowrap" class="ft03"><b>Hierarchical&#160;clustering</b></p>
+<p style="position:absolute;top:167px;left:80px;white-space:nowrap" class="ft09">consists&#160;of&#160;the&#160;successive&#160;joining&#160;together&#160;or&#160;splitting&#160;of&#160;individual&#160;objects<br/>or&#160;groups&#160;of&#160;objects&#160;based&#160;upon&#160;a&#160;measure&#160;of&#160;similarity&#160;or&#160;distance&#160;between<br/>the&#160;objects.&#160;This&#160;produces&#160;a&#160;“tree”&#160;or&#160;dendrogram&#160;in&#160;which&#160;any&#160;object&#160;is<br/>associated&#160;with&#160;successively&#160;larger&#160;groups&#160;of&#160;objects.&#160;Groups&#160;or&#160;clusters&#160;are<br/>arbitrarily&#160;deﬁned&#160;based&#160;upon&#160;distance&#160;relationships&#160;to&#160;be&#160;described.&#160;This<br/>hierarchical&#160;structure&#160;resembles&#160;the&#160;hierarchical&#160;patterns&#160;of&#160;phylogenetic&#160;re-<br/>lationships&#160;among&#160;organisms,&#160;which&#160;are&#160;a&#160;consequence&#160;of&#160;their&#160;evolutionary<br/>descent&#160;from&#160;shared&#160;common&#160;ancestors.&#160;The&#160;second&#160;clustering&#160;approach&#160;in-<br/>volves</p>
+<p style="position:absolute;top:311px;left:124px;white-space:nowrap" class="ft04">optimization</p>
+<p style="position:absolute;top:311px;left:204px;white-space:nowrap" class="ft02">,&#160;in&#160;which&#160;the&#160;number&#160;of&#160;groups&#160;or&#160;clusters&#160;is&#160;prespeciﬁed.</p>
+<p style="position:absolute;top:329px;left:80px;white-space:nowrap" class="ft09">Optimization&#160;(nonhierarchical)&#160;methods&#160;do&#160;not&#160;construct&#160;the&#160;clusters&#160;based<br/>on&#160;pairwise&#160;diﬀerences&#160;between&#160;individual&#160;objects.&#160;Instead,&#160;mutually&#160;exclu-<br/>sive&#160;clusters&#160;are&#160;formed,&#160;with&#160;no&#160;“subclusters.”&#160;We&#160;discuss</p>
+<p style="position:absolute;top:364px;left:481px;white-space:nowrap" class="ft05">K</p>
+<p style="position:absolute;top:364px;left:495px;white-space:nowrap" class="ft02">-means&#160;as&#160;an</p>
+<p style="position:absolute;top:382px;left:80px;white-space:nowrap" class="ft09">example&#160;of&#160;this.&#160;Assignments&#160;of&#160;objects&#160;to&#160;one&#160;or&#160;another&#160;of&#160;the&#160;predeter-<br/>mined&#160;groups&#160;are&#160;determined&#160;in&#160;such&#160;a&#160;way&#160;that&#160;their&#160;distances&#160;from&#160;cluster<br/>“centers”&#160;are&#160;minimized.&#160;A&#160;method&#160;such&#160;as</p>
+<p style="position:absolute;top:418px;left:376px;white-space:nowrap" class="ft05">K</p>
+<p style="position:absolute;top:418px;left:390px;white-space:nowrap" class="ft02">-means&#160;is&#160;not&#160;used&#160;for&#160;classi-</p>
+<p style="position:absolute;top:436px;left:80px;white-space:nowrap" class="ft09">ﬁcation&#160;of&#160;organisms&#160;because&#160;the&#160;biology&#160;and&#160;observation&#160;indicate&#160;that&#160;their<br/>relationships&#160;are&#160;hierarchical.</p>
+<p style="position:absolute;top:498px;left:80px;white-space:nowrap" class="ft03"><b>10.4.1&#160;Agglomerative&#160;Hierarchical&#160;Clustering</b></p>
+<p style="position:absolute;top:530px;left:80px;white-space:nowrap" class="ft09">Agglomerative&#160;hierarchical&#160;methods&#160;sequentially&#160;merge&#160;OTUs&#160;into&#160;clusters<br/>having&#160;larger&#160;and&#160;larger&#160;numbers&#160;of&#160;members&#160;by&#160;successively&#160;grouping&#160;those<br/>that&#160;are&#160;least&#160;distant&#160;ﬁrst.&#160;In&#160;contrast,&#160;divisive&#160;hierarchical&#160;methods&#160;sequen-<br/>tially&#160;divide&#160;larger&#160;groups&#160;into&#160;smaller&#160;and&#160;smaller&#160;clusters&#160;with&#160;fewer&#160;mem-<br/>bers.&#160;Here,&#160;we&#160;will&#160;discuss&#160;an&#160;agglomerative&#160;approach&#160;only.&#160;Agglomerative<br/>hierarchical&#160;clustering&#160;starts&#160;with&#160;the</p>
+<p style="position:absolute;top:620px;left:329px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:617px;left:346px;white-space:nowrap" class="ft06">×</p>
+<p style="position:absolute;top:620px;left:360px;white-space:nowrap" class="ft05">p</p>
+<p style="position:absolute;top:620px;left:373px;white-space:nowrap" class="ft02">matrix&#160;of</p>
+<p style="position:absolute;top:620px;left:438px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:620px;left:456px;white-space:nowrap" class="ft02">OTUs&#160;measured&#160;on</p>
+<p style="position:absolute;top:638px;left:80px;white-space:nowrap" class="ft05">p</p>
+<p style="position:absolute;top:638px;left:93px;white-space:nowrap" class="ft02">characters.&#160;This&#160;is&#160;used&#160;to&#160;calculate&#160;an</p>
+<p style="position:absolute;top:638px;left:350px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:634px;left:366px;white-space:nowrap" class="ft06">×</p>
+<p style="position:absolute;top:638px;left:381px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:638px;left:399px;white-space:nowrap" class="ft03"><b>distance&#160;matrix</b></p>
+<p style="position:absolute;top:638px;left:520px;white-space:nowrap" class="ft02">using&#160;dis-</p>
+<p style="position:absolute;top:656px;left:80px;white-space:nowrap" class="ft09">tance&#160;measures&#160;such&#160;as&#160;those&#160;described&#160;above.&#160;The&#160;distance&#160;matrix&#160;is&#160;used&#160;to<br/>decide&#160;which&#160;of&#160;the&#160;OTUs&#160;to&#160;join&#160;ﬁrst.&#160;After&#160;the&#160;ﬁrst&#160;two&#160;OTUs&#160;are&#160;joined,&#160;a<br/>new&#160;distance&#160;matrix&#160;is&#160;generated&#160;taking&#160;into&#160;account&#160;the&#160;newly&#160;formed&#160;clus-<br/>ter,&#160;and&#160;the&#160;process&#160;is&#160;continued&#160;until&#160;all&#160;OTUs&#160;have&#160;been&#160;joined&#160;to&#160;other<br/>OTUs&#160;or&#160;to&#160;clusters.&#160;The&#160;result&#160;is&#160;presented&#160;as&#160;a</p>
+<p style="position:absolute;top:728px;left:405px;white-space:nowrap" class="ft03"><b>dendrogram</b></p>
+<p style="position:absolute;top:728px;left:495px;white-space:nowrap" class="ft02">.&#160;The&#160;process</p>
+<p style="position:absolute;top:746px;left:80px;white-space:nowrap" class="ft02">is&#160;summarized&#160;in&#160;the&#160;following&#160;steps.</p>
+<p style="position:absolute;top:784px;left:80px;white-space:nowrap" class="ft03"><b>Procedures&#160;for&#160;agglomerative&#160;clustering</b></p>
+<p style="position:absolute;top:814px;left:87px;white-space:nowrap" class="ft02">1.&#160;Start&#160;with</p>
+<p style="position:absolute;top:814px;left:177px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:814px;left:194px;white-space:nowrap" class="ft02">clusters,&#160;each&#160;containing&#160;one&#160;OTU,&#160;and&#160;calculate&#160;the</p>
+<p style="position:absolute;top:814px;left:541px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:811px;left:556px;white-space:nowrap" class="ft06">×</p>
+<p style="position:absolute;top:814px;left:569px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:832px;left:106px;white-space:nowrap" class="ft02">symmetric&#160;distance&#160;matrix</p>
+<p style="position:absolute;top:832px;left:285px;white-space:nowrap" class="ft05">D</p>
+<p style="position:absolute;top:838px;left:298px;white-space:nowrap" class="ft07">1</p>
+<p style="position:absolute;top:832px;left:309px;white-space:nowrap" class="ft02">(entries</p>
+<p style="position:absolute;top:832px;left:363px;white-space:nowrap" class="ft05">d</p>
+<p style="position:absolute;top:838px;left:371px;white-space:nowrap" class="ft08">ij</p>
+<p style="position:absolute;top:832px;left:381px;white-space:nowrap" class="ft02">).</p>
+<p style="position:absolute;top:850px;left:87px;white-space:nowrap" class="ft02">2.&#160;Determine&#160;from</p>
+<p style="position:absolute;top:850px;left:212px;white-space:nowrap" class="ft05">D</p>
+<p style="position:absolute;top:856px;left:225px;white-space:nowrap" class="ft07">1</p>
+<p style="position:absolute;top:850px;left:236px;white-space:nowrap" class="ft02">which&#160;of&#160;the&#160;OTUs&#160;(or&#160;clusters&#160;in&#160;later&#160;iterations)&#160;are</p>
+<p style="position:absolute;top:868px;left:106px;white-space:nowrap" class="ft02">least&#160;distant&#160;(i.e.,&#160;ﬁnd&#160;the</p>
+<p style="position:absolute;top:868px;left:287px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:868px;left:298px;white-space:nowrap" class="ft02">and</p>
+<p style="position:absolute;top:868px;left:328px;white-space:nowrap" class="ft05">j</p>
+<p style="position:absolute;top:868px;left:342px;white-space:nowrap" class="ft02">for&#160;which</p>
+<p style="position:absolute;top:868px;left:410px;white-space:nowrap" class="ft05">d</p>
+<p style="position:absolute;top:874px;left:417px;white-space:nowrap" class="ft08">ij</p>
+<p style="position:absolute;top:868px;left:434px;white-space:nowrap" class="ft02">is&#160;a&#160;minimum,</p>
+<p style="position:absolute;top:868px;left:536px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:865px;left:548px;white-space:nowrap" class="ft06">&#160;</p>
+<p style="position:absolute;top:868px;left:548px;white-space:nowrap" class="ft02">=</p>
+<p style="position:absolute;top:868px;left:565px;white-space:nowrap" class="ft05">j</p>
+<p style="position:absolute;top:868px;left:572px;white-space:nowrap" class="ft02">).</p>
+<p style="position:absolute;top:886px;left:106px;white-space:nowrap" class="ft02">Suppose&#160;these&#160;happen&#160;to&#160;be&#160;clusters&#160;(or&#160;OTUs)&#160;I&#160;and&#160;J.</p>
+</div>
+</body>
+</html>

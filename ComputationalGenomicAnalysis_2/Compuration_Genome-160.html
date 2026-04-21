@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 160</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:18px;font-family:ACJJPN+FN;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft05{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page160-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome160.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">146</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">6&#160;Sequence&#160;Alignment</p>
+<p style="position:absolute;top:113px;left:103px;white-space:nowrap" class="ft01">Before&#160;proceeding,&#160;note&#160;that&#160;we&#160;may&#160;align&#160;nucleic&#160;acids&#160;with&#160;each&#160;other</p>
+<p style="position:absolute;top:131px;left:80px;white-space:nowrap" class="ft06">or&#160;polypeptide&#160;sequences&#160;with&#160;each&#160;other.&#160;The&#160;latter&#160;case&#160;raises&#160;a&#160;number&#160;of<br/>additional&#160;issues&#160;because&#160;of&#160;constraints&#160;on&#160;protein&#160;structures&#160;and&#160;the&#160;genetic<br/>code,&#160;so&#160;it&#160;will&#160;be&#160;discussed&#160;in&#160;the&#160;next&#160;chapter.</p>
+<p style="position:absolute;top:222px;left:80px;white-space:nowrap" class="ft02"><b>6.2&#160;Basic&#160;Example</b></p>
+<p style="position:absolute;top:260px;left:80px;white-space:nowrap" class="ft06">Before&#160;proceeding&#160;to&#160;a&#160;rigorous&#160;description,&#160;we&#160;will&#160;introduce&#160;the&#160;“ﬂavor”&#160;of<br/>the&#160;process&#160;with&#160;a&#160;simple&#160;“toy”&#160;example.&#160;Suppose&#160;that&#160;we&#160;wish&#160;to&#160;align</p>
+<p style="position:absolute;top:280px;left:551px;white-space:nowrap" class="ft03">WHAT</p>
+<p style="position:absolute;top:296px;left:80px;white-space:nowrap" class="ft01">with</p>
+<p style="position:absolute;top:298px;left:114px;white-space:nowrap" class="ft03">WHY</p>
+<p style="position:absolute;top:296px;left:138px;white-space:nowrap" class="ft01">.&#160;Our&#160;goal&#160;is&#160;to&#160;ﬁnd&#160;the&#160;highest-scoring&#160;alignment.&#160;This&#160;means&#160;that</p>
+<p style="position:absolute;top:314px;left:80px;white-space:nowrap" class="ft06">we&#160;will&#160;have&#160;to&#160;devise&#160;a&#160;scoring&#160;system&#160;to&#160;characterize&#160;each&#160;possible&#160;alignment.<br/>One&#160;possible&#160;alignment&#160;solution&#160;is</p>
+<p style="position:absolute;top:366px;left:320px;white-space:nowrap" class="ft03">WHAT</p>
+<p style="position:absolute;top:389px;left:320px;white-space:nowrap" class="ft03">WH</p>
+<p style="position:absolute;top:387px;left:338px;white-space:nowrap" class="ft01">-</p>
+<p style="position:absolute;top:389px;left:343px;white-space:nowrap" class="ft03">Y</p>
+<p style="position:absolute;top:420px;left:103px;white-space:nowrap" class="ft01">We&#160;need&#160;a&#160;rule&#160;to&#160;tell&#160;us&#160;how&#160;to&#160;calculate&#160;an&#160;alignment&#160;score&#160;that&#160;will,</p>
+<p style="position:absolute;top:438px;left:80px;white-space:nowrap" class="ft06">in&#160;turn,&#160;allow&#160;us&#160;to&#160;identify&#160;which&#160;alignment&#160;is&#160;best.&#160;Let’s&#160;use&#160;the&#160;following<br/>scores&#160;for&#160;each&#160;instance&#160;of&#160;match,&#160;mismatch,&#160;or&#160;indel:</p>
+<p style="position:absolute;top:488px;left:225px;white-space:nowrap" class="ft01">identity&#160;(match)</p>
+<p style="position:absolute;top:488px;left:417px;white-space:nowrap" class="ft01">+1</p>
+<p style="position:absolute;top:505px;left:225px;white-space:nowrap" class="ft01">substitution&#160;(mismatch)</p>
+<p style="position:absolute;top:502px;left:417px;white-space:nowrap" class="ft04">−</p>
+<p style="position:absolute;top:505px;left:429px;white-space:nowrap" class="ft05">µ</p>
+<p style="position:absolute;top:523px;left:225px;white-space:nowrap" class="ft01">indel</p>
+<p style="position:absolute;top:520px;left:417px;white-space:nowrap" class="ft04">−</p>
+<p style="position:absolute;top:523px;left:429px;white-space:nowrap" class="ft05">δ</p>
+<p style="position:absolute;top:556px;left:103px;white-space:nowrap" class="ft01">The&#160;minus&#160;signs&#160;for&#160;substitutions&#160;and&#160;indels&#160;assure&#160;that&#160;alignments&#160;with</p>
+<p style="position:absolute;top:573px;left:80px;white-space:nowrap" class="ft01">many&#160;substitutions&#160;or&#160;indels&#160;will&#160;have&#160;low&#160;scores.&#160;We&#160;deﬁne&#160;the&#160;score</p>
+<p style="position:absolute;top:573px;left:553px;white-space:nowrap" class="ft05">S</p>
+<p style="position:absolute;top:573px;left:569px;white-space:nowrap" class="ft01">as</p>
+<p style="position:absolute;top:591px;left:80px;white-space:nowrap" class="ft01">the&#160;sum&#160;of&#160;individual&#160;scores&#160;at&#160;each&#160;position:</p>
+<p style="position:absolute;top:624px;left:225px;white-space:nowrap" class="ft05">S</p>
+<p style="position:absolute;top:624px;left:235px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:626px;left:241px;white-space:nowrap" class="ft03">WHAT</p>
+<p style="position:absolute;top:624px;left:273px;white-space:nowrap" class="ft05">/</p>
+<p style="position:absolute;top:626px;left:280px;white-space:nowrap" class="ft03">WH</p>
+<p style="position:absolute;top:621px;left:299px;white-space:nowrap" class="ft04">−</p>
+<p style="position:absolute;top:626px;left:314px;white-space:nowrap" class="ft03">Y</p>
+<p style="position:absolute;top:624px;left:322px;white-space:nowrap" class="ft01">)&#160;=&#160;1&#160;+&#160;1</p>
+<p style="position:absolute;top:621px;left:384px;white-space:nowrap" class="ft04">−</p>
+<p style="position:absolute;top:624px;left:399px;white-space:nowrap" class="ft05">δ</p>
+<p style="position:absolute;top:621px;left:409px;white-space:nowrap" class="ft04">−</p>
+<p style="position:absolute;top:624px;left:424px;white-space:nowrap" class="ft05">µ.</p>
+<p style="position:absolute;top:657px;left:103px;white-space:nowrap" class="ft01">There&#160;is&#160;a&#160;more&#160;general&#160;way&#160;of&#160;describing&#160;the&#160;scoring&#160;process&#160;(not&#160;nec-</p>
+<p style="position:absolute;top:675px;left:80px;white-space:nowrap" class="ft06">essary&#160;for&#160;“toy”&#160;problems&#160;such&#160;as&#160;the&#160;one&#160;above).&#160;We&#160;write&#160;the&#160;target&#160;se-<br/>quence&#160;(</p>
+<p style="position:absolute;top:695px;left:138px;white-space:nowrap" class="ft03">WHY</p>
+<p style="position:absolute;top:693px;left:161px;white-space:nowrap" class="ft01">)&#160;and&#160;the&#160;search&#160;space&#160;(</p>
+<p style="position:absolute;top:695px;left:330px;white-space:nowrap" class="ft03">WHAT</p>
+<p style="position:absolute;top:693px;left:361px;white-space:nowrap" class="ft01">)&#160;as&#160;rows&#160;and&#160;columns&#160;of&#160;a&#160;ma-</p>
+<p style="position:absolute;top:711px;left:80px;white-space:nowrap" class="ft01">trix:</p>
+</div>
+</body>
+</html>

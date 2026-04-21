@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 522</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft05{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+	.ft07{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page522-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome522.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">514</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">C&#160;Miscellaneous&#160;Data</p>
+<p style="position:absolute;top:115px;left:103px;white-space:nowrap" class="ft06">+&#160;if(array.dat[i,4]==0)<br/>+&#160;array.dat.r&lt;-rbind(array.dat.r,array.dat[i,])<br/>+&#160;}<br/>#Two&#160;lines&#160;above&#160;specify&#160;inclusion&#160;of&#160;a&#160;row&#160;only&#160;if<br/>#its&#160;flag&#160;is&#160;equal&#160;to&#160;zero.<br/>&gt;&#160;length(array.dat.r[,1])<br/>[1]&#160;5641&#160;#Number&#160;of&#160;rows&#160;not&#160;flagged</p>
+<p style="position:absolute;top:247px;left:80px;white-space:nowrap" class="ft07">We&#160;see&#160;that&#160;only&#160;5641&#160;rows&#160;out&#160;of&#160;9216&#160;are&#160;not&#160;ﬂagged.&#160;(The&#160;original&#160;data&#160;had<br/>a&#160;“bad”&#160;block,&#160;and&#160;many&#160;rows&#160;near&#160;the&#160;end&#160;contained&#160;zero&#160;for&#160;all&#160;intensity<br/>values.)</p>
+<p style="position:absolute;top:315px;left:80px;white-space:nowrap" class="ft03">Step&#160;3:&#160;Calculate</p>
+<p style="position:absolute;top:315px;left:197px;white-space:nowrap" class="ft04">M</p>
+<p style="position:absolute;top:315px;left:218px;white-space:nowrap" class="ft03">and</p>
+<p style="position:absolute;top:315px;left:247px;white-space:nowrap" class="ft04">A</p>
+<p style="position:absolute;top:315px;left:258px;white-space:nowrap" class="ft03">,&#160;and&#160;obtain&#160;the&#160;factor&#160;for&#160;global&#160;normalization</p>
+<p style="position:absolute;top:346px;left:80px;white-space:nowrap" class="ft07">We&#160;make&#160;vectors&#160;of&#160;appropriate&#160;length&#160;and&#160;then&#160;compute&#160;the&#160;appropriate<br/>logarithms&#160;in&#160;base&#160;2:</p>
+<p style="position:absolute;top:392px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;M&lt;-rep(0,5641)<br/>&gt;&#160;M[]&lt;-log2(array.dat.r[,2]/array.dat.r[,3])<br/>&gt;&#160;A&lt;-rep(0,5641)<br/>&gt;&#160;A[]&lt;-log2((array.dat.r[,2]*array.dat.r[,3])**0.5)</p>
+<p style="position:absolute;top:471px;left:80px;white-space:nowrap" class="ft07">At&#160;this&#160;point,&#160;we&#160;can&#160;compute&#160;the&#160;factor&#160;needed&#160;for&#160;global&#160;normalization.<br/>Remember&#160;that&#160;we&#160;found&#160;that&#160;log</p>
+<p style="position:absolute;top:495px;left:302px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:489px;left:309px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:489px;left:315px;white-space:nowrap" class="ft04">R/G</p>
+<p style="position:absolute;top:489px;left:345px;white-space:nowrap" class="ft02">)&#160;=&#160;log</p>
+<p style="position:absolute;top:495px;left:390px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:489px;left:400px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:489px;left:408px;white-space:nowrap" class="ft02">,so&#160;we&#160;seek&#160;the&#160;mean&#160;value</p>
+<p style="position:absolute;top:507px;left:80px;white-space:nowrap" class="ft02">of</p>
+<p style="position:absolute;top:507px;left:97px;white-space:nowrap" class="ft04">M</p>
+<p style="position:absolute;top:507px;left:114px;white-space:nowrap" class="ft02">:</p>
+<p style="position:absolute;top:535px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;mean(M[])<br/>[1]&#160;NaN</p>
+<p style="position:absolute;top:577px;left:80px;white-space:nowrap" class="ft02">The&#160;“</p>
+<p style="position:absolute;top:579px;left:119px;white-space:nowrap" class="ft01">NaN</p>
+<p style="position:absolute;top:577px;left:143px;white-space:nowrap" class="ft02">”&#160;indicates&#160;a&#160;number&#160;not&#160;available.&#160;To&#160;ﬁnd&#160;out&#160;where&#160;the&#160;problem</p>
+<p style="position:absolute;top:595px;left:80px;white-space:nowrap" class="ft02">lies,&#160;we&#160;hunt&#160;for&#160;the&#160;oﬀending&#160;row&#160;in</p>
+<p style="position:absolute;top:597px;left:326px;white-space:nowrap" class="ft01">M</p>
+<p style="position:absolute;top:595px;left:339px;white-space:nowrap" class="ft02">and&#160;check&#160;in</p>
+<p style="position:absolute;top:597px;left:426px;white-space:nowrap" class="ft01">A</p>
+<p style="position:absolute;top:595px;left:439px;white-space:nowrap" class="ft02">as&#160;well:</p>
+<p style="position:absolute;top:623px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;(1:length(M))[M[]==&#34;NaN&#34;]<br/>[1]&#160;2096<br/>&gt;&#160;(1:length(A))[A[]==&#34;NaN&#34;]<br/>[1]&#160;2096</p>
+<p style="position:absolute;top:701px;left:80px;white-space:nowrap" class="ft02">Only&#160;row&#160;number&#160;2096&#160;is&#160;problematic.&#160;We&#160;look&#160;in</p>
+<p style="position:absolute;top:703px;left:421px;white-space:nowrap" class="ft01">array.dat.r</p>
+<p style="position:absolute;top:701px;left:514px;white-space:nowrap" class="ft02">to&#160;identify</p>
+<p style="position:absolute;top:719px;left:80px;white-space:nowrap" class="ft02">the&#160;problem:</p>
+<p style="position:absolute;top:747px;left:103px;white-space:nowrap" class="ft01">&gt;&#160;array.dat.r[2096,]</p>
+<p style="position:absolute;top:765px;left:173px;white-space:nowrap" class="ft01">V1&#160;V2</p>
+<p style="position:absolute;top:765px;left:236px;white-space:nowrap" class="ft01">V3&#160;V4</p>
+<p style="position:absolute;top:783px;left:103px;white-space:nowrap" class="ft01">2292&#160;string&#160;-9&#160;2968</p>
+<p style="position:absolute;top:783px;left:267px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:807px;left:80px;white-space:nowrap" class="ft07">Obviously,&#160;we&#160;can’t&#160;take&#160;the&#160;logarithm&#160;or&#160;square&#160;root&#160;of&#160;a&#160;negative&#160;number;<br/>therefore,&#160;we&#160;need&#160;to&#160;exclude&#160;this&#160;row.&#160;(Note&#160;that&#160;the&#160;listed&#160;row&#160;number&#160;of<br/>the&#160;original&#160;matrix&#160;is&#160;not&#160;the&#160;same&#160;as&#160;the&#160;actual&#160;row&#160;number&#160;after&#160;the&#160;ﬂagged<br/>rows&#160;were&#160;removed.)</p>
+<p style="position:absolute;top:889px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;a&lt;-A[c(1:2095,2097:5641)]&#160;#Include&#160;all&#160;but&#160;row&#160;2096<br/>&gt;&#160;m&lt;-M[c(1:2095,2097:5641)]</p>
+</div>
+</body>
+</html>

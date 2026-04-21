@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 293</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft04{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft05{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page293-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome293.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">280</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">10&#160;Similarity,&#160;Distance,&#160;and&#160;Clustering</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft01">ues&#160;of</p>
+<p style="position:absolute;top:113px;left:123px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:113px;left:131px;white-space:nowrap" class="ft01">,&#160;unless&#160;we&#160;have&#160;prior&#160;information&#160;indicating&#160;the&#160;appropriate&#160;number</p>
+<p style="position:absolute;top:131px;left:80px;white-space:nowrap" class="ft01">of&#160;clusters.</p>
+<p style="position:absolute;top:170px;left:80px;white-space:nowrap" class="ft03"><b>Procedures&#160;for</b></p>
+<p style="position:absolute;top:170px;left:197px;white-space:nowrap" class="ft02">K</p>
+<p style="position:absolute;top:170px;left:211px;white-space:nowrap" class="ft03"><b>-means&#160;clustering</b></p>
+<p style="position:absolute;top:200px;left:87px;white-space:nowrap" class="ft01">1.&#160;Partition&#160;the&#160;OTUs&#160;into</p>
+<p style="position:absolute;top:200px;left:272px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:200px;left:285px;white-space:nowrap" class="ft01">clusters.&#160;(This&#160;can&#160;be&#160;done&#160;by&#160;random&#160;parti-</p>
+<p style="position:absolute;top:218px;left:106px;white-space:nowrap" class="ft01">tioning&#160;or&#160;by&#160;arbitrarily&#160;clustering&#160;around&#160;two&#160;or&#160;more&#160;OTUs.)</p>
+<p style="position:absolute;top:236px;left:87px;white-space:nowrap" class="ft06">2.&#160;Calculate&#160;the&#160;centroids&#160;of&#160;the&#160;clusters.<br/>3.&#160;Assign&#160;or&#160;reassign&#160;each&#160;OTU&#160;to&#160;that&#160;cluster&#160;whose&#160;centroid&#160;is&#160;the&#160;closest.</p>
+<p style="position:absolute;top:272px;left:106px;white-space:nowrap" class="ft01">(Distance&#160;is&#160;calculated&#160;as&#160;Euclidean&#160;distance.)</p>
+<p style="position:absolute;top:290px;left:87px;white-space:nowrap" class="ft01">4.&#160;Recalculate&#160;the&#160;centroids&#160;of&#160;the&#160;new&#160;clusters&#160;formed&#160;after&#160;the&#160;gain&#160;or&#160;loss</p>
+<p style="position:absolute;top:308px;left:106px;white-space:nowrap" class="ft01">of&#160;OTUs&#160;to&#160;or&#160;from&#160;the&#160;previous&#160;clusters.</p>
+<p style="position:absolute;top:326px;left:87px;white-space:nowrap" class="ft01">5.&#160;Repeat&#160;steps&#160;3&#160;and&#160;4&#160;for&#160;a&#160;predetermined&#160;number&#160;of&#160;iterations&#160;or&#160;until</p>
+<p style="position:absolute;top:344px;left:106px;white-space:nowrap" class="ft01">membership&#160;of&#160;the&#160;groups&#160;no&#160;longer&#160;changes.</p>
+<p style="position:absolute;top:396px;left:103px;white-space:nowrap" class="ft01">As&#160;a&#160;ﬁrst&#160;example&#160;of&#160;how&#160;this&#160;works,&#160;we&#160;will&#160;use&#160;a&#160;“toy”&#160;problem&#160;that</p>
+<p style="position:absolute;top:414px;left:80px;white-space:nowrap" class="ft06">can&#160;be&#160;calculated&#160;by&#160;hand.&#160;We&#160;imagine&#160;that&#160;we&#160;have&#160;ﬁve&#160;OTUs,&#160;A,&#160;B,&#160;.&#160;.&#160;.&#160;,<br/>E,&#160;each&#160;described&#160;by&#160;two&#160;characters,</p>
+<p style="position:absolute;top:432px;left:321px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:437px;left:329px;white-space:nowrap" class="ft04">1</p>
+<p style="position:absolute;top:432px;left:341px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:432px;left:369px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:437px;left:378px;white-space:nowrap" class="ft04">2</p>
+<p style="position:absolute;top:432px;left:384px;white-space:nowrap" class="ft01">,&#160;and&#160;we&#160;want&#160;to&#160;place&#160;the&#160;ﬁve</p>
+<p style="position:absolute;top:450px;left:80px;white-space:nowrap" class="ft01">objects&#160;into&#160;two&#160;clusters.&#160;The&#160;data&#160;are:</p>
+<p style="position:absolute;top:476px;left:295px;white-space:nowrap" class="ft01">OTU</p>
+<p style="position:absolute;top:476px;left:333px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:481px;left:341px;white-space:nowrap" class="ft04">1</p>
+<p style="position:absolute;top:476px;left:353px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:481px;left:361px;white-space:nowrap" class="ft04">2</p>
+<p style="position:absolute;top:494px;left:306px;white-space:nowrap" class="ft01">A</p>
+<p style="position:absolute;top:494px;left:337px;white-space:nowrap" class="ft01">1&#160;1</p>
+<p style="position:absolute;top:512px;left:306px;white-space:nowrap" class="ft01">B</p>
+<p style="position:absolute;top:512px;left:337px;white-space:nowrap" class="ft01">3&#160;1</p>
+<p style="position:absolute;top:530px;left:306px;white-space:nowrap" class="ft01">C</p>
+<p style="position:absolute;top:530px;left:337px;white-space:nowrap" class="ft01">4&#160;8</p>
+<p style="position:absolute;top:548px;left:306px;white-space:nowrap" class="ft01">D</p>
+<p style="position:absolute;top:548px;left:337px;white-space:nowrap" class="ft01">8&#160;10</p>
+<p style="position:absolute;top:566px;left:307px;white-space:nowrap" class="ft01">E</p>
+<p style="position:absolute;top:566px;left:337px;white-space:nowrap" class="ft01">9&#160;6</p>
+<p style="position:absolute;top:592px;left:80px;white-space:nowrap" class="ft06">The&#160;data&#160;are&#160;plotted&#160;in&#160;Fig.&#160;10.6.&#160;We&#160;can&#160;already&#160;see&#160;by&#160;inspection&#160;what&#160;the<br/>answer&#160;should&#160;be&#160;(A&#160;and&#160;B&#160;form&#160;one&#160;cluster,&#160;while&#160;C,&#160;D,&#160;and&#160;E&#160;form&#160;another),<br/>but&#160;we&#160;want&#160;to&#160;get&#160;a&#160;feel&#160;for&#160;how&#160;the&#160;computation&#160;actually&#160;works.</p>
+<p style="position:absolute;top:667px;left:80px;white-space:nowrap" class="ft03"><b>Computational&#160;Example&#160;10.2:</b></p>
+<p style="position:absolute;top:667px;left:310px;white-space:nowrap" class="ft02">K</p>
+<p style="position:absolute;top:667px;left:324px;white-space:nowrap" class="ft03"><b>-means&#160;clustering&#160;by&#160;hand</b></p>
+<p style="position:absolute;top:694px;left:80px;white-space:nowrap" class="ft06">Step&#160;1.&#160;Start&#160;by&#160;making&#160;an&#160;arbitrary&#160;partition&#160;of&#160;OTUs&#160;into&#160;clusters:&#160;OTUs<br/>with</p>
+<p style="position:absolute;top:712px;left:114px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:717px;left:122px;white-space:nowrap" class="ft04">1</p>
+<p style="position:absolute;top:708px;left:133px;white-space:nowrap" class="ft05">≤</p>
+<p style="position:absolute;top:712px;left:149px;white-space:nowrap" class="ft01">6&#160;will&#160;be&#160;taken&#160;as&#160;Cluster&#160;I&#160;and&#160;the&#160;others&#160;will&#160;be&#160;taken&#160;as&#160;Cluster</p>
+<p style="position:absolute;top:730px;left:80px;white-space:nowrap" class="ft06">II.&#160;Thus&#160;we&#160;assign&#160;A,&#160;B,&#160;and&#160;C&#160;to&#160;Cluster&#160;I,&#160;and&#160;D&#160;and&#160;E&#160;to&#160;Cluster&#160;II.<br/>Step&#160;2.&#160;Calculate&#160;the&#160;centroids&#160;for&#160;the&#160;ﬁrst&#160;deﬁnition&#160;of&#160;clusters.&#160;For&#160;Cluster<br/>I&#160;(deﬁned&#160;as&#160;A,&#160;B,&#160;C),&#160;this&#160;value&#160;is</p>
+<p style="position:absolute;top:766px;left:313px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:771px;left:322px;white-space:nowrap" class="ft04">1</p>
+<p style="position:absolute;top:766px;left:333px;white-space:nowrap" class="ft01">=&#160;2.67,</p>
+<p style="position:absolute;top:766px;left:385px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:771px;left:394px;white-space:nowrap" class="ft04">2</p>
+<p style="position:absolute;top:766px;left:405px;white-space:nowrap" class="ft01">=&#160;3.33,&#160;while&#160;for&#160;Cluster&#160;II</p>
+<p style="position:absolute;top:784px;left:80px;white-space:nowrap" class="ft01">(deﬁned&#160;as&#160;D,&#160;E),&#160;the&#160;centroid&#160;is</p>
+<p style="position:absolute;top:784px;left:300px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:789px;left:309px;white-space:nowrap" class="ft04">1</p>
+<p style="position:absolute;top:784px;left:320px;white-space:nowrap" class="ft01">=&#160;8.50,</p>
+<p style="position:absolute;top:784px;left:373px;white-space:nowrap" class="ft02">x</p>
+<p style="position:absolute;top:789px;left:381px;white-space:nowrap" class="ft04">2</p>
+<p style="position:absolute;top:784px;left:393px;white-space:nowrap" class="ft01">=&#160;8.00.</p>
+<p style="position:absolute;top:802px;left:80px;white-space:nowrap" class="ft06">Step&#160;3.&#160;Now&#160;calculate&#160;the&#160;Euclidean&#160;distance&#160;between&#160;each&#160;OTU&#160;and&#160;each&#160;of<br/>the&#160;two&#160;cluster&#160;centroids:</p>
+<p style="position:absolute;top:843px;left:222px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:843px;left:229px;white-space:nowrap" class="ft01">(A,&#160;I)&#160;=&#160;2.87</p>
+<p style="position:absolute;top:843px;left:334px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:843px;left:342px;white-space:nowrap" class="ft01">(A,&#160;II)&#160;=&#160;10.26</p>
+<p style="position:absolute;top:860px;left:222px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:860px;left:229px;white-space:nowrap" class="ft01">(B,&#160;I)&#160;=&#160;2.35</p>
+<p style="position:absolute;top:860px;left:334px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:860px;left:342px;white-space:nowrap" class="ft01">(B,&#160;II)&#160;=&#160;8.90</p>
+<p style="position:absolute;top:878px;left:222px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:878px;left:229px;white-space:nowrap" class="ft01">(C,&#160;I)&#160;=&#160;4.86</p>
+<p style="position:absolute;top:878px;left:334px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:878px;left:342px;white-space:nowrap" class="ft01">(C,&#160;II)&#160;=&#160;4.50</p>
+</div>
+</body>
+</html>

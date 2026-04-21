@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 521</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKEO+FL;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page521-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome521.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:302px;white-space:nowrap" class="ft00">C.5&#160;Preprocessing&#160;of&#160;Microarray&#160;Data</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">513</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft05">and&#160;c)&#160;the&#160;columns&#160;for&#160;background-subtracted&#160;median&#160;values&#160;for&#160;each&#160;wave-<br/>length,&#160;and&#160;(d)&#160;the&#160;column&#160;of&#160;ﬂags&#160;(four&#160;columns&#160;total).&#160;This&#160;is&#160;saved&#160;as&#160;a<br/>tab-delimited&#160;text&#160;ﬁle.&#160;If&#160;we&#160;parse&#160;down&#160;the&#160;identiﬁer&#160;column&#160;(ﬁrst&#160;column),<br/>we&#160;see&#160;that&#160;some&#160;identiﬁers&#160;contain&#160;spaces&#160;and&#160;characters&#160;that&#160;will&#160;be&#160;read<br/>as</p>
+<p style="position:absolute;top:185px;left:99px;white-space:nowrap" class="ft02">R</p>
+<p style="position:absolute;top:185px;left:113px;white-space:nowrap" class="ft01">operators.&#160;This&#160;creates&#160;problems&#160;importing&#160;the&#160;data&#160;into</p>
+<p style="position:absolute;top:185px;left:492px;white-space:nowrap" class="ft02">R</p>
+<p style="position:absolute;top:185px;left:501px;white-space:nowrap" class="ft01">.&#160;Remove&#160;all</p>
+<p style="position:absolute;top:203px;left:80px;white-space:nowrap" class="ft05">spaces&#160;from&#160;the&#160;tab-delimited&#160;ﬁle,&#160;and&#160;then&#160;convert&#160;all&#160;tabs&#160;to&#160;spaces.&#160;Failure<br/>to&#160;remove&#160;spaces&#160;in&#160;the&#160;identiﬁer&#160;column&#160;yields&#160;the&#160;following&#160;result&#160;when&#160;we<br/>try&#160;to&#160;use</p>
+<p style="position:absolute;top:241px;left:149px;white-space:nowrap" class="ft03">read.table()</p>
+<p style="position:absolute;top:239px;left:244px;white-space:nowrap" class="ft01">:</p>
+<p style="position:absolute;top:268px;left:103px;white-space:nowrap" class="ft06">&gt;array.dat&lt;-read.table(&#34;array_ex.txt_s&#34;,row.names=TRUE)<br/>Error&#160;in&#160;scan(file&#160;=&#160;file,&#160;what&#160;=&#160;what,&#160;sep&#160;=&#160;sep,</p>
+<p style="position:absolute;top:303px;left:165px;white-space:nowrap" class="ft03">quote&#160;=&#160;quote,&#160;dec&#160;=&#160;dec,):</p>
+<p style="position:absolute;top:321px;left:134px;white-space:nowrap" class="ft03">line&#160;3361&#160;did&#160;not&#160;have&#160;4&#160;elements</p>
+<p style="position:absolute;top:346px;left:80px;white-space:nowrap" class="ft01">It&#160;is&#160;tedious&#160;to&#160;remove&#160;various&#160;other&#160;non-alphanumeric&#160;characters&#160;(e.g.,</p>
+<p style="position:absolute;top:348px;left:551px;white-space:nowrap" class="ft03">-,&#34;,</p>
+<p style="position:absolute;top:366px;left:80px;white-space:nowrap" class="ft03">’,&#160;(,)</p>
+<p style="position:absolute;top:364px;left:128px;white-space:nowrap" class="ft01">)&#160;so&#160;that</p>
+<p style="position:absolute;top:366px;left:189px;white-space:nowrap" class="ft03">read.table()</p>
+<p style="position:absolute;top:364px;left:288px;white-space:nowrap" class="ft01">will&#160;work.&#160;Eventually,&#160;we&#160;may&#160;need&#160;to&#160;use:</p>
+<p style="position:absolute;top:393px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;array.dat&lt;-read.table(&#34;array_ex.txt_s&#34;,as.is=TRUE)<br/>&gt;&#160;array.dat[1:5,]</p>
+<p style="position:absolute;top:429px;left:158px;white-space:nowrap" class="ft03">V1</p>
+<p style="position:absolute;top:429px;left:205px;white-space:nowrap" class="ft03">V2</p>
+<p style="position:absolute;top:429px;left:244px;white-space:nowrap" class="ft03">V3</p>
+<p style="position:absolute;top:429px;left:275px;white-space:nowrap" class="ft03">V4</p>
+<p style="position:absolute;top:447px;left:103px;white-space:nowrap" class="ft03">1</p>
+<p style="position:absolute;top:447px;left:126px;white-space:nowrap" class="ft03">GH01040&#160;19404&#160;6040</p>
+<p style="position:absolute;top:447px;left:283px;white-space:nowrap" class="ft03">0</p>
+<p style="position:absolute;top:465px;left:103px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:465px;left:126px;white-space:nowrap" class="ft03">GH01059&#160;12628&#160;3352</p>
+<p style="position:absolute;top:465px;left:283px;white-space:nowrap" class="ft03">0</p>
+<p style="position:absolute;top:483px;left:103px;white-space:nowrap" class="ft03">3</p>
+<p style="position:absolute;top:483px;left:126px;white-space:nowrap" class="ft03">GH01066</p>
+<p style="position:absolute;top:483px;left:197px;white-space:nowrap" class="ft03">2236</p>
+<p style="position:absolute;top:483px;left:244px;white-space:nowrap" class="ft03">893</p>
+<p style="position:absolute;top:483px;left:283px;white-space:nowrap" class="ft03">0</p>
+<p style="position:absolute;top:501px;left:103px;white-space:nowrap" class="ft03">4</p>
+<p style="position:absolute;top:501px;left:126px;white-space:nowrap" class="ft03">GH01085</p>
+<p style="position:absolute;top:501px;left:205px;white-space:nowrap" class="ft03">474</p>
+<p style="position:absolute;top:501px;left:244px;white-space:nowrap" class="ft03">801</p>
+<p style="position:absolute;top:501px;left:283px;white-space:nowrap" class="ft03">0</p>
+<p style="position:absolute;top:519px;left:103px;white-space:nowrap" class="ft03">5</p>
+<p style="position:absolute;top:519px;left:126px;white-space:nowrap" class="ft03">GH01088</p>
+<p style="position:absolute;top:519px;left:205px;white-space:nowrap" class="ft03">820&#160;1062</p>
+<p style="position:absolute;top:519px;left:283px;white-space:nowrap" class="ft03">0</p>
+<p style="position:absolute;top:544px;left:80px;white-space:nowrap" class="ft01">Without&#160;the</p>
+<p style="position:absolute;top:546px;left:165px;white-space:nowrap" class="ft03">as.is=TRUE</p>
+<p style="position:absolute;top:544px;left:248px;white-space:nowrap" class="ft01">argument,&#160;you&#160;may&#160;get&#160;the&#160;following&#160;error&#160;message:</p>
+<p style="position:absolute;top:590px;left:103px;white-space:nowrap" class="ft03">Error&#160;in&#160;read.table(&#34;array_ex.txt_s&#34;,&#160;row.names&#160;=&#160;TRUE)&#160;:</p>
+<p style="position:absolute;top:608px;left:134px;white-space:nowrap" class="ft03">invalid&#160;row.names&#160;specification</p>
+<p style="position:absolute;top:633px;left:80px;white-space:nowrap" class="ft05">The&#160;identiﬁer&#160;column&#160;has&#160;experimental&#160;meaning&#160;to&#160;the&#160;biologist&#160;and&#160;reﬂects<br/>idiosyncracies&#160;of&#160;biological&#160;nomenclature.&#160;Remove&#160;the&#160;oﬀending&#160;characters<br/>without&#160;complaining.</p>
+<p style="position:absolute;top:702px;left:80px;white-space:nowrap" class="ft04">Step&#160;2:&#160;Remove&#160;ﬂagged&#160;data</p>
+<p style="position:absolute;top:735px;left:80px;white-space:nowrap" class="ft05">The&#160;ﬂags&#160;are&#160;in&#160;the&#160;fourth&#160;column.&#160;Nonzero&#160;values&#160;indicate&#160;rows&#160;that&#160;should<br/>be&#160;eliminated&#160;because&#160;the&#160;data&#160;for&#160;that&#160;feature&#160;are&#160;unreliable.&#160;We&#160;create<br/>an&#160;object&#160;called</p>
+<p style="position:absolute;top:773px;left:194px;white-space:nowrap" class="ft03">array.dat.r</p>
+<p style="position:absolute;top:771px;left:287px;white-space:nowrap" class="ft01">and&#160;then&#160;use&#160;the&#160;code&#160;below&#160;to&#160;extract&#160;the</p>
+<p style="position:absolute;top:789px;left:80px;white-space:nowrap" class="ft05">appropriate&#160;rows.&#160;The&#160;original&#160;data&#160;set&#160;contains&#160;9216&#160;rows,&#160;so&#160;the&#160;process<br/>may&#160;take&#160;several&#160;minutes&#160;to&#160;complete.</p>
+<p style="position:absolute;top:836px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;array.dat.r&lt;-array.dat[1,]<br/>&gt;&#160;array.dat.r</p>
+<p style="position:absolute;top:871px;left:158px;white-space:nowrap" class="ft03">V1</p>
+<p style="position:absolute;top:871px;left:205px;white-space:nowrap" class="ft03">V2</p>
+<p style="position:absolute;top:871px;left:244px;white-space:nowrap" class="ft03">V3&#160;V4</p>
+<p style="position:absolute;top:889px;left:103px;white-space:nowrap" class="ft03">1&#160;GH01040&#160;19404&#160;6040</p>
+<p style="position:absolute;top:889px;left:275px;white-space:nowrap" class="ft03">0</p>
+<p style="position:absolute;top:907px;left:103px;white-space:nowrap" class="ft03">&gt;&#160;for(i&#160;in&#160;2:length(array.dat[,1])){</p>
+</div>
+</body>
+</html>

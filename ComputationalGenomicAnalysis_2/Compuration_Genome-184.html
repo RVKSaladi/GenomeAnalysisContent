@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 184</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:13px;font-family:ADDPDE+Fg;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft05{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft06{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft07{font-size:10px;font-family:ACOHGB+Fs;color:#000000;}
+	.ft08{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft09{font-size:10px;font-family:ACJNAH+FB;color:#000000;}
+	.ft010{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft011{font-size:15px;font-family:ACOIMK+Fq;color:#000000;}
+	.ft012{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page184-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome184.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">170</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">7&#160;Rapid&#160;Alignment&#160;Methods:</p>
+<p style="position:absolute;top:82px;left:312px;white-space:nowrap" class="ft01">FASTA</p>
+<p style="position:absolute;top:82px;left:358px;white-space:nowrap" class="ft00">and</p>
+<p style="position:absolute;top:82px;left:384px;white-space:nowrap" class="ft01">BLAST</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft02"><b>7.2.1&#160;Word&#160;Lists&#160;and&#160;Comparison&#160;by&#160;Content</b></p>
+<p style="position:absolute;top:146px;left:80px;white-space:nowrap" class="ft03">Rather&#160;than&#160;scanning&#160;each&#160;sequence&#160;for&#160;each</p>
+<p style="position:absolute;top:146px;left:375px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:146px;left:384px;white-space:nowrap" class="ft03">-word,&#160;there&#160;is&#160;a&#160;way&#160;to&#160;collect</p>
+<p style="position:absolute;top:164px;left:80px;white-space:nowrap" class="ft03">the</p>
+<p style="position:absolute;top:164px;left:106px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:164px;left:114px;white-space:nowrap" class="ft03">-word&#160;information&#160;in&#160;a&#160;set&#160;of&#160;lists.&#160;A&#160;list&#160;will&#160;be&#160;a&#160;row&#160;of&#160;a&#160;table,&#160;where</p>
+<p style="position:absolute;top:182px;left:80px;white-space:nowrap" class="ft03">the&#160;table&#160;has&#160;4</p>
+<p style="position:absolute;top:180px;left:176px;white-space:nowrap" class="ft05">k</p>
+<p style="position:absolute;top:182px;left:188px;white-space:nowrap" class="ft03">rows,&#160;each&#160;of&#160;which&#160;corresponds&#160;to&#160;one</p>
+<p style="position:absolute;top:182px;left:444px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:182px;left:453px;white-space:nowrap" class="ft03">-word.&#160;For&#160;example,</p>
+<p style="position:absolute;top:200px;left:80px;white-space:nowrap" class="ft03">with</p>
+<p style="position:absolute;top:200px;left:114px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:200px;left:127px;white-space:nowrap" class="ft03">=&#160;2&#160;and&#160;the&#160;sequences&#160;below,</p>
+<p style="position:absolute;top:226px;left:246px;white-space:nowrap" class="ft03">J&#160;=</p>
+<p style="position:absolute;top:228px;left:274px;white-space:nowrap" class="ft06">C&#160;C&#160;A&#160;T&#160;C&#160;G&#160;C&#160;C&#160;A&#160;T&#160;C&#160;G</p>
+<p style="position:absolute;top:244px;left:247px;white-space:nowrap" class="ft03">I&#160;=</p>
+<p style="position:absolute;top:246px;left:274px;white-space:nowrap" class="ft06">G&#160;C&#160;A&#160;T&#160;C&#160;G&#160;G&#160;C</p>
+<p style="position:absolute;top:270px;left:80px;white-space:nowrap" class="ft03">we&#160;obtain&#160;the&#160;word&#160;lists&#160;shown&#160;in&#160;Table&#160;7.2.&#160;Thinking&#160;of&#160;the&#160;rows&#160;as</p>
+<p style="position:absolute;top:270px;left:527px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:270px;left:535px;white-space:nowrap" class="ft03">-words,</p>
+<p style="position:absolute;top:288px;left:80px;white-space:nowrap" class="ft03">we&#160;denote&#160;the&#160;list&#160;of&#160;positions&#160;in&#160;the&#160;row&#160;corresponding&#160;to&#160;the&#160;word</p>
+<p style="position:absolute;top:288px;left:551px;white-space:nowrap" class="ft04">w</p>
+<p style="position:absolute;top:288px;left:569px;white-space:nowrap" class="ft03">as</p>
+<p style="position:absolute;top:306px;left:80px;white-space:nowrap" class="ft04">L</p>
+<p style="position:absolute;top:311px;left:91px;white-space:nowrap" class="ft05">w</p>
+<p style="position:absolute;top:306px;left:100px;white-space:nowrap" class="ft03">(J)&#160;(e.g.,&#160;with</p>
+<p style="position:absolute;top:306px;left:199px;white-space:nowrap" class="ft04">w</p>
+<p style="position:absolute;top:306px;left:217px;white-space:nowrap" class="ft03">=</p>
+<p style="position:absolute;top:308px;left:234px;white-space:nowrap" class="ft06">CG</p>
+<p style="position:absolute;top:306px;left:250px;white-space:nowrap" class="ft03">,</p>
+<p style="position:absolute;top:306px;left:260px;white-space:nowrap" class="ft04">L</p>
+<p style="position:absolute;top:309px;left:271px;white-space:nowrap" class="ft07">CG</p>
+<p style="position:absolute;top:306px;left:282px;white-space:nowrap" class="ft03">(J)&#160;=</p>
+<p style="position:absolute;top:302px;left:325px;white-space:nowrap" class="ft08">{</p>
+<p style="position:absolute;top:306px;left:333px;white-space:nowrap" class="ft03">5</p>
+<p style="position:absolute;top:306px;left:341px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:306px;left:347px;white-space:nowrap" class="ft03">11</p>
+<p style="position:absolute;top:302px;left:362px;white-space:nowrap" class="ft08">}</p>
+<p style="position:absolute;top:306px;left:370px;white-space:nowrap" class="ft03">).&#160;These&#160;tables&#160;are&#160;sparse,&#160;since</p>
+<p style="position:absolute;top:324px;left:80px;white-space:nowrap" class="ft012">the&#160;sequences&#160;are&#160;short,&#160;but&#160;serve&#160;to&#160;illustrate&#160;our&#160;methods.&#160;They&#160;can&#160;be<br/>constructed&#160;in&#160;a&#160;time&#160;proportional&#160;to&#160;the&#160;sum&#160;of&#160;the&#160;sequence&#160;lengths.</p>
+<p style="position:absolute;top:360px;left:103px;white-space:nowrap" class="ft03">One&#160;approach&#160;to&#160;speeding&#160;up&#160;comparison&#160;is&#160;to&#160;limit&#160;detailed&#160;comparisons</p>
+<p style="position:absolute;top:378px;left:80px;white-space:nowrap" class="ft03">only&#160;to&#160;those&#160;sequences&#160;that&#160;share&#160;enough&#160;“content,”&#160;by&#160;which&#160;we&#160;mean</p>
+<p style="position:absolute;top:378px;left:569px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:378px;left:577px;white-space:nowrap" class="ft03">-</p>
+<p style="position:absolute;top:396px;left:80px;white-space:nowrap" class="ft03">letter&#160;words&#160;in&#160;common.&#160;The&#160;statistic&#160;that&#160;counts</p>
+<p style="position:absolute;top:396px;left:411px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:396px;left:419px;white-space:nowrap" class="ft03">-words&#160;in&#160;common&#160;is</p>
+<p style="position:absolute;top:424px;left:273px;white-space:nowrap" class="ft05">n</p>
+<p style="position:absolute;top:422px;left:281px;white-space:nowrap" class="ft09">−</p>
+<p style="position:absolute;top:424px;left:290px;white-space:nowrap" class="ft05">k</p>
+<p style="position:absolute;top:424px;left:297px;white-space:nowrap" class="ft010">+1</p>
+<p style="position:absolute;top:422px;left:282px;white-space:nowrap" class="ft011"></p>
+<p style="position:absolute;top:460px;left:283px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:460px;left:287px;white-space:nowrap" class="ft010">=1</p>
+<p style="position:absolute;top:424px;left:314px;white-space:nowrap" class="ft05">m</p>
+<p style="position:absolute;top:422px;left:325px;white-space:nowrap" class="ft09">−</p>
+<p style="position:absolute;top:424px;left:334px;white-space:nowrap" class="ft05">k</p>
+<p style="position:absolute;top:424px;left:341px;white-space:nowrap" class="ft010">+1</p>
+<p style="position:absolute;top:422px;left:325px;white-space:nowrap" class="ft011"></p>
+<p style="position:absolute;top:460px;left:325px;white-space:nowrap" class="ft05">j</p>
+<p style="position:absolute;top:460px;left:330px;white-space:nowrap" class="ft010">=1</p>
+<p style="position:absolute;top:440px;left:359px;white-space:nowrap" class="ft04">X</p>
+<p style="position:absolute;top:445px;left:371px;white-space:nowrap" class="ft05">i,j</p>
+<p style="position:absolute;top:440px;left:385px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:488px;left:80px;white-space:nowrap" class="ft03">where</p>
+<p style="position:absolute;top:488px;left:125px;white-space:nowrap" class="ft04">X</p>
+<p style="position:absolute;top:493px;left:137px;white-space:nowrap" class="ft05">i,j</p>
+<p style="position:absolute;top:488px;left:157px;white-space:nowrap" class="ft03">=&#160;1&#160;if&#160;I</p>
+<p style="position:absolute;top:493px;left:208px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:488px;left:213px;white-space:nowrap" class="ft03">I</p>
+<p style="position:absolute;top:493px;left:219px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:493px;left:223px;white-space:nowrap" class="ft010">+1</p>
+<p style="position:absolute;top:488px;left:241px;white-space:nowrap" class="ft04">.&#160;.&#160;.</p>
+<p style="position:absolute;top:488px;left:261px;white-space:nowrap" class="ft03">I</p>
+<p style="position:absolute;top:493px;left:266px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:493px;left:271px;white-space:nowrap" class="ft010">+</p>
+<p style="position:absolute;top:493px;left:280px;white-space:nowrap" class="ft05">k</p>
+<p style="position:absolute;top:491px;left:286px;white-space:nowrap" class="ft09">−</p>
+<p style="position:absolute;top:493px;left:296px;white-space:nowrap" class="ft010">1</p>
+<p style="position:absolute;top:488px;left:309px;white-space:nowrap" class="ft03">=&#160;J</p>
+<p style="position:absolute;top:493px;left:334px;white-space:nowrap" class="ft05">j</p>
+<p style="position:absolute;top:488px;left:340px;white-space:nowrap" class="ft03">J</p>
+<p style="position:absolute;top:493px;left:348px;white-space:nowrap" class="ft05">j</p>
+<p style="position:absolute;top:493px;left:353px;white-space:nowrap" class="ft010">+1</p>
+<p style="position:absolute;top:488px;left:372px;white-space:nowrap" class="ft04">.&#160;.&#160;.</p>
+<p style="position:absolute;top:488px;left:391px;white-space:nowrap" class="ft03">J</p>
+<p style="position:absolute;top:493px;left:399px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:493px;left:403px;white-space:nowrap" class="ft010">+</p>
+<p style="position:absolute;top:493px;left:413px;white-space:nowrap" class="ft05">k</p>
+<p style="position:absolute;top:491px;left:419px;white-space:nowrap" class="ft09">−</p>
+<p style="position:absolute;top:493px;left:428px;white-space:nowrap" class="ft010">1</p>
+<p style="position:absolute;top:488px;left:441px;white-space:nowrap" class="ft03">and&#160;0&#160;otherwise.&#160;The</p>
+<p style="position:absolute;top:505px;left:80px;white-space:nowrap" class="ft03">computation&#160;time&#160;is&#160;proportional&#160;to</p>
+<p style="position:absolute;top:505px;left:334px;white-space:nowrap" class="ft04">n</p>
+<p style="position:absolute;top:502px;left:348px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:505px;left:365px;white-space:nowrap" class="ft04">m</p>
+<p style="position:absolute;top:505px;left:378px;white-space:nowrap" class="ft03">,&#160;the&#160;product&#160;of&#160;the&#160;sequence</p>
+<p style="position:absolute;top:523px;left:80px;white-space:nowrap" class="ft03">lengths.&#160;To&#160;improve&#160;this,&#160;note&#160;that&#160;for&#160;each</p>
+<p style="position:absolute;top:523px;left:384px;white-space:nowrap" class="ft04">w</p>
+<p style="position:absolute;top:523px;left:402px;white-space:nowrap" class="ft03">in&#160;I,&#160;there&#160;are&#160;#</p>
+<p style="position:absolute;top:523px;left:517px;white-space:nowrap" class="ft04">L</p>
+<p style="position:absolute;top:529px;left:527px;white-space:nowrap" class="ft05">w</p>
+<p style="position:absolute;top:523px;left:537px;white-space:nowrap" class="ft03">(J)&#160;oc-</p>
+<p style="position:absolute;top:541px;left:80px;white-space:nowrap" class="ft03">currences&#160;in&#160;J.&#160;So&#160;the&#160;sum&#160;above&#160;is&#160;equal&#160;to</p>
+<p style="position:absolute;top:559px;left:246px;white-space:nowrap" class="ft011"></p>
+<p style="position:absolute;top:597px;left:252px;white-space:nowrap" class="ft05">w</p>
+<p style="position:absolute;top:576px;left:268px;white-space:nowrap" class="ft03">(#</p>
+<p style="position:absolute;top:576px;left:286px;white-space:nowrap" class="ft04">L</p>
+<p style="position:absolute;top:582px;left:296px;white-space:nowrap" class="ft05">w</p>
+<p style="position:absolute;top:576px;left:306px;white-space:nowrap" class="ft03">(I))</p>
+<p style="position:absolute;top:573px;left:332px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:576px;left:347px;white-space:nowrap" class="ft03">(#</p>
+<p style="position:absolute;top:576px;left:365px;white-space:nowrap" class="ft04">L</p>
+<p style="position:absolute;top:582px;left:375px;white-space:nowrap" class="ft05">w</p>
+<p style="position:absolute;top:576px;left:385px;white-space:nowrap" class="ft03">(J))</p>
+<p style="position:absolute;top:576px;left:412px;white-space:nowrap" class="ft04">.</p>
+<p style="position:absolute;top:622px;left:103px;white-space:nowrap" class="ft03">This&#160;equality&#160;is&#160;a&#160;restatement&#160;of&#160;the&#160;relationship&#160;between&#160;multiplication</p>
+<p style="position:absolute;top:640px;left:80px;white-space:nowrap" class="ft012">and&#160;addition(!).&#160;This&#160;second&#160;computation&#160;is&#160;much&#160;easier.&#160;First&#160;we&#160;ﬁnd&#160;the<br/>frequency&#160;of&#160;k-letter&#160;words&#160;in&#160;each&#160;sequence.&#160;This&#160;is&#160;accomplished&#160;by&#160;scanning<br/>each&#160;sequence&#160;(of&#160;lengths&#160;n&#160;and&#160;m).&#160;Then&#160;the&#160;word&#160;frequencies&#160;are&#160;multiplied<br/>and&#160;added.&#160;Therefore,&#160;the&#160;total&#160;time&#160;is&#160;proportional&#160;to&#160;4</p>
+<p style="position:absolute;top:691px;left:456px;white-space:nowrap" class="ft05">k</p>
+<p style="position:absolute;top:694px;left:467px;white-space:nowrap" class="ft03">+</p>
+<p style="position:absolute;top:694px;left:483px;white-space:nowrap" class="ft04">n</p>
+<p style="position:absolute;top:694px;left:495px;white-space:nowrap" class="ft03">+</p>
+<p style="position:absolute;top:694px;left:511px;white-space:nowrap" class="ft04">m</p>
+<p style="position:absolute;top:694px;left:524px;white-space:nowrap" class="ft03">.&#160;For&#160;our</p>
+<p style="position:absolute;top:712px;left:80px;white-space:nowrap" class="ft03">sequence&#160;of&#160;numbers&#160;of&#160;2-word&#160;matches,&#160;the&#160;statistic&#160;above&#160;is</p>
+<p style="position:absolute;top:744px;left:109px;white-space:nowrap" class="ft03">0</p>
+<p style="position:absolute;top:742px;left:117px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:744px;left:127px;white-space:nowrap" class="ft03">+&#160;0</p>
+<p style="position:absolute;top:742px;left:149px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:744px;left:159px;white-space:nowrap" class="ft03">+&#160;0</p>
+<p style="position:absolute;top:742px;left:182px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:744px;left:192px;white-space:nowrap" class="ft03">+&#160;2</p>
+<p style="position:absolute;top:741px;left:218px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:744px;left:233px;white-space:nowrap" class="ft03">1&#160;+&#160;2</p>
+<p style="position:absolute;top:741px;left:269px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:744px;left:284px;white-space:nowrap" class="ft03">1&#160;+&#160;2</p>
+<p style="position:absolute;top:741px;left:321px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:744px;left:336px;white-space:nowrap" class="ft03">0&#160;+&#160;2</p>
+<p style="position:absolute;top:741px;left:372px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:744px;left:387px;white-space:nowrap" class="ft03">1&#160;+&#160;0</p>
+<p style="position:absolute;top:742px;left:420px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:744px;left:430px;white-space:nowrap" class="ft03">+&#160;0</p>
+<p style="position:absolute;top:742px;left:453px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:744px;left:463px;white-space:nowrap" class="ft03">+&#160;1</p>
+<p style="position:absolute;top:741px;left:488px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:744px;left:503px;white-space:nowrap" class="ft03">2&#160;+&#160;0</p>
+<p style="position:absolute;top:741px;left:540px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:744px;left:555px;white-space:nowrap" class="ft03">1</p>
+<p style="position:absolute;top:767px;left:139px;white-space:nowrap" class="ft03">+0</p>
+<p style="position:absolute;top:764px;left:159px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:767px;left:168px;white-space:nowrap" class="ft03">+&#160;0</p>
+<p style="position:absolute;top:764px;left:191px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:767px;left:201px;white-space:nowrap" class="ft03">+&#160;2</p>
+<p style="position:absolute;top:763px;left:227px;white-space:nowrap" class="ft08">×</p>
+<p style="position:absolute;top:767px;left:242px;white-space:nowrap" class="ft03">1&#160;+&#160;0</p>
+<p style="position:absolute;top:764px;left:275px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:767px;left:285px;white-space:nowrap" class="ft03">+&#160;0</p>
+<p style="position:absolute;top:764px;left:307px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:767px;left:318px;white-space:nowrap" class="ft03">=&#160;10</p>
+<p style="position:absolute;top:800px;left:80px;white-space:nowrap" class="ft012">If&#160;10&#160;is&#160;above&#160;a&#160;threshold&#160;that&#160;we&#160;specify,&#160;then&#160;a&#160;full&#160;sequence&#160;comparison&#160;can<br/>be&#160;performed.&#160;(Low&#160;thresholds&#160;require&#160;more&#160;comparisons&#160;than&#160;high&#160;thresh-<br/>olds.)&#160;This&#160;method&#160;is&#160;quite&#160;fast,&#160;but&#160;the&#160;comparison&#160;totally&#160;ignores&#160;the&#160;relative<br/>positions&#160;of&#160;the</p>
+<p style="position:absolute;top:854px;left:187px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:854px;left:195px;white-space:nowrap" class="ft03">-words&#160;in&#160;the&#160;sequence.&#160;A&#160;more&#160;sensitive&#160;method&#160;would&#160;be</p>
+<p style="position:absolute;top:872px;left:80px;white-space:nowrap" class="ft03">useful.</p>
+</div>
+</body>
+</html>

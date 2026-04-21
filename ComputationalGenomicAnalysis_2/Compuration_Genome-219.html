@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 219</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft05{font-size:10px;font-family:ACJNAH+FB;color:#000000;}
+	.ft06{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft07{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft08{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft09{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page219-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome219.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:102px;white-space:nowrap" class="ft00">8.3&#160;The&#160;Three-Step&#160;Method:&#160;Overlap,&#160;Layout,&#160;and&#160;Multiple&#160;Alignment</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">205</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft01">based&#160;on&#160;their&#160;scores.&#160;If,&#160;for&#160;example,&#160;two&#160;reads</p>
+<p style="position:absolute;top:113px;left:405px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:113px;left:418px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:113px;left:448px;white-space:nowrap" class="ft02">s</p>
+<p style="position:absolute;top:113px;left:460px;white-space:nowrap" class="ft01">of&#160;length&#160;500&#160;have</p>
+<p style="position:absolute;top:131px;left:80px;white-space:nowrap" class="ft01">scores&#160;that&#160;indicate&#160;overlap&#160;of&#160;approximately&#160;400&#160;bases,&#160;then&#160;if</p>
+<p style="position:absolute;top:131px;left:499px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:131px;left:511px;white-space:nowrap" class="ft01">has&#160;a&#160;score</p>
+<p style="position:absolute;top:149px;left:80px;white-space:nowrap" class="ft01">indicating&#160;a&#160;300&#160;base&#160;overlap&#160;with&#160;a&#160;third&#160;read</p>
+<p style="position:absolute;top:149px;left:392px;white-space:nowrap" class="ft02">t</p>
+<p style="position:absolute;top:149px;left:397px;white-space:nowrap" class="ft01">,&#160;then</p>
+<p style="position:absolute;top:149px;left:440px;white-space:nowrap" class="ft02">t</p>
+<p style="position:absolute;top:149px;left:451px;white-space:nowrap" class="ft01">must&#160;have&#160;at&#160;least&#160;a</p>
+<p style="position:absolute;top:167px;left:80px;white-space:nowrap" class="ft01">200&#160;base&#160;overlap&#160;with</p>
+<p style="position:absolute;top:167px;left:226px;white-space:nowrap" class="ft02">s</p>
+<p style="position:absolute;top:167px;left:233px;white-space:nowrap" class="ft01">;&#160;otherwise&#160;the&#160;pairwise&#160;scores&#160;are&#160;inconsistent&#160;with&#160;a</p>
+<p style="position:absolute;top:185px;left:80px;white-space:nowrap" class="ft09">genomic&#160;layout.&#160;Fixing&#160;the&#160;orientation&#160;of&#160;one&#160;of&#160;the&#160;pairs&#160;of&#160;reads&#160;determines<br/>the&#160;orientation&#160;for&#160;the&#160;remaining&#160;reads&#160;in&#160;the&#160;cluster.</p>
+<p style="position:absolute;top:221px;left:103px;white-space:nowrap" class="ft01">Finally,&#160;there&#160;is&#160;the&#160;problem&#160;of&#160;determining&#160;the</p>
+<p style="position:absolute;top:221px;left:435px;white-space:nowrap" class="ft03"><b>consensus&#160;sequence</b></p>
+<p style="position:absolute;top:239px;left:80px;white-space:nowrap" class="ft09">from&#160;the&#160;layout.&#160;It&#160;might&#160;be&#160;imagined&#160;that&#160;this&#160;is&#160;an&#160;easy&#160;job,&#160;and&#160;it&#160;would<br/>be&#160;if&#160;the&#160;sequences&#160;were&#160;perfectly&#160;aligned.&#160;Unfortunately,&#160;as&#160;with&#160;many&#160;com-<br/>putational&#160;problems&#160;in&#160;biology,&#160;this&#160;is&#160;almost&#160;never&#160;the&#160;case.&#160;Instead,&#160;se-<br/>quencing&#160;errors,&#160;fragments&#160;incorrectly&#160;clustered,&#160;and&#160;the&#160;approximate&#160;nature<br/>of&#160;the&#160;initial&#160;alignment&#160;all&#160;make&#160;this&#160;problem&#160;most&#160;challenging.&#160;A</p>
+<p style="position:absolute;top:311px;left:532px;white-space:nowrap" class="ft03"><b>greedy</b></p>
+<p style="position:absolute;top:329px;left:80px;white-space:nowrap" class="ft03"><b>procedure</b></p>
+<p style="position:absolute;top:329px;left:160px;white-space:nowrap" class="ft01">(which&#160;recursively&#160;“grabs”&#160;solutions&#160;close&#160;to&#160;a&#160;local&#160;optimum;&#160;see</p>
+<p style="position:absolute;top:348px;left:80px;white-space:nowrap" class="ft04">www.nist.gov/dads/HTML/greedyHeuristic.html</p>
+<p style="position:absolute;top:346px;left:419px;white-space:nowrap" class="ft01">)&#160;allows&#160;an&#160;initial&#160;align-</p>
+<p style="position:absolute;top:364px;left:80px;white-space:nowrap" class="ft09">ment,&#160;if&#160;desired,&#160;in&#160;the&#160;following&#160;manner.&#160;The&#160;highest-scoring&#160;overlap&#160;can&#160;be<br/>ﬁxed&#160;and&#160;the&#160;sequences&#160;aligned.&#160;Then&#160;the&#160;sequence&#160;with&#160;the&#160;highest&#160;overlap<br/>score&#160;with&#160;any&#160;member&#160;of&#160;this&#160;cluster&#160;can&#160;be&#160;added,&#160;and&#160;so&#160;on.&#160;The&#160;identity<br/>of&#160;the&#160;base&#160;at&#160;any&#160;position&#160;is&#160;then&#160;taken&#160;to&#160;be&#160;the&#160;majority&#160;letter&#160;in&#160;the&#160;re-<br/>sulting&#160;multiple&#160;alignment.&#160;Of&#160;course,&#160;this&#160;is&#160;only&#160;the&#160;beginning&#160;of&#160;producing<br/>a&#160;consensus&#160;sequence&#160;since&#160;the&#160;alignment&#160;is&#160;very&#160;unlikely&#160;to&#160;be&#160;correct.</p>
+<p style="position:absolute;top:472px;left:103px;white-space:nowrap" class="ft01">To&#160;illustrate&#160;these&#160;ideas,&#160;we&#160;take&#160;a&#160;“toy”&#160;example&#160;through&#160;the&#160;assembly</p>
+<p style="position:absolute;top:490px;left:80px;white-space:nowrap" class="ft09">process.&#160;The&#160;DNA&#160;to&#160;be&#160;sequenced&#160;is&#160;short&#160;(70&#160;bases),&#160;and&#160;the&#160;reads&#160;are&#160;8<br/>bases&#160;long.&#160;This&#160;sequence&#160;is&#160;taken&#160;from&#160;an&#160;earlier&#160;example&#160;(Section&#160;2.1)&#160;along<br/>with&#160;enough&#160;3</p>
+<p style="position:absolute;top:521px;left:176px;white-space:nowrap" class="ft05"></p>
+<p style="position:absolute;top:526px;left:186px;white-space:nowrap" class="ft01">and&#160;5</p>
+<p style="position:absolute;top:521px;left:224px;white-space:nowrap" class="ft05"></p>
+<p style="position:absolute;top:526px;left:235px;white-space:nowrap" class="ft01">sequences&#160;(7&#160;bases)&#160;on&#160;both&#160;ends,&#160;underlined&#160;in&#160;the</p>
+<p style="position:absolute;top:544px;left:80px;white-space:nowrap" class="ft09">example&#160;below,&#160;so&#160;that&#160;the&#160;full&#160;70&#160;bases&#160;can&#160;be&#160;covered&#160;(if&#160;reads&#160;overlap&#160;the<br/>ends).&#160;The&#160;reads&#160;are&#160;random&#160;in&#160;position&#160;and&#160;orientation,&#160;and&#160;the&#160;problem<br/>is&#160;so&#160;small&#160;that&#160;we&#160;must&#160;take&#160;100%&#160;accuracy&#160;in&#160;our&#160;reads.&#160;As&#160;we&#160;will&#160;see,<br/>assembly&#160;is&#160;still&#160;not&#160;an&#160;entirely&#160;easy&#160;task.&#160;The&#160;DNA&#160;represented&#160;by&#160;the&#160;“top<br/>strand”&#160;sequence&#160;is</p>
+<p style="position:absolute;top:648px;left:100px;white-space:nowrap" class="ft01">5</p>
+<p style="position:absolute;top:643px;left:107px;white-space:nowrap" class="ft05"></p>
+<p style="position:absolute;top:645px;left:111px;white-space:nowrap" class="ft06">−</p>
+<p style="position:absolute;top:650px;left:132px;white-space:nowrap" class="ft04">CAGCGCGCTGCGTGACGAGTCTGACAAAGACGGTATGCGCATCGTGATTGAAGTG</p>
+<p style="position:absolute;top:673px;left:132px;white-space:nowrap" class="ft04">AAACGCGATGCGGTCGGTGAAGTTGTGCT</p>
+<p style="position:absolute;top:667px;left:363px;white-space:nowrap" class="ft06">−</p>
+<p style="position:absolute;top:671px;left:377px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:665px;left:385px;white-space:nowrap" class="ft05"></p>
+<p style="position:absolute;top:704px;left:103px;white-space:nowrap" class="ft01">Table&#160;8.1&#160;gives&#160;the&#160;20&#160;reads&#160;and&#160;their&#160;reverse&#160;complements&#160;(5</p>
+<p style="position:absolute;top:699px;left:514px;white-space:nowrap" class="ft05"></p>
+<p style="position:absolute;top:704px;left:524px;white-space:nowrap" class="ft01">to&#160;3</p>
+<p style="position:absolute;top:699px;left:550px;white-space:nowrap" class="ft05"></p>
+<p style="position:absolute;top:704px;left:560px;white-space:nowrap" class="ft01">ori-</p>
+<p style="position:absolute;top:722px;left:80px;white-space:nowrap" class="ft09">entation&#160;for&#160;both).&#160;The&#160;reads,&#160;which&#160;are&#160;a&#160;subset&#160;of&#160;all&#160;possible&#160;reads,&#160;were<br/>chosen&#160;at&#160;random&#160;locations&#160;in&#160;the&#160;sequence&#160;and&#160;in&#160;random&#160;orientations&#160;(i.e.,<br/>some&#160;correspond&#160;to&#160;the</p>
+<p style="position:absolute;top:758px;left:238px;white-space:nowrap" class="ft07">complement</p>
+<p style="position:absolute;top:758px;left:320px;white-space:nowrap" class="ft01">of&#160;the&#160;strand&#160;shown).</p>
+<p style="position:absolute;top:775px;left:103px;white-space:nowrap" class="ft01">Next,&#160;we&#160;present&#160;a&#160;20</p>
+<p style="position:absolute;top:772px;left:248px;white-space:nowrap" class="ft06">×</p>
+<p style="position:absolute;top:775px;left:263px;white-space:nowrap" class="ft01">20&#160;overlap&#160;matrix&#160;(Fig.&#160;8.3)&#160;that&#160;indicates&#160;which</p>
+<p style="position:absolute;top:793px;left:80px;white-space:nowrap" class="ft09">fragments&#160;or&#160;their&#160;complements&#160;overlap&#160;by&#160;more&#160;than&#160;a&#160;prespeciﬁed&#160;number&#160;of<br/>letters.&#160;In&#160;location&#160;(</p>
+<p style="position:absolute;top:811px;left:208px;white-space:nowrap" class="ft02">k,&#160;l</p>
+<p style="position:absolute;top:811px;left:228px;white-space:nowrap" class="ft01">)&#160;with</p>
+<p style="position:absolute;top:811px;left:270px;white-space:nowrap" class="ft02">k&#160;&lt;&#160;l</p>
+<p style="position:absolute;top:811px;left:303px;white-space:nowrap" class="ft01">,&#160;the&#160;entry&#160;is&#160;the&#160;number&#160;of&#160;bases&#160;of&#160;overlap</p>
+<p style="position:absolute;top:829px;left:80px;white-space:nowrap" class="ft01">for</p>
+<p style="position:absolute;top:829px;left:103px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:835px;left:110px;white-space:nowrap" class="ft08">k</p>
+<p style="position:absolute;top:829px;left:122px;white-space:nowrap" class="ft01">versus</p>
+<p style="position:absolute;top:829px;left:167px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:835px;left:174px;white-space:nowrap" class="ft08">l</p>
+<p style="position:absolute;top:829px;left:178px;white-space:nowrap" class="ft01">,&#160;and&#160;if</p>
+<p style="position:absolute;top:829px;left:230px;white-space:nowrap" class="ft02">k&#160;&gt;&#160;l</p>
+<p style="position:absolute;top:829px;left:267px;white-space:nowrap" class="ft01">the&#160;entry&#160;is&#160;the&#160;number&#160;of&#160;bases&#160;of&#160;overlap&#160;of</p>
+<p style="position:absolute;top:829px;left:568px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:835px;left:575px;white-space:nowrap" class="ft08">k</p>
+<p style="position:absolute;top:847px;left:80px;white-space:nowrap" class="ft01">with</p>
+<p style="position:absolute;top:847px;left:114px;white-space:nowrap" class="ft02">r</p>
+<p style="position:absolute;top:843px;left:121px;white-space:nowrap" class="ft05">∗</p>
+<p style="position:absolute;top:855px;left:121px;white-space:nowrap" class="ft08">l</p>
+<p style="position:absolute;top:847px;left:128px;white-space:nowrap" class="ft01">.&#160;No&#160;diagonal&#160;entries&#160;are&#160;made&#160;because&#160;alignments&#160;of&#160;a&#160;sequence&#160;with</p>
+<p style="position:absolute;top:865px;left:80px;white-space:nowrap" class="ft09">itself&#160;are&#160;uninformative.&#160;If&#160;the&#160;best&#160;overlap&#160;is&#160;less&#160;than&#160;3,&#160;it&#160;is&#160;not&#160;entered.<br/>This&#160;is&#160;because,&#160;for&#160;iid&#160;letters,&#160;overlaps&#160;of&#160;two&#160;random&#160;letters&#160;happen&#160;1</p>
+<p style="position:absolute;top:883px;left:568px;white-space:nowrap" class="ft02">/</p>
+<p style="position:absolute;top:883px;left:575px;white-space:nowrap" class="ft01">2</p>
+<p style="position:absolute;top:901px;left:80px;white-space:nowrap" class="ft01">the&#160;time,&#160;and&#160;two-letter&#160;overlaps&#160;happen&#160;1</p>
+<p style="position:absolute;top:901px;left:366px;white-space:nowrap" class="ft02">/</p>
+<p style="position:absolute;top:901px;left:373px;white-space:nowrap" class="ft01">8&#160;of&#160;the&#160;time.&#160;(This&#160;calculation</p>
+</div>
+</body>
+</html>

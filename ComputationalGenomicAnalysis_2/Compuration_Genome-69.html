@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 69</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft05{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft06{font-size:10px;font-family:ACOHGB+Fs;color:#000000;}
+	.ft07{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft08{font-size:15px;font-family:ACOIJK+Fr;color:#000000;}
+	.ft09{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft010{font-size:15px;font-family:ACOIMK+Fq;color:#000000;}
+	.ft011{font-size:10px;font-family:ACJNAH+FB;color:#000000;}
+	.ft012{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page69-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome069.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:320px;white-space:nowrap" class="ft00">2.6&#160;Introduction&#160;to&#160;Markov&#160;Chains</p>
+<p style="position:absolute;top:82px;left:569px;white-space:nowrap" class="ft00">53</p>
+<p style="position:absolute;top:113px;left:103px;white-space:nowrap" class="ft01">The&#160;transition&#160;matrix&#160;tells&#160;us&#160;the&#160;probabilities&#160;that&#160;apply&#160;as&#160;we&#160;go&#160;from&#160;the</p>
+<p style="position:absolute;top:131px;left:80px;white-space:nowrap" class="ft01">state&#160;at&#160;position</p>
+<p style="position:absolute;top:131px;left:188px;white-space:nowrap" class="ft02">t</p>
+<p style="position:absolute;top:131px;left:196px;white-space:nowrap" class="ft01">to&#160;the&#160;state&#160;at&#160;position</p>
+<p style="position:absolute;top:131px;left:345px;white-space:nowrap" class="ft02">t</p>
+<p style="position:absolute;top:131px;left:350px;white-space:nowrap" class="ft01">+1.&#160;For&#160;example,&#160;if</p>
+<p style="position:absolute;top:131px;left:476px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:137px;left:489px;white-space:nowrap" class="ft03">t</p>
+<p style="position:absolute;top:131px;left:498px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:133px;left:514px;white-space:nowrap" class="ft04">A</p>
+<p style="position:absolute;top:131px;left:522px;white-space:nowrap" class="ft01">,&#160;then&#160;the</p>
+<p style="position:absolute;top:149px;left:80px;white-space:nowrap" class="ft01">probability&#160;that</p>
+<p style="position:absolute;top:149px;left:186px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:155px;left:199px;white-space:nowrap" class="ft03">t</p>
+<p style="position:absolute;top:155px;left:203px;white-space:nowrap" class="ft05">+1</p>
+<p style="position:absolute;top:149px;left:223px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:151px;left:239px;white-space:nowrap" class="ft04">G</p>
+<p style="position:absolute;top:149px;left:250px;white-space:nowrap" class="ft01">is</p>
+<p style="position:absolute;top:149px;left:264px;white-space:nowrap" class="ft02">p</p>
+<p style="position:absolute;top:152px;left:271px;white-space:nowrap" class="ft06">AG</p>
+<p style="position:absolute;top:149px;left:283px;white-space:nowrap" class="ft01">.&#160;But&#160;how&#160;do&#160;we&#160;start&#160;the&#160;chain?&#160;To&#160;completely</p>
+<p style="position:absolute;top:167px;left:80px;white-space:nowrap" class="ft012">specify&#160;the&#160;evolution&#160;of&#160;the&#160;Markov&#160;chain,&#160;we&#160;need&#160;both&#160;the&#160;transition&#160;matrix<br/>and&#160;the</p>
+<p style="position:absolute;top:185px;left:136px;white-space:nowrap" class="ft07">initial&#160;probability&#160;distribution</p>
+<p style="position:absolute;top:185px;left:327px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:185px;left:336px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:185px;left:345px;white-space:nowrap" class="ft01">.&#160;The&#160;initial&#160;probability&#160;distribution</p>
+<p style="position:absolute;top:203px;left:80px;white-space:nowrap" class="ft01">can&#160;be&#160;written&#160;as&#160;a&#160;row&#160;vector&#160;whose&#160;elements&#160;are</p>
+<p style="position:absolute;top:236px;left:259px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:241px;left:267px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:236px;left:276px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:232px;left:292px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:236px;left:301px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:236px;left:307px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:241px;left:319px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:236px;left:330px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:236px;left:346px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:236px;left:351px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:236px;left:357px;white-space:nowrap" class="ft02">,&#160;i</p>
+<p style="position:absolute;top:232px;left:373px;white-space:nowrap" class="ft09">∈&#160;X</p>
+<p style="position:absolute;top:236px;left:400px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:269px;left:80px;white-space:nowrap" class="ft01">In&#160;the&#160;case&#160;of&#160;DNA,&#160;the</p>
+<p style="position:absolute;top:269px;left:241px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:274px;left:249px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:269px;left:259px;white-space:nowrap" class="ft01">are&#160;the&#160;initial&#160;probabilities&#160;(at&#160;position&#160;0)&#160;of</p>
+<p style="position:absolute;top:271px;left:554px;white-space:nowrap" class="ft04">A</p>
+<p style="position:absolute;top:269px;left:562px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:271px;left:570px;white-space:nowrap" class="ft04">C</p>
+<p style="position:absolute;top:269px;left:578px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:289px;left:80px;white-space:nowrap" class="ft04">G</p>
+<p style="position:absolute;top:287px;left:88px;white-space:nowrap" class="ft01">,&#160;and</p>
+<p style="position:absolute;top:289px;left:126px;white-space:nowrap" class="ft04">T</p>
+<p style="position:absolute;top:287px;left:134px;white-space:nowrap" class="ft01">.</p>
+<p style="position:absolute;top:305px;left:103px;white-space:nowrap" class="ft01">To&#160;ﬁnd&#160;the&#160;probability&#160;distribution&#160;for&#160;the&#160;states&#160;at&#160;position&#160;1&#160;(represented</p>
+<p style="position:absolute;top:323px;left:80px;white-space:nowrap" class="ft01">by&#160;row&#160;vector</p>
+<p style="position:absolute;top:323px;left:175px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:320px;left:184px;white-space:nowrap" class="ft05">(1)</p>
+<p style="position:absolute;top:323px;left:200px;white-space:nowrap" class="ft01">),&#160;we&#160;use&#160;the&#160;law&#160;of&#160;total&#160;probability&#160;as&#160;follows:</p>
+<p style="position:absolute;top:355px;left:185px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:359px;left:194px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:359px;left:200px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:364px;left:213px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:359px;left:223px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:359px;left:239px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:359px;left:246px;white-space:nowrap" class="ft01">)&#160;=</p>
+<p style="position:absolute;top:341px;left:273px;white-space:nowrap" class="ft010"></p>
+<p style="position:absolute;top:380px;left:273px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:377px;left:277px;white-space:nowrap" class="ft011">∈X</p>
+<p style="position:absolute;top:355px;left:298px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:359px;left:307px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:359px;left:312px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:364px;left:325px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:359px;left:336px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:359px;left:351px;white-space:nowrap" class="ft02">i,&#160;X</p>
+<p style="position:absolute;top:364px;left:376px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:359px;left:386px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:359px;left:402px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:359px;left:409px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:400px;left:256px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:383px;left:273px;white-space:nowrap" class="ft010"></p>
+<p style="position:absolute;top:421px;left:273px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:419px;left:277px;white-space:nowrap" class="ft011">∈X</p>
+<p style="position:absolute;top:397px;left:298px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:400px;left:307px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:400px;left:312px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:406px;left:325px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:400px;left:336px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:400px;left:351px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:400px;left:357px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:397px;left:362px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:400px;left:372px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:400px;left:377px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:406px;left:390px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:400px;left:400px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:400px;left:416px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:397px;left:423px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:400px;left:427px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:406px;left:440px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:400px;left:451px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:400px;left:467px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:400px;left:472px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:442px;left:256px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:425px;left:273px;white-space:nowrap" class="ft010"></p>
+<p style="position:absolute;top:463px;left:273px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:461px;left:277px;white-space:nowrap" class="ft011">∈X</p>
+<p style="position:absolute;top:442px;left:298px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:447px;left:306px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:442px;left:311px;white-space:nowrap" class="ft02">p</p>
+<p style="position:absolute;top:447px;left:319px;white-space:nowrap" class="ft03">ij</p>
+<p style="position:absolute;top:442px;left:329px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:442px;left:544px;white-space:nowrap" class="ft01">(2.26)</p>
+<p style="position:absolute;top:489px;left:80px;white-space:nowrap" class="ft01">You&#160;may&#160;recognize&#160;this&#160;as&#160;the&#160;product&#160;of&#160;the&#160;row&#160;vector</p>
+<p style="position:absolute;top:489px;left:463px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:489px;left:477px;white-space:nowrap" class="ft01">with&#160;the&#160;matrix</p>
+<p style="position:absolute;top:507px;left:80px;white-space:nowrap" class="ft02">P</p>
+<p style="position:absolute;top:507px;left:92px;white-space:nowrap" class="ft01">,&#160;so&#160;that&#160;(in&#160;matrix&#160;notation)</p>
+<p style="position:absolute;top:540px;left:297px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:537px;left:306px;white-space:nowrap" class="ft05">(1)</p>
+<p style="position:absolute;top:540px;left:327px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:540px;left:342px;white-space:nowrap" class="ft02">πP.</p>
+<p style="position:absolute;top:573px;left:80px;white-space:nowrap" class="ft012">To&#160;compute&#160;the&#160;probability&#160;distribution&#160;for&#160;the&#160;states&#160;at&#160;position&#160;2&#160;(repre-<br/>sented&#160;by&#160;row&#160;vector</p>
+<p style="position:absolute;top:591px;left:223px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:589px;left:232px;white-space:nowrap" class="ft05">(2)</p>
+<p style="position:absolute;top:591px;left:248px;white-space:nowrap" class="ft01">),&#160;we&#160;ﬁrst&#160;note&#160;that</p>
+<p style="position:absolute;top:587px;left:384px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:591px;left:393px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:591px;left:399px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:596px;left:411px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:591px;left:423px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:591px;left:439px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:587px;left:446px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:591px;left:451px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:596px;left:463px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:591px;left:475px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:591px;left:491px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:591px;left:496px;white-space:nowrap" class="ft01">)&#160;is&#160;the</p>
+<p style="position:absolute;top:591px;left:550px;white-space:nowrap" class="ft02">i,&#160;j</p>
+<p style="position:absolute;top:591px;left:568px;white-space:nowrap" class="ft01">th</p>
+<p style="position:absolute;top:609px;left:80px;white-space:nowrap" class="ft01">element&#160;of&#160;the&#160;matrix</p>
+<p style="position:absolute;top:609px;left:233px;white-space:nowrap" class="ft02">P&#160;P</p>
+<p style="position:absolute;top:609px;left:262px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:609px;left:281px;white-space:nowrap" class="ft02">P</p>
+<p style="position:absolute;top:606px;left:292px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:609px;left:299px;white-space:nowrap" class="ft01">.&#160;This&#160;is&#160;another&#160;application&#160;of&#160;the&#160;law&#160;of</p>
+<p style="position:absolute;top:627px;left:80px;white-space:nowrap" class="ft01">total&#160;probability,</p>
+<p style="position:absolute;top:658px;left:107px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:662px;left:116px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:662px;left:122px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:667px;left:135px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:662px;left:145px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:662px;left:161px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:658px;left:168px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:662px;left:172px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:667px;left:185px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:662px;left:196px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:662px;left:211px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:662px;left:217px;white-space:nowrap" class="ft01">)&#160;=</p>
+<p style="position:absolute;top:644px;left:244px;white-space:nowrap" class="ft010"></p>
+<p style="position:absolute;top:683px;left:243px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:680px;left:249px;white-space:nowrap" class="ft011">∈X</p>
+<p style="position:absolute;top:658px;left:270px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:662px;left:279px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:662px;left:285px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:667px;left:298px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:662px;left:308px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:662px;left:324px;white-space:nowrap" class="ft02">j,&#160;X</p>
+<p style="position:absolute;top:667px;left:349px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:662px;left:360px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:662px;left:376px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:658px;left:384px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:662px;left:388px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:667px;left:401px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:662px;left:412px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:662px;left:427px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:662px;left:433px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:704px;left:227px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:686px;left:244px;white-space:nowrap" class="ft010"></p>
+<p style="position:absolute;top:725px;left:243px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:722px;left:249px;white-space:nowrap" class="ft011">∈X</p>
+<p style="position:absolute;top:700px;left:270px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:704px;left:279px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:704px;left:285px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:709px;left:298px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:704px;left:308px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:704px;left:324px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:700px;left:331px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:704px;left:335px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:709px;left:348px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:704px;left:359px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:704px;left:374px;white-space:nowrap" class="ft02">k,&#160;X</p>
+<p style="position:absolute;top:709px;left:402px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:704px;left:412px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:704px;left:428px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:704px;left:433px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:700px;left:439px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:704px;left:448px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:704px;left:454px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:709px;left:467px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:704px;left:477px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:704px;left:493px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:700px;left:501px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:704px;left:505px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:709px;left:518px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:704px;left:529px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:704px;left:544px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:704px;left:550px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:746px;left:227px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:728px;left:244px;white-space:nowrap" class="ft010"></p>
+<p style="position:absolute;top:767px;left:243px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:764px;left:249px;white-space:nowrap" class="ft011">∈X</p>
+<p style="position:absolute;top:742px;left:270px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:746px;left:279px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:746px;left:285px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:751px;left:298px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:746px;left:308px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:746px;left:324px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:742px;left:331px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:746px;left:335px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:751px;left:348px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:746px;left:359px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:746px;left:374px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:746px;left:382px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:742px;left:388px;white-space:nowrap" class="ft08">P</p>
+<p style="position:absolute;top:746px;left:397px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:746px;left:403px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:751px;left:416px;white-space:nowrap" class="ft05">1</p>
+<p style="position:absolute;top:746px;left:427px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:746px;left:442px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:742px;left:451px;white-space:nowrap" class="ft09">|</p>
+<p style="position:absolute;top:746px;left:455px;white-space:nowrap" class="ft02">X</p>
+<p style="position:absolute;top:751px;left:467px;white-space:nowrap" class="ft05">0</p>
+<p style="position:absolute;top:746px;left:478px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:746px;left:494px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:746px;left:499px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:787px;left:227px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:770px;left:244px;white-space:nowrap" class="ft010"></p>
+<p style="position:absolute;top:809px;left:243px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:806px;left:249px;white-space:nowrap" class="ft011">∈X</p>
+<p style="position:absolute;top:787px;left:270px;white-space:nowrap" class="ft02">p</p>
+<p style="position:absolute;top:793px;left:278px;white-space:nowrap" class="ft03">ik</p>
+<p style="position:absolute;top:787px;left:289px;white-space:nowrap" class="ft02">p</p>
+<p style="position:absolute;top:793px;left:297px;white-space:nowrap" class="ft03">kj</p>
+<p style="position:absolute;top:825px;left:227px;white-space:nowrap" class="ft01">=&#160;(</p>
+<p style="position:absolute;top:825px;left:249px;white-space:nowrap" class="ft02">P&#160;P</p>
+<p style="position:absolute;top:825px;left:272px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:830px;left:278px;white-space:nowrap" class="ft03">ij</p>
+<p style="position:absolute;top:825px;left:288px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:858px;left:80px;white-space:nowrap" class="ft012">as&#160;required.&#160;(Note&#160;that&#160;the&#160;second&#160;line&#160;follows&#160;from&#160;the&#160;deﬁnition&#160;of&#160;condi-<br/>tional&#160;probability,&#160;the&#160;third&#160;from&#160;the&#160;Markov&#160;property.)&#160;Copying&#160;the&#160;argument<br/>that&#160;leads&#160;to&#160;(2.26)&#160;then&#160;shows&#160;that&#160;the&#160;elements&#160;of</p>
+<p style="position:absolute;top:894px;left:425px;white-space:nowrap" class="ft02">π</p>
+<p style="position:absolute;top:891px;left:434px;white-space:nowrap" class="ft05">(2)</p>
+<p style="position:absolute;top:894px;left:455px;white-space:nowrap" class="ft01">are&#160;given&#160;by</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 102</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKEO+FL;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page102-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome102.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:250px;white-space:nowrap" class="ft00">3.5&#160;Restriction&#160;Fragment&#160;Length&#160;Distributions</p>
+<p style="position:absolute;top:82px;left:569px;white-space:nowrap" class="ft00">87</p>
+<p style="position:absolute;top:126px;left:103px;white-space:nowrap" class="ft01">The&#160;restriction&#160;sites&#160;we&#160;look&#160;for&#160;are&#160;for</p>
+<p style="position:absolute;top:126px;left:361px;white-space:nowrap" class="ft02">Alu</p>
+<p style="position:absolute;top:126px;left:385px;white-space:nowrap" class="ft01">I,</p>
+<p style="position:absolute;top:128px;left:399px;white-space:nowrap" class="ft03">AGCT</p>
+<p style="position:absolute;top:126px;left:431px;white-space:nowrap" class="ft01">.&#160;We&#160;code&#160;this&#160;as&#160;[1&#160;3&#160;2</p>
+<p style="position:absolute;top:144px;left:80px;white-space:nowrap" class="ft01">4],&#160;and&#160;then&#160;use&#160;the</p>
+<p style="position:absolute;top:146px;left:215px;white-space:nowrap" class="ft03">rsite</p>
+<p style="position:absolute;top:144px;left:259px;white-space:nowrap" class="ft01">function&#160;to&#160;ﬁnd&#160;the&#160;sites&#160;and&#160;write&#160;the&#160;result&#160;into</p>
+<p style="position:absolute;top:164px;left:80px;white-space:nowrap" class="ft03">alu.map</p>
+<p style="position:absolute;top:162px;left:136px;white-space:nowrap" class="ft01">.</p>
+<p style="position:absolute;top:193px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;alu1&#160;&lt;-&#160;c(1,3,2,4)<br/>&gt;&#160;alu.map&#160;&lt;-&#160;rsite(seq2,alu1)</p>
+<p style="position:absolute;top:238px;left:80px;white-space:nowrap" class="ft06">The&#160;nested&#160;loops&#160;cause&#160;this&#160;to&#160;take&#160;a&#160;bit&#160;of&#160;time&#160;to&#160;run.&#160;The&#160;output&#160;is&#160;the<br/>initial&#160;positions&#160;of&#160;all&#160;of&#160;the</p>
+<p style="position:absolute;top:256px;left:273px;white-space:nowrap" class="ft02">Alu</p>
+<p style="position:absolute;top:256px;left:296px;white-space:nowrap" class="ft01">I&#160;sites&#160;in&#160;the&#160;simulated&#160;sequence.&#160;Checking</p>
+<p style="position:absolute;top:274px;left:80px;white-space:nowrap" class="ft01">the&#160;output&#160;(length&#160;and&#160;ﬁrst&#160;ten&#160;terms):</p>
+<p style="position:absolute;top:305px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;length(alu.map)<br/>[1]&#160;184<br/>&gt;&#160;alu.map[1:10]<br/>[1]&#160;645&#160;915&#160;1076&#160;1790&#160;1836&#160;1957&#160;2100&#160;2566&#160;2881&#160;2980</p>
+<p style="position:absolute;top:386px;left:80px;white-space:nowrap" class="ft06">Note&#160;that&#160;the&#160;prediction&#160;from&#160;the&#160;mathematical&#160;model&#160;was&#160;190&#160;sites:&#160;We<br/>found&#160;184&#160;for&#160;this&#160;particular&#160;string.&#160;(To&#160;estimate&#160;the&#160;expected&#160;number,&#160;we<br/>would&#160;need&#160;to&#160;simulate&#160;many&#160;strings&#160;and&#160;report&#160;the&#160;mean&#160;number&#160;of&#160;sites<br/>detected.)&#160;We&#160;judge&#160;that&#160;the&#160;model&#160;agrees&#160;well&#160;with&#160;the&#160;simulation&#160;(so&#160;far!).</p>
+<p style="position:absolute;top:475px;left:80px;white-space:nowrap" class="ft02">Obtaining&#160;and&#160;displaying&#160;fragment&#160;lengths&#160;and&#160;fragment&#160;length&#160;distribution</p>
+<p style="position:absolute;top:511px;left:80px;white-space:nowrap" class="ft06">We&#160;obtain&#160;the&#160;fragment&#160;lengths&#160;by&#160;subtracting&#160;positions&#160;of&#160;successive&#160;sites.<br/>Since&#160;the&#160;molecule&#160;is&#160;linear,&#160;we&#160;need&#160;to&#160;deal&#160;with&#160;the&#160;ends.&#160;The&#160;function</p>
+<p style="position:absolute;top:548px;left:80px;white-space:nowrap" class="ft03">flengthr</p>
+<p style="position:absolute;top:547px;left:144px;white-space:nowrap" class="ft01">,&#160;written&#160;in</p>
+<p style="position:absolute;top:547px;left:222px;white-space:nowrap" class="ft04">R</p>
+<p style="position:absolute;top:547px;left:232px;white-space:nowrap" class="ft01">,&#160;does&#160;these&#160;things&#160;for&#160;us.</p>
+<p style="position:absolute;top:578px;left:103px;white-space:nowrap" class="ft03">&gt;&#160;flengthr&#160;&lt;&#160;-&#160;function(rmap,&#160;N){</p>
+<p style="position:absolute;top:596px;left:111px;white-space:nowrap" class="ft05">#rmap&#160;is&#160;a&#160;vector&#160;of&#160;restriction&#160;sites&#160;for&#160;a&#160;linear&#160;molecule<br/>#&#160;N&#160;is&#160;the&#160;length&#160;of&#160;the&#160;molecule</p>
+<p style="position:absolute;top:632px;left:126px;white-space:nowrap" class="ft03">frags&lt;-rep(0,&#160;length(rmap))</p>
+<p style="position:absolute;top:649px;left:111px;white-space:nowrap" class="ft03">#&#160;Vector&#160;for&#160;subtraction&#160;results:&#160;elements&#160;initialized&#160;to&#160;0</p>
+<p style="position:absolute;top:667px;left:126px;white-space:nowrap" class="ft03">rmap&lt;-c(rmap,N)</p>
+<p style="position:absolute;top:685px;left:111px;white-space:nowrap" class="ft03">#&#160;Adds&#160;length&#160;of&#160;molecule&#160;for&#160;calculation&#160;of&#160;end&#160;piece.</p>
+<p style="position:absolute;top:703px;left:126px;white-space:nowrap" class="ft05">for(i&#160;in&#160;1:(length(rmap)-1)){<br/>frags[i]&#160;&lt;&#160;-&#160;rmap[i+1]-rmap[i]}<br/>frags&#160;&lt;-&#160;c(rmap[1],frags)&#160;#&#160;First&#160;term&#160;is&#160;left&#160;end&#160;piece<br/>return(frags)</p>
+<p style="position:absolute;top:775px;left:111px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:793px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;alu.frag&#160;&lt;-&#160;flengthr(alu.map,48500)<br/>&gt;&#160;alu.frag[1:10]<br/>[1]&#160;645&#160;270&#160;161&#160;714&#160;46&#160;121&#160;143&#160;466&#160;315&#160;99</p>
+<p style="position:absolute;top:856px;left:80px;white-space:nowrap" class="ft06">The&#160;two&#160;lines&#160;above&#160;run&#160;the&#160;function&#160;and&#160;display&#160;the&#160;ﬁrst&#160;ten&#160;fragment&#160;lengths.<br/>You&#160;can&#160;verify&#160;that&#160;the&#160;second&#160;element&#160;in</p>
+<p style="position:absolute;top:875px;left:356px;white-space:nowrap" class="ft03">alu.frag</p>
+<p style="position:absolute;top:874px;left:423px;white-space:nowrap" class="ft01">is&#160;the&#160;diﬀerence&#160;between</p>
+<p style="position:absolute;top:892px;left:80px;white-space:nowrap" class="ft01">the&#160;ﬁrst&#160;two&#160;elements&#160;in</p>
+<p style="position:absolute;top:893px;left:244px;white-space:nowrap" class="ft03">alu.map</p>
+<p style="position:absolute;top:892px;left:299px;white-space:nowrap" class="ft01">.</p>
+</div>
+</body>
+</html>

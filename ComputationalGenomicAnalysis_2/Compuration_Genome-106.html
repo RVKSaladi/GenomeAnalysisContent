@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 106</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:13px;font-family:ACNFFA+FA;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft04{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page106-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome106.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:390px;white-space:nowrap" class="ft00">3.6</p>
+<p style="position:absolute;top:82px;left:415px;white-space:nowrap" class="ft01">k</p>
+<p style="position:absolute;top:82px;left:422px;white-space:nowrap" class="ft00">-word&#160;Occurrences</p>
+<p style="position:absolute;top:82px;left:569px;white-space:nowrap" class="ft00">91</p>
+<p style="position:absolute;top:125px;left:80px;white-space:nowrap" class="ft04">word&#160;count,&#160;accumulating&#160;the&#160;total&#160;counts&#160;for&#160;each&#160;word&#160;in&#160;a&#160;four-dimensional<br/>array,</p>
+<p style="position:absolute;top:145px;left:122px;white-space:nowrap" class="ft03">tcount</p>
+<p style="position:absolute;top:143px;left:169px;white-space:nowrap" class="ft02">.&#160;The&#160;plug-in&#160;portion&#160;is&#160;included&#160;for&#160;the&#160;computation&#160;to&#160;be&#160;per-</p>
+<p style="position:absolute;top:161px;left:80px;white-space:nowrap" class="ft04">formed&#160;in&#160;the&#160;next&#160;box.&#160;For&#160;counting&#160;only,&#160;we&#160;could&#160;“comment&#160;out”&#160;all&#160;lines<br/>in&#160;the&#160;plug-in,&#160;and&#160;delete&#160;the</p>
+<p style="position:absolute;top:181px;left:282px;white-space:nowrap" class="ft03">ncount</p>
+<p style="position:absolute;top:179px;left:336px;white-space:nowrap" class="ft02">in&#160;the</p>
+<p style="position:absolute;top:181px;left:381px;white-space:nowrap" class="ft03">return()</p>
+<p style="position:absolute;top:179px;left:450px;white-space:nowrap" class="ft02">statement.&#160;For&#160;now,</p>
+<p style="position:absolute;top:197px;left:80px;white-space:nowrap" class="ft02">we&#160;just&#160;concentrate&#160;on</p>
+<p style="position:absolute;top:199px;left:233px;white-space:nowrap" class="ft03">tcount</p>
+<p style="position:absolute;top:197px;left:280px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:224px;left:103px;white-space:nowrap" class="ft05">Ncount4&lt;-function(seq,w){<br/>#w=length&#160;of&#160;word<br/>tcount&lt;-array(rep(0,4^w),&#160;rep(4,w))<br/>#&#160;array[4x4x4x4]&#160;to&#160;hold&#160;word&#160;counts,&#160;elements&#160;set&#160;to&#160;zero<br/>ncount&lt;-array(rep(0,4^w),&#160;rep(4,w))<br/>#&#160;array[4x4x4x4]</p>
+<p style="position:absolute;top:313px;left:244px;white-space:nowrap" class="ft03">holds&#160;number&#160;of&#160;sequences&#160;with&#160;one&#160;or</p>
+<p style="position:absolute;top:331px;left:103px;white-space:nowrap" class="ft05">#&#160;more&#160;of&#160;each&#160;k-word<br/>N&lt;-length(seq[1,])&#160;#Length&#160;of&#160;each&#160;sequence<br/>M&lt;-length(seq[,1])&#160;#Number&#160;of&#160;sequences<br/>#######################################################<br/>#Count&#160;total&#160;number&#160;of&#160;word&#160;occurrences<br/>for(j&#160;in&#160;1:M){</p>
+<p style="position:absolute;top:421px;left:236px;white-space:nowrap" class="ft03">#looping&#160;over&#160;sequences</p>
+<p style="position:absolute;top:439px;left:118px;white-space:nowrap" class="ft05">jcount&lt;-array(rep(0,4^w),&#160;rep(4,w))<br/>#array&#160;to&#160;hold&#160;word&#160;counts&#160;for&#160;sequence&#160;j</p>
+<p style="position:absolute;top:475px;left:134px;white-space:nowrap" class="ft05">for(k&#160;in&#160;1:(N-w+1)){&#160;#looping&#160;over&#160;positions<br/>jcount[seq[j,k],seq[j,k+1],seq[j,k+2],seq[j,k+3]]&lt;-<br/>jcount[seq[j,k],seq[j,k+1],seq[j,k+2],seq[j,k+3]]+1<br/>#adds&#160;1&#160;if&#160;word&#160;at&#160;k,k+1,k+2,k+3&#160;appears&#160;in&#160;sequence&#160;j<br/>}<br/>tcount&lt;-tcount+jcount<br/>#Add&#160;contribution&#160;of&#160;j&#160;to&#160;total</p>
+<p style="position:absolute;top:600px;left:103px;white-space:nowrap" class="ft05">#######################################################<br/>#Plug-in:&#160;add&#160;1&#160;to&#160;ncount&#160;if&#160;word&#160;occurs&#160;&gt;=&#160;once&#160;in&#160;j</p>
+<p style="position:absolute;top:636px;left:118px;white-space:nowrap" class="ft03">for(k&#160;in&#160;1:4){</p>
+<p style="position:absolute;top:654px;left:134px;white-space:nowrap" class="ft03">for(l&#160;in&#160;1:4){</p>
+<p style="position:absolute;top:672px;left:150px;white-space:nowrap" class="ft03">for(m&#160;in&#160;1:4){</p>
+<p style="position:absolute;top:690px;left:165px;white-space:nowrap" class="ft03">for(n&#160;in&#160;1:4){</p>
+<p style="position:absolute;top:708px;left:181px;white-space:nowrap" class="ft05">if(jcount[k,l,m,n]!=0){<br/>ncount[k,l,m,n]&lt;-ncount[k,l,m,n]+1}<br/>}</p>
+<p style="position:absolute;top:762px;left:165px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:780px;left:150px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:797px;left:134px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:815px;left:103px;white-space:nowrap" class="ft05">#######################################################<br/>}<br/>return(tcount,ncount)<br/>}</p>
+<p style="position:absolute;top:892px;left:80px;white-space:nowrap" class="ft02">The&#160;word&#160;count&#160;is&#160;performed&#160;on&#160;the&#160;promoter&#160;sequences:</p>
+</div>
+</body>
+</html>

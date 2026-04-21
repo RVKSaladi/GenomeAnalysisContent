@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 286</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft05{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft06{font-size:15px;font-family:ACOIMK+Fq;color:#000000;}
+	.ft07{font-size:10px;font-family:ACJNAH+FB;color:#000000;}
+	.ft08{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft09{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page286-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome286.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:440px;white-space:nowrap" class="ft00">10.4&#160;Clustering</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">273</p>
+<p style="position:absolute;top:125px;left:87px;white-space:nowrap" class="ft01">3.&#160;Merge&#160;I&#160;and&#160;J&#160;into&#160;cluster&#160;IJ.&#160;Form&#160;a&#160;new&#160;distance&#160;matrix</p>
+<p style="position:absolute;top:125px;left:487px;white-space:nowrap" class="ft02">D</p>
+<p style="position:absolute;top:131px;left:499px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:125px;left:511px;white-space:nowrap" class="ft01">by&#160;deleting</p>
+<p style="position:absolute;top:143px;left:106px;white-space:nowrap" class="ft09">rows&#160;corresponding&#160;to&#160;I&#160;and&#160;J&#160;and&#160;columns&#160;I&#160;and&#160;J,&#160;and&#160;by&#160;adding&#160;a&#160;new<br/>row&#160;and&#160;column&#160;for&#160;distances&#160;of&#160;IJ&#160;from&#160;all&#160;remaining&#160;clusters.<br/>(The&#160;method&#160;for&#160;calculating&#160;distances&#160;between&#160;clusters&#160;is&#160;given&#160;in&#160;(10.2).)</p>
+<p style="position:absolute;top:197px;left:87px;white-space:nowrap" class="ft01">4.&#160;Repeat&#160;steps&#160;2&#160;and&#160;3&#160;a&#160;total&#160;of</p>
+<p style="position:absolute;top:197px;left:306px;white-space:nowrap" class="ft02">m</p>
+<p style="position:absolute;top:194px;left:321px;white-space:nowrap" class="ft04">−</p>
+<p style="position:absolute;top:197px;left:334px;white-space:nowrap" class="ft01">1&#160;times&#160;until&#160;a&#160;single&#160;cluster&#160;is&#160;formed.</p>
+<p style="position:absolute;top:215px;left:131px;white-space:nowrap" class="ft09">–&#160;Record&#160;which&#160;clusters&#160;are&#160;merged&#160;at&#160;each&#160;step.<br/>–&#160;Record&#160;the&#160;distances&#160;between&#160;the&#160;clusters&#160;that&#160;are&#160;merged&#160;in&#160;that<br/>step.</p>
+<p style="position:absolute;top:303px;left:103px;white-space:nowrap" class="ft01">As&#160;the&#160;steps&#160;above&#160;are&#160;applied,&#160;individual&#160;OTUs&#160;merge&#160;with&#160;others&#160;to</p>
+<p style="position:absolute;top:321px;left:80px;white-space:nowrap" class="ft09">form&#160;clusters,&#160;and&#160;it&#160;is&#160;necessary&#160;to&#160;specify&#160;what&#160;is&#160;meant&#160;by&#160;distance&#160;between<br/>clusters.&#160;There&#160;are&#160;a&#160;number&#160;of&#160;possible&#160;criteria&#160;for&#160;merging&#160;clusters&#160;I&#160;and&#160;J.<br/>Three&#160;clustering&#160;criteria,&#160;based&#160;upon&#160;the&#160;individual&#160;OTUs&#160;that&#160;belong&#160;to&#160;I<br/>and&#160;J,&#160;are</p>
+<p style="position:absolute;top:407px;left:162px;white-space:nowrap" class="ft01">Single&#160;linkage:</p>
+<p style="position:absolute;top:407px;left:288px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:412px;left:296px;white-space:nowrap" class="ft03">IJ</p>
+<p style="position:absolute;top:407px;left:311px;white-space:nowrap" class="ft01">=&#160;min</p>
+<p style="position:absolute;top:403px;left:352px;white-space:nowrap" class="ft04">{</p>
+<p style="position:absolute;top:407px;left:360px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:412px;left:367px;white-space:nowrap" class="ft05">ij</p>
+<p style="position:absolute;top:407px;left:382px;white-space:nowrap" class="ft01">:</p>
+<p style="position:absolute;top:407px;left:390px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:403px;left:400px;white-space:nowrap" class="ft04">∈</p>
+<p style="position:absolute;top:407px;left:414px;white-space:nowrap" class="ft01">I&#160;and</p>
+<p style="position:absolute;top:407px;left:453px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:403px;left:464px;white-space:nowrap" class="ft04">∈</p>
+<p style="position:absolute;top:407px;left:478px;white-space:nowrap" class="ft01">J</p>
+<p style="position:absolute;top:403px;left:486px;white-space:nowrap" class="ft04">}</p>
+<p style="position:absolute;top:407px;left:494px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:425px;left:162px;white-space:nowrap" class="ft01">Complete&#160;linkage:</p>
+<p style="position:absolute;top:425px;left:288px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:430px;left:296px;white-space:nowrap" class="ft03">IJ</p>
+<p style="position:absolute;top:425px;left:311px;white-space:nowrap" class="ft01">=&#160;max</p>
+<p style="position:absolute;top:421px;left:355px;white-space:nowrap" class="ft04">{</p>
+<p style="position:absolute;top:425px;left:363px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:430px;left:370px;white-space:nowrap" class="ft05">ij</p>
+<p style="position:absolute;top:425px;left:385px;white-space:nowrap" class="ft01">:</p>
+<p style="position:absolute;top:425px;left:393px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:421px;left:402px;white-space:nowrap" class="ft04">∈</p>
+<p style="position:absolute;top:425px;left:417px;white-space:nowrap" class="ft01">I&#160;and</p>
+<p style="position:absolute;top:425px;left:456px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:421px;left:467px;white-space:nowrap" class="ft04">∈</p>
+<p style="position:absolute;top:425px;left:481px;white-space:nowrap" class="ft01">J</p>
+<p style="position:absolute;top:421px;left:489px;white-space:nowrap" class="ft04">}</p>
+<p style="position:absolute;top:425px;left:497px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:443px;left:162px;white-space:nowrap" class="ft01">Group&#160;average:</p>
+<p style="position:absolute;top:443px;left:288px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:448px;left:296px;white-space:nowrap" class="ft03">IJ</p>
+<p style="position:absolute;top:443px;left:311px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:428px;left:327px;white-space:nowrap" class="ft06"></p>
+<p style="position:absolute;top:451px;left:343px;white-space:nowrap" class="ft05">i</p>
+<p style="position:absolute;top:448px;left:347px;white-space:nowrap" class="ft07">∈</p>
+<p style="position:absolute;top:450px;left:355px;white-space:nowrap" class="ft03">I</p>
+<p style="position:absolute;top:428px;left:363px;white-space:nowrap" class="ft06"></p>
+<p style="position:absolute;top:451px;left:379px;white-space:nowrap" class="ft05">j</p>
+<p style="position:absolute;top:448px;left:384px;white-space:nowrap" class="ft07">∈</p>
+<p style="position:absolute;top:450px;left:392px;white-space:nowrap" class="ft03">J</p>
+<p style="position:absolute;top:443px;left:401px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:448px;left:409px;white-space:nowrap" class="ft05">ij</p>
+<p style="position:absolute;top:443px;left:420px;white-space:nowrap" class="ft02">/</p>
+<p style="position:absolute;top:443px;left:427px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:443px;left:433px;white-space:nowrap" class="ft02">N</p>
+<p style="position:absolute;top:448px;left:445px;white-space:nowrap" class="ft03">I</p>
+<p style="position:absolute;top:443px;left:450px;white-space:nowrap" class="ft02">N</p>
+<p style="position:absolute;top:448px;left:462px;white-space:nowrap" class="ft03">J</p>
+<p style="position:absolute;top:443px;left:469px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:443px;left:475px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:426px;left:544px;white-space:nowrap" class="ft01">(10.2)</p>
+<p style="position:absolute;top:476px;left:80px;white-space:nowrap" class="ft01">where</p>
+<p style="position:absolute;top:476px;left:122px;white-space:nowrap" class="ft02">N</p>
+<p style="position:absolute;top:482px;left:134px;white-space:nowrap" class="ft03">I</p>
+<p style="position:absolute;top:476px;left:143px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:476px;left:172px;white-space:nowrap" class="ft02">N</p>
+<p style="position:absolute;top:482px;left:184px;white-space:nowrap" class="ft03">J</p>
+<p style="position:absolute;top:476px;left:194px;white-space:nowrap" class="ft01">are&#160;the&#160;numbers&#160;of&#160;members&#160;in&#160;clusters&#160;I&#160;and&#160;J,&#160;respectively.</p>
+<p style="position:absolute;top:494px;left:80px;white-space:nowrap" class="ft02">N</p>
+<p style="position:absolute;top:499px;left:92px;white-space:nowrap" class="ft03">I</p>
+<p style="position:absolute;top:494px;left:97px;white-space:nowrap" class="ft02">N</p>
+<p style="position:absolute;top:499px;left:109px;white-space:nowrap" class="ft03">J</p>
+<p style="position:absolute;top:494px;left:120px;white-space:nowrap" class="ft01">is&#160;the&#160;number&#160;of&#160;possible&#160;distances&#160;between&#160;each&#160;of&#160;the&#160;objects&#160;in&#160;cluster</p>
+<p style="position:absolute;top:512px;left:80px;white-space:nowrap" class="ft01">I&#160;and&#160;the&#160;objects&#160;in&#160;cluster&#160;J.&#160;These&#160;distinctions&#160;are&#160;illustrated&#160;in&#160;Fig.&#160;10.2.</p>
+<p style="position:absolute;top:530px;left:103px;white-space:nowrap" class="ft01">This&#160;method&#160;is&#160;illustrated&#160;by&#160;using&#160;the&#160;primate&#160;data&#160;presented&#160;in&#160;Ta-</p>
+<p style="position:absolute;top:548px;left:80px;white-space:nowrap" class="ft09">ble&#160;10.1.&#160;In&#160;that&#160;table,&#160;the&#160;fraction&#160;of&#160;bases&#160;that&#160;diﬀered&#160;between&#160;each&#160;se-<br/>quence&#160;pair&#160;was&#160;stated.&#160;This&#160;edit&#160;distance&#160;is&#160;used&#160;to&#160;produce&#160;our&#160;distances,&#160;the</p>
+<p style="position:absolute;top:584px;left:80px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:589px;left:88px;white-space:nowrap" class="ft05">ij</p>
+<p style="position:absolute;top:584px;left:99px;white-space:nowrap" class="ft01">.&#160;The&#160;table&#160;of&#160;distances&#160;between&#160;OTUs&#160;is&#160;given&#160;below.&#160;Because</p>
+<p style="position:absolute;top:584px;left:521px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:589px;left:528px;white-space:nowrap" class="ft05">ij</p>
+<p style="position:absolute;top:584px;left:544px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:584px;left:560px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:589px;left:568px;white-space:nowrap" class="ft05">ji</p>
+<p style="position:absolute;top:584px;left:578px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:602px;left:80px;white-space:nowrap" class="ft09">we&#160;need&#160;only&#160;list&#160;half&#160;of&#160;the&#160;oﬀ-diagonal&#160;entries.&#160;For&#160;the&#160;entries&#160;on&#160;the&#160;diag-<br/>onal,</p>
+<p style="position:absolute;top:620px;left:117px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:625px;left:125px;white-space:nowrap" class="ft05">ii</p>
+<p style="position:absolute;top:620px;left:139px;white-space:nowrap" class="ft01">=&#160;0.&#160;(The&#160;distance&#160;between&#160;an&#160;OTU&#160;and&#160;itself&#160;is&#160;zero.)&#160;The&#160;matrix</p>
+<p style="position:absolute;top:638px;left:80px;white-space:nowrap" class="ft01">below&#160;represents&#160;the&#160;initial&#160;distance&#160;matrix,</p>
+<p style="position:absolute;top:638px;left:373px;white-space:nowrap" class="ft02">D</p>
+<p style="position:absolute;top:643px;left:385px;white-space:nowrap" class="ft03">1</p>
+<p style="position:absolute;top:638px;left:392px;white-space:nowrap" class="ft01">.</p>
+<p style="position:absolute;top:706px;left:221px;white-space:nowrap" class="ft02">D</p>
+<p style="position:absolute;top:711px;left:233px;white-space:nowrap" class="ft03">1</p>
+<p style="position:absolute;top:706px;left:244px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:670px;left:262px;white-space:nowrap" class="ft01">OTU&#160;Hy</p>
+<p style="position:absolute;top:670px;left:350px;white-space:nowrap" class="ft01">Pa</p>
+<p style="position:absolute;top:670px;left:390px;white-space:nowrap" class="ft01">Go&#160;Ho</p>
+<p style="position:absolute;top:688px;left:269px;white-space:nowrap" class="ft01">Hy</p>
+<p style="position:absolute;top:688px;left:313px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:706px;left:270px;white-space:nowrap" class="ft01">Pa&#160;0</p>
+<p style="position:absolute;top:706px;left:308px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:706px;left:312px;white-space:nowrap" class="ft01">150</p>
+<p style="position:absolute;top:706px;left:355px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:724px;left:269px;white-space:nowrap" class="ft01">Go&#160;0</p>
+<p style="position:absolute;top:724px;left:308px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:724px;left:312px;white-space:nowrap" class="ft01">150&#160;0</p>
+<p style="position:absolute;top:724px;left:349px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:724px;left:353px;white-space:nowrap" class="ft01">133</p>
+<p style="position:absolute;top:724px;left:396px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:742px;left:269px;white-space:nowrap" class="ft01">Ho&#160;0</p>
+<p style="position:absolute;top:742px;left:308px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:742px;left:312px;white-space:nowrap" class="ft01">150&#160;0.067&#160;0</p>
+<p style="position:absolute;top:742px;left:390px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:742px;left:394px;white-space:nowrap" class="ft01">100&#160;0</p>
+<p style="position:absolute;top:774px;left:103px;white-space:nowrap" class="ft01">For&#160;illustration,&#160;we&#160;employ&#160;single-linkage&#160;clustering,&#160;for&#160;which&#160;the&#160;ﬁrst</p>
+<p style="position:absolute;top:792px;left:80px;white-space:nowrap" class="ft01">cluster&#160;is&#160;determined&#160;by&#160;min</p>
+<p style="position:absolute;top:788px;left:273px;white-space:nowrap" class="ft04">{</p>
+<p style="position:absolute;top:792px;left:281px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:797px;left:288px;white-space:nowrap" class="ft05">ij</p>
+<p style="position:absolute;top:788px;left:299px;white-space:nowrap" class="ft04">}</p>
+<p style="position:absolute;top:792px;left:306px;white-space:nowrap" class="ft01">,</p>
+<p style="position:absolute;top:792px;left:317px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:788px;left:328px;white-space:nowrap" class="ft04">&#160;</p>
+<p style="position:absolute;top:792px;left:328px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:792px;left:347px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:792px;left:354px;white-space:nowrap" class="ft01">.&#160;Clearly,&#160;Pa&#160;(</p>
+<p style="position:absolute;top:792px;left:450px;white-space:nowrap" class="ft08">Pan&#160;troglodytes,</p>
+<p style="position:absolute;top:792px;left:562px;white-space:nowrap" class="ft01">the</p>
+<p style="position:absolute;top:810px;left:80px;white-space:nowrap" class="ft01">chimpanzee)&#160;and&#160;Ho&#160;(</p>
+<p style="position:absolute;top:810px;left:226px;white-space:nowrap" class="ft08">H.&#160;sapiens</p>
+<p style="position:absolute;top:810px;left:296px;white-space:nowrap" class="ft01">)&#160;have&#160;the&#160;least&#160;pairwise&#160;distance:</p>
+<p style="position:absolute;top:810px;left:525px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:815px;left:533px;white-space:nowrap" class="ft03">Pa</p>
+<p style="position:absolute;top:815px;left:546px;white-space:nowrap" class="ft05">,</p>
+<p style="position:absolute;top:815px;left:550px;white-space:nowrap" class="ft03">Ho</p>
+<p style="position:absolute;top:810px;left:571px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:828px;left:80px;white-space:nowrap" class="ft09">0.067&#160;(indicated&#160;by&#160;the&#160;box).&#160;So&#160;we&#160;merge&#160;these&#160;two&#160;OTUs&#160;to&#160;form&#160;the&#160;ﬁrst<br/>cluster&#160;(PaHo),&#160;and&#160;we&#160;record&#160;the&#160;joining&#160;of&#160;Pa&#160;and&#160;Ho&#160;at&#160;distance&#160;0.067.&#160;We<br/>then&#160;create&#160;a&#160;new&#160;distance&#160;or&#160;dissimilarity&#160;matrix,</p>
+<p style="position:absolute;top:864px;left:417px;white-space:nowrap" class="ft02">D</p>
+<p style="position:absolute;top:869px;left:430px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:864px;left:436px;white-space:nowrap" class="ft01">,&#160;by&#160;deleting&#160;rows&#160;and</p>
+<p style="position:absolute;top:882px;left:80px;white-space:nowrap" class="ft09">columns&#160;corresponding&#160;to&#160;Pa&#160;and&#160;Ho&#160;and&#160;adding&#160;a&#160;new&#160;row&#160;and&#160;column&#160;for<br/>the&#160;(PaHo)&#160;cluster.</p>
+</div>
+</body>
+</html>

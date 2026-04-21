@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 117</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page117-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome117.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">102</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">4&#160;Physical&#160;Mapping&#160;of&#160;DNA</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft01"><b>4.2.3&#160;Computational&#160;Analysis&#160;of&#160;Double&#160;Digests</b></p>
+<p style="position:absolute;top:144px;left:80px;white-space:nowrap" class="ft05">As&#160;we&#160;indicated&#160;above,&#160;one&#160;experimental&#160;approach&#160;to&#160;the&#160;restriction&#160;mapping<br/>problem&#160;is&#160;to&#160;select&#160;another&#160;enzyme,&#160;digest&#160;with&#160;that&#160;enzyme,&#160;and&#160;ﬁnally<br/>digest&#160;with&#160;a&#160;combination&#160;of&#160;both&#160;enzymes.&#160;Inferring&#160;the&#160;two-enzyme&#160;map<br/>of&#160;the&#160;DNA&#160;from&#160;the&#160;resulting&#160;data&#160;is&#160;called&#160;the</p>
+<p style="position:absolute;top:198px;left:414px;white-space:nowrap" class="ft01"><b>double-digest&#160;problem</b></p>
+<p style="position:absolute;top:216px;left:80px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:216px;left:86px;white-space:nowrap" class="ft01"><b>DDP</b></p>
+<p style="position:absolute;top:216px;left:124px;white-space:nowrap" class="ft02">).&#160;Here&#160;is&#160;a&#160;simple&#160;example&#160;for&#160;a&#160;linear&#160;molecule&#160;digested&#160;with&#160;enzymes</p>
+<p style="position:absolute;top:234px;left:80px;white-space:nowrap" class="ft02">A&#160;and&#160;B&#160;(in&#160;these&#160;examples,&#160;fragment&#160;sizes&#160;are&#160;taken&#160;to&#160;be&#160;integers):</p>
+<p style="position:absolute;top:264px;left:145px;white-space:nowrap" class="ft02">Products&#160;produced&#160;from&#160;digestion&#160;with&#160;A&#160;:</p>
+<p style="position:absolute;top:260px;left:463px;white-space:nowrap" class="ft03">{</p>
+<p style="position:absolute;top:264px;left:470px;white-space:nowrap" class="ft02">2</p>
+<p style="position:absolute;top:264px;left:478px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:264px;left:485px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:260px;left:492px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:264px;left:500px;white-space:nowrap" class="ft02">;</p>
+<p style="position:absolute;top:282px;left:145px;white-space:nowrap" class="ft02">Products&#160;produced&#160;from&#160;digestion&#160;with&#160;B&#160;:</p>
+<p style="position:absolute;top:278px;left:463px;white-space:nowrap" class="ft03">{</p>
+<p style="position:absolute;top:282px;left:470px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:282px;left:478px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:282px;left:485px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:278px;left:492px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:282px;left:500px;white-space:nowrap" class="ft02">;</p>
+<p style="position:absolute;top:300px;left:145px;white-space:nowrap" class="ft02">Products&#160;produced&#160;from&#160;digestion&#160;with&#160;A&#160;+&#160;B&#160;:</p>
+<p style="position:absolute;top:296px;left:463px;white-space:nowrap" class="ft03">{</p>
+<p style="position:absolute;top:300px;left:470px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:300px;left:478px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:300px;left:485px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:300px;left:492px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:300px;left:499px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:296px;left:506px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:300px;left:514px;white-space:nowrap" class="ft04">.</p>
+<p style="position:absolute;top:329px;left:103px;white-space:nowrap" class="ft02">This&#160;“toy”&#160;problem&#160;can&#160;be&#160;solved&#160;by&#160;inspection.&#160;The&#160;“ends”&#160;in&#160;the&#160;double</p>
+<p style="position:absolute;top:347px;left:80px;white-space:nowrap" class="ft05">digest&#160;must&#160;be&#160;1&#160;and&#160;4.&#160;This&#160;is&#160;because&#160;the&#160;shorter&#160;of&#160;the&#160;fragments&#160;produced<br/>at&#160;each&#160;end&#160;by&#160;digestion&#160;with&#160;A&#160;or&#160;B&#160;must&#160;lie&#160;wholly&#160;within&#160;the&#160;larger&#160;of&#160;the<br/>end&#160;fragments&#160;produced&#160;by&#160;A&#160;or&#160;B.&#160;This&#160;observation&#160;solves&#160;the&#160;problem.&#160;The<br/>solution&#160;is</p>
+<p style="position:absolute;top:426px;left:164px;white-space:nowrap" class="ft02">A:</p>
+<p style="position:absolute;top:447px;left:165px;white-space:nowrap" class="ft02">B:</p>
+<p style="position:absolute;top:447px;left:243px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:425px;left:264px;white-space:nowrap" class="ft02">2</p>
+<p style="position:absolute;top:425px;left:391px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:447px;left:370px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:478px;left:80px;white-space:nowrap" class="ft05">In&#160;general,&#160;there&#160;are&#160;(2!)(2!)&#160;=&#160;4&#160;diﬀerent&#160;potential&#160;maps&#160;or&#160;orderings&#160;for&#160;this<br/>problem&#160;(two&#160;orderings&#160;for&#160;A&#160;fragments&#160;and&#160;two&#160;for&#160;B&#160;fragments),&#160;and&#160;each<br/>ordering&#160;has&#160;a&#160;biologically&#160;indistinguishable&#160;reversal.&#160;That&#160;is,</p>
+<p style="position:absolute;top:543px;left:201px;white-space:nowrap" class="ft02">A&#160;:</p>
+<p style="position:absolute;top:543px;left:239px;white-space:nowrap" class="ft02">2</p>
+<p style="position:absolute;top:543px;left:264px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:543px;left:319px;white-space:nowrap" class="ft02">and</p>
+<p style="position:absolute;top:543px;left:391px;white-space:nowrap" class="ft02">A&#160;:</p>
+<p style="position:absolute;top:543px;left:429px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:543px;left:454px;white-space:nowrap" class="ft02">2</p>
+<p style="position:absolute;top:561px;left:201px;white-space:nowrap" class="ft02">B&#160;:</p>
+<p style="position:absolute;top:561px;left:239px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:561px;left:264px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:561px;left:391px;white-space:nowrap" class="ft02">B&#160;:</p>
+<p style="position:absolute;top:561px;left:429px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:561px;left:454px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:590px;left:80px;white-space:nowrap" class="ft05">are&#160;reversals&#160;of&#160;each&#160;other.&#160;They&#160;correspond&#160;to&#160;reading&#160;fragment&#160;orders&#160;from<br/>one&#160;end&#160;of&#160;the&#160;molecule&#160;or&#160;the&#160;other.</p>
+<p style="position:absolute;top:626px;left:103px;white-space:nowrap" class="ft02">It&#160;is&#160;easy&#160;for&#160;these&#160;problems&#160;to&#160;become&#160;more&#160;complex:</p>
+<p style="position:absolute;top:655px;left:115px;white-space:nowrap" class="ft02">Products&#160;produced&#160;from&#160;digestion&#160;with&#160;A&#160;:</p>
+<p style="position:absolute;top:652px;left:464px;white-space:nowrap" class="ft03">{</p>
+<p style="position:absolute;top:655px;left:472px;white-space:nowrap" class="ft02">3</p>
+<p style="position:absolute;top:655px;left:480px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:655px;left:486px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:655px;left:494px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:655px;left:500px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:652px;left:508px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:655px;left:516px;white-space:nowrap" class="ft02">;</p>
+<p style="position:absolute;top:673px;left:115px;white-space:nowrap" class="ft02">Products&#160;produced&#160;from&#160;digestion&#160;with&#160;B&#160;:</p>
+<p style="position:absolute;top:670px;left:464px;white-space:nowrap" class="ft03">{</p>
+<p style="position:absolute;top:673px;left:472px;white-space:nowrap" class="ft02">2</p>
+<p style="position:absolute;top:673px;left:480px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:673px;left:486px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:673px;left:494px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:673px;left:500px;white-space:nowrap" class="ft02">6</p>
+<p style="position:absolute;top:670px;left:508px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:673px;left:516px;white-space:nowrap" class="ft02">;</p>
+<p style="position:absolute;top:691px;left:115px;white-space:nowrap" class="ft02">Products&#160;produced&#160;from&#160;digestion&#160;with&#160;A&#160;+&#160;B&#160;:</p>
+<p style="position:absolute;top:688px;left:464px;white-space:nowrap" class="ft03">{</p>
+<p style="position:absolute;top:691px;left:472px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:691px;left:480px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:691px;left:486px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:691px;left:494px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:691px;left:500px;white-space:nowrap" class="ft02">2</p>
+<p style="position:absolute;top:691px;left:508px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:691px;left:515px;white-space:nowrap" class="ft02">3</p>
+<p style="position:absolute;top:691px;left:522px;white-space:nowrap" class="ft04">,</p>
+<p style="position:absolute;top:691px;left:529px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:688px;left:536px;white-space:nowrap" class="ft03">}</p>
+<p style="position:absolute;top:691px;left:544px;white-space:nowrap" class="ft04">.</p>
+<p style="position:absolute;top:721px;left:80px;white-space:nowrap" class="ft05">Obviously,&#160;5&#160;must&#160;be&#160;at&#160;the&#160;end,&#160;and&#160;therefore&#160;6&#160;must&#160;be&#160;also.&#160;This&#160;is&#160;because<br/>there&#160;must&#160;be&#160;a&#160;fragment&#160;at&#160;each&#160;end&#160;from&#160;the&#160;A&#160;or&#160;B&#160;digests&#160;that&#160;is&#160;not<br/>cleaved&#160;after&#160;double&#160;digestion.&#160;Fragment&#160;5&#160;must&#160;lie&#160;within&#160;6&#160;since&#160;6&#160;is&#160;the<br/>only&#160;B&#160;fragment&#160;large&#160;enough&#160;to&#160;contain&#160;it.&#160;Since&#160;in&#160;this&#160;problem&#160;only&#160;integer<br/>values&#160;are&#160;allowed,&#160;one&#160;end&#160;of&#160;5&#160;must&#160;match&#160;one&#160;end&#160;of&#160;6,&#160;which&#160;means&#160;that<br/>5&#160;is&#160;an&#160;end&#160;fragment&#160;from&#160;the&#160;A&#160;digest&#160;and&#160;6&#160;is&#160;an&#160;end&#160;fragment&#160;from&#160;the&#160;B<br/>digest:</p>
+<p style="position:absolute;top:845px;left:270px;white-space:nowrap" class="ft02">(two&#160;fragments)</p>
+<p style="position:absolute;top:842px;left:374px;white-space:nowrap" class="ft03">−</p>
+<p style="position:absolute;top:845px;left:385px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:863px;left:270px;white-space:nowrap" class="ft02">(two&#160;fragments)</p>
+<p style="position:absolute;top:860px;left:374px;white-space:nowrap" class="ft03">−</p>
+<p style="position:absolute;top:863px;left:385px;white-space:nowrap" class="ft02">6</p>
+<p style="position:absolute;top:888px;left:103px;white-space:nowrap" class="ft02">Having&#160;determined&#160;the&#160;two&#160;end&#160;fragments,&#160;we&#160;have&#160;only&#160;four&#160;possibilities</p>
+<p style="position:absolute;top:905px;left:80px;white-space:nowrap" class="ft02">left&#160;to&#160;consider:</p>
+</div>
+</body>
+</html>

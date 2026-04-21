@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 176</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft04{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft05{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft06{font-size:15px;font-family:ACJKEO+FL;color:#000000;}
+	.ft07{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft08{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page176-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome176.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">162</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">6&#160;Sequence&#160;Alignment</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft08">have&#160;many&#160;sequences&#160;of&#160;orthologous&#160;genes&#160;from&#160;diﬀerent&#160;organisms,&#160;and&#160;we<br/>are&#160;interested&#160;in&#160;the&#160;relationships&#160;between&#160;these&#160;sequences.&#160;Sometimes&#160;genes<br/>within&#160;an&#160;organism&#160;arise&#160;from&#160;duplications&#160;and&#160;the&#160;history&#160;of&#160;the&#160;duplications<br/>(along&#160;with&#160;the&#160;associated&#160;functions)&#160;must&#160;be&#160;inferred.&#160;How&#160;are&#160;the&#160;methods<br/>we&#160;have&#160;constructed&#160;in&#160;this&#160;chapter&#160;generalized?</p>
+<p style="position:absolute;top:203px;left:103px;white-space:nowrap" class="ft01">It&#160;turns&#160;out&#160;to&#160;be&#160;almost&#160;obvious&#160;how&#160;to&#160;generalize&#160;the&#160;dynamic&#160;pro-</p>
+<p style="position:absolute;top:221px;left:80px;white-space:nowrap" class="ft08">gramming&#160;methods.&#160;We&#160;will&#160;indicate&#160;how&#160;this&#160;is&#160;done&#160;for&#160;three&#160;sequences.<br/>The&#160;basic&#160;idea&#160;in&#160;the&#160;pairwise&#160;case&#160;was&#160;to&#160;have&#160;a&#160;recursion&#160;for&#160;the&#160;end&#160;of<br/>the&#160;alignment.&#160;Recall&#160;that</p>
+<p style="position:absolute;top:257px;left:264px;white-space:nowrap" class="ft02">A</p>
+<p style="position:absolute;top:257px;left:282px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:257px;left:301px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:262px;left:309px;white-space:nowrap" class="ft03">1</p>
+<p style="position:absolute;top:257px;left:316px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:262px;left:324px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:257px;left:333px;white-space:nowrap" class="ft02">.&#160;.&#160;.&#160;a</p>
+<p style="position:absolute;top:262px;left:361px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:257px;left:373px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:257px;left:403px;white-space:nowrap" class="ft02">B</p>
+<p style="position:absolute;top:257px;left:423px;white-space:nowrap" class="ft01">=</p>
+<p style="position:absolute;top:257px;left:442px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:262px;left:448px;white-space:nowrap" class="ft03">1</p>
+<p style="position:absolute;top:257px;left:454px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:262px;left:461px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:257px;left:470px;white-space:nowrap" class="ft02">.&#160;.&#160;.&#160;b</p>
+<p style="position:absolute;top:262px;left:497px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:257px;left:510px;white-space:nowrap" class="ft01">have&#160;align-</p>
+<p style="position:absolute;top:275px;left:80px;white-space:nowrap" class="ft01">ments&#160;that&#160;can&#160;end&#160;in&#160;three&#160;possibilities:&#160;(</p>
+<p style="position:absolute;top:271px;left:359px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:275px;left:371px;white-space:nowrap" class="ft02">,&#160;b</p>
+<p style="position:absolute;top:280px;left:384px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:275px;left:390px;white-space:nowrap" class="ft01">),&#160;(</p>
+<p style="position:absolute;top:275px;left:411px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:280px;left:419px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:275px;left:424px;white-space:nowrap" class="ft02">,&#160;b</p>
+<p style="position:absolute;top:280px;left:437px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:275px;left:444px;white-space:nowrap" class="ft01">),&#160;or&#160;(</p>
+<p style="position:absolute;top:275px;left:483px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:280px;left:491px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:275px;left:496px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:271px;left:503px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:275px;left:514px;white-space:nowrap" class="ft01">).&#160;In&#160;other</p>
+<p style="position:absolute;top:293px;left:80px;white-space:nowrap" class="ft08">words,&#160;the&#160;alignments&#160;end&#160;in&#160;an&#160;indel&#160;or&#160;aligned&#160;letters.&#160;The&#160;number&#160;of&#160;al-<br/>ternatives&#160;for&#160;aligning</p>
+<p style="position:absolute;top:311px;left:235px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:316px;left:243px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:311px;left:255px;white-space:nowrap" class="ft01">with</p>
+<p style="position:absolute;top:311px;left:291px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:316px;left:298px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:311px;left:311px;white-space:nowrap" class="ft01">can&#160;be&#160;calculated&#160;as&#160;3&#160;=&#160;2</p>
+<p style="position:absolute;top:308px;left:498px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:307px;left:510px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:311px;left:526px;white-space:nowrap" class="ft01">1,&#160;which</p>
+<p style="position:absolute;top:329px;left:80px;white-space:nowrap" class="ft08">can&#160;be&#160;understood&#160;as&#160;follows.&#160;There&#160;are&#160;two&#160;things&#160;that&#160;you&#160;can&#160;do&#160;at<br/>the</p>
+<p style="position:absolute;top:346px;left:109px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:346px;left:114px;white-space:nowrap" class="ft01">th&#160;position&#160;of&#160;sequence</p>
+<p style="position:absolute;top:346px;left:280px;white-space:nowrap" class="ft02">A</p>
+<p style="position:absolute;top:346px;left:291px;white-space:nowrap" class="ft01">:&#160;align&#160;or&#160;employ&#160;an&#160;indel.&#160;There&#160;are&#160;two</p>
+<p style="position:absolute;top:364px;left:80px;white-space:nowrap" class="ft01">things&#160;that&#160;you&#160;can&#160;do&#160;at&#160;the</p>
+<p style="position:absolute;top:364px;left:288px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:364px;left:295px;white-space:nowrap" class="ft01">th&#160;position&#160;of&#160;sequence</p>
+<p style="position:absolute;top:364px;left:456px;white-space:nowrap" class="ft02">B</p>
+<p style="position:absolute;top:364px;left:468px;white-space:nowrap" class="ft01">:&#160;align&#160;or&#160;employ</p>
+<p style="position:absolute;top:382px;left:80px;white-space:nowrap" class="ft01">an&#160;indel.&#160;Therefore&#160;there&#160;are&#160;2</p>
+<p style="position:absolute;top:380px;left:294px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:382px;left:308px;white-space:nowrap" class="ft01">alternatives&#160;for&#160;two&#160;sequences.&#160;However,</p>
+<p style="position:absolute;top:400px;left:80px;white-space:nowrap" class="ft01">“align”&#160;is&#160;the&#160;same&#160;event&#160;for&#160;both&#160;sequences,&#160;so&#160;we&#160;subtract&#160;1&#160;from&#160;2</p>
+<p style="position:absolute;top:398px;left:556px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:400px;left:569px;white-space:nowrap" class="ft01">to</p>
+<p style="position:absolute;top:418px;left:80px;white-space:nowrap" class="ft08">obtain&#160;the&#160;number&#160;of&#160;distinct&#160;combinations.&#160;If&#160;we&#160;now&#160;introduce&#160;a&#160;third&#160;se-<br/>quence</p>
+<p style="position:absolute;top:436px;left:129px;white-space:nowrap" class="ft02">c</p>
+<p style="position:absolute;top:442px;left:136px;white-space:nowrap" class="ft03">1</p>
+<p style="position:absolute;top:436px;left:143px;white-space:nowrap" class="ft02">c</p>
+<p style="position:absolute;top:442px;left:149px;white-space:nowrap" class="ft03">2</p>
+<p style="position:absolute;top:436px;left:158px;white-space:nowrap" class="ft02">.&#160;.&#160;.&#160;c</p>
+<p style="position:absolute;top:442px;left:185px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:436px;left:192px;white-space:nowrap" class="ft01">,&#160;the&#160;three-sequence&#160;alignment&#160;can&#160;end&#160;in&#160;one&#160;of&#160;seven&#160;ways</p>
+<p style="position:absolute;top:454px;left:80px;white-space:nowrap" class="ft01">(7&#160;=&#160;2</p>
+<p style="position:absolute;top:452px;left:124px;white-space:nowrap" class="ft03">3</p>
+<p style="position:absolute;top:451px;left:134px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:150px;white-space:nowrap" class="ft01">1):&#160;(</p>
+<p style="position:absolute;top:454px;left:179px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:460px;left:186px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:454px;left:192px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:451px;left:198px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:210px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:451px;left:217px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:228px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:454px;left:234px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:454px;left:241px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:451px;left:246px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:258px;white-space:nowrap" class="ft02">,&#160;b</p>
+<p style="position:absolute;top:460px;left:271px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:454px;left:277px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:451px;left:284px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:296px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:454px;left:301px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:454px;left:308px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:451px;left:314px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:325px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:451px;left:332px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:344px;white-space:nowrap" class="ft02">,&#160;c</p>
+<p style="position:absolute;top:460px;left:357px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:454px;left:364px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:454px;left:370px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:454px;left:377px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:451px;left:382px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:394px;white-space:nowrap" class="ft02">,&#160;b</p>
+<p style="position:absolute;top:460px;left:407px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:454px;left:413px;white-space:nowrap" class="ft02">,&#160;c</p>
+<p style="position:absolute;top:460px;left:426px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:454px;left:434px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:454px;left:440px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:454px;left:446px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:454px;left:452px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:460px;left:460px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:454px;left:465px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:451px;left:472px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:483px;white-space:nowrap" class="ft02">,&#160;c</p>
+<p style="position:absolute;top:460px;left:496px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:454px;left:504px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:454px;left:509px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:454px;left:516px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:454px;left:522px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:460px;left:530px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:454px;left:535px;white-space:nowrap" class="ft02">,&#160;b</p>
+<p style="position:absolute;top:460px;left:548px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:454px;left:554px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:451px;left:561px;white-space:nowrap" class="ft05">−</p>
+<p style="position:absolute;top:454px;left:573px;white-space:nowrap" class="ft01">),</p>
+<p style="position:absolute;top:472px;left:80px;white-space:nowrap" class="ft01">and&#160;(</p>
+<p style="position:absolute;top:472px;left:116px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:478px;left:124px;white-space:nowrap" class="ft04">i</p>
+<p style="position:absolute;top:472px;left:129px;white-space:nowrap" class="ft02">,&#160;b</p>
+<p style="position:absolute;top:478px;left:142px;white-space:nowrap" class="ft04">j</p>
+<p style="position:absolute;top:472px;left:148px;white-space:nowrap" class="ft02">,&#160;c</p>
+<p style="position:absolute;top:478px;left:161px;white-space:nowrap" class="ft04">k</p>
+<p style="position:absolute;top:472px;left:168px;white-space:nowrap" class="ft01">).&#160;In&#160;other&#160;words,&#160;the&#160;alignment&#160;ends&#160;in&#160;0,&#160;1,&#160;or&#160;2&#160;indels.&#160;This</p>
+<p style="position:absolute;top:490px;left:80px;white-space:nowrap" class="ft08">fundamental&#160;term&#160;in&#160;the&#160;recursion&#160;is&#160;no&#160;problem,&#160;except&#160;that&#160;it&#160;must&#160;be&#160;done<br/>in&#160;time&#160;and&#160;space&#160;proportional&#160;to&#160;the&#160;number&#160;of&#160;(</p>
+<p style="position:absolute;top:508px;left:405px;white-space:nowrap" class="ft02">i,&#160;j,&#160;k</p>
+<p style="position:absolute;top:508px;left:438px;white-space:nowrap" class="ft01">)&#160;positions;&#160;that&#160;is&#160;the</p>
+<p style="position:absolute;top:526px;left:80px;white-space:nowrap" class="ft01">product&#160;of&#160;the&#160;length&#160;of&#160;the&#160;sequences</p>
+<p style="position:absolute;top:526px;left:343px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:522px;left:352px;white-space:nowrap" class="ft05">×</p>
+<p style="position:absolute;top:526px;left:368px;white-space:nowrap" class="ft02">j</p>
+<p style="position:absolute;top:522px;left:379px;white-space:nowrap" class="ft05">×</p>
+<p style="position:absolute;top:526px;left:394px;white-space:nowrap" class="ft02">k</p>
+<p style="position:absolute;top:526px;left:403px;white-space:nowrap" class="ft01">.&#160;This&#160;dramatic&#160;increase&#160;in</p>
+<p style="position:absolute;top:544px;left:80px;white-space:nowrap" class="ft08">running&#160;time&#160;and&#160;storage&#160;requirements&#160;continues&#160;as&#160;we&#160;increase&#160;the&#160;number<br/>of&#160;sequences,&#160;so&#160;that&#160;this&#160;method&#160;is&#160;practical&#160;for&#160;small&#160;problems&#160;only.&#160;Hence<br/>the&#160;bioinformatics&#160;community&#160;has&#160;found&#160;heuristic&#160;solutions.</p>
+<p style="position:absolute;top:598px;left:103px;white-space:nowrap" class="ft01">One&#160;class&#160;of&#160;methods&#160;for&#160;speeding&#160;up&#160;the&#160;calculation&#160;employs&#160;pairwise</p>
+<p style="position:absolute;top:616px;left:80px;white-space:nowrap" class="ft08">alignments&#160;in&#160;an&#160;incremental&#160;fashion:&#160;the&#160;most&#160;similar&#160;pair&#160;is&#160;placed&#160;into&#160;a<br/>ﬁxed&#160;alignment,&#160;and&#160;then&#160;the&#160;other&#160;sequences&#160;are&#160;included&#160;in&#160;a&#160;stepwise&#160;fash-<br/>ion.&#160;One&#160;of&#160;the&#160;most&#160;used&#160;and&#160;practical&#160;programs&#160;to&#160;perform&#160;global&#160;multiple<br/>alignment&#160;is</p>
+<p style="position:absolute;top:669px;left:168px;white-space:nowrap" class="ft06">CLUSTALW</p>
+<p style="position:absolute;top:669px;left:251px;white-space:nowrap" class="ft01">(Thompson&#160;et&#160;al.,&#160;1994).&#160;That&#160;program&#160;proceeds</p>
+<p style="position:absolute;top:687px;left:80px;white-space:nowrap" class="ft08">by&#160;computing&#160;all&#160;pairwise&#160;alignments,&#160;estimating&#160;a&#160;tree&#160;(or&#160;cluster)&#160;of&#160;re-<br/>lationships&#160;using&#160;those&#160;alignment&#160;scores&#160;(see&#160;Section&#160;10&#160;for&#160;a&#160;discussion&#160;of<br/>clustering),&#160;and&#160;then&#160;collecting&#160;the&#160;sequences&#160;into&#160;a&#160;multiple&#160;alignment&#160;us-<br/>ing&#160;the&#160;tree&#160;and&#160;pairwise&#160;alignments&#160;as&#160;a&#160;guide&#160;for&#160;adding&#160;each&#160;successive<br/>sequence.</p>
+<p style="position:absolute;top:777px;left:103px;white-space:nowrap" class="ft01">Another&#160;approach&#160;developed&#160;in&#160;recent&#160;years&#160;uses&#160;hidden&#160;Markov&#160;mod-</p>
+<p style="position:absolute;top:795px;left:80px;white-space:nowrap" class="ft01">els&#160;(HMMs)&#160;and&#160;has&#160;proven&#160;quite&#160;eﬀective&#160;(see,&#160;e.g.,</p>
+<p style="position:absolute;top:797px;left:457px;white-space:nowrap" class="ft07">www.cse.usc.edu/</p>
+<p style="position:absolute;top:815px;left:80px;white-space:nowrap" class="ft07">research/compbio/sum.html</p>
+<p style="position:absolute;top:813px;left:278px;white-space:nowrap" class="ft01">).</p>
+</div>
+</body>
+</html>

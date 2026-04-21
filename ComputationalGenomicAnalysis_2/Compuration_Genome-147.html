@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 147</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft03{font-size:14px;font-family:ADBHGH+Symbol*1;color:#000000;}
+	.ft04{font-size:14px;font-family:ADCBIE+TimesNewRomanPSMT*1;color:#000000;}
+	.ft05{font-size:14px;font-family:ADCBCF+TimesNewRomanPS;color:#000000;}
+	.ft06{font-size:14px;font-family:ACNGDO+Courier*1;color:#000000;}
+	.ft07{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft08{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page147-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome147.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:91px;white-space:nowrap" class="ft00">5.3&#160;Analyzing&#160;Genomes&#160;with&#160;Reversals&#160;of&#160;Oriented&#160;Conserved&#160;Segments</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">133</p>
+<p style="position:absolute;top:113px;left:103px;white-space:nowrap" class="ft01">To&#160;track&#160;the&#160;orientation&#160;of&#160;conserved&#160;segment</p>
+<p style="position:absolute;top:113px;left:407px;white-space:nowrap" class="ft02">i</p>
+<p style="position:absolute;top:113px;left:412px;white-space:nowrap" class="ft01">,&#160;label&#160;its&#160;left&#160;end&#160;(tail)</p>
+<p style="position:absolute;top:113px;left:569px;white-space:nowrap" class="ft02">ia</p>
+<p style="position:absolute;top:131px;left:80px;white-space:nowrap" class="ft01">and&#160;its&#160;right&#160;end&#160;(head)</p>
+<p style="position:absolute;top:131px;left:242px;white-space:nowrap" class="ft02">ib</p>
+<p style="position:absolute;top:131px;left:254px;white-space:nowrap" class="ft01">.&#160;If&#160;genome</p>
+<p style="position:absolute;top:131px;left:332px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:131px;left:347px;white-space:nowrap" class="ft01">has</p>
+<p style="position:absolute;top:131px;left:374px;white-space:nowrap" class="ft02">n</p>
+<p style="position:absolute;top:131px;left:388px;white-space:nowrap" class="ft01">conserved&#160;segments,&#160;there&#160;are</p>
+<p style="position:absolute;top:149px;left:80px;white-space:nowrap" class="ft01">now&#160;2</p>
+<p style="position:absolute;top:149px;left:120px;white-space:nowrap" class="ft02">n</p>
+<p style="position:absolute;top:149px;left:135px;white-space:nowrap" class="ft01">elements&#160;representing&#160;their&#160;ends,&#160;thus&#160;specifying&#160;their&#160;location&#160;and</p>
+<p style="position:absolute;top:167px;left:80px;white-space:nowrap" class="ft01">orientation.&#160;We&#160;preﬁx&#160;the&#160;list&#160;of&#160;elements&#160;in</p>
+<p style="position:absolute;top:167px;left:366px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:167px;left:380px;white-space:nowrap" class="ft01">with&#160;0&#160;and&#160;add&#160;element</p>
+<p style="position:absolute;top:167px;left:535px;white-space:nowrap" class="ft02">n</p>
+<p style="position:absolute;top:167px;left:545px;white-space:nowrap" class="ft01">+&#160;1&#160;to</p>
+<p style="position:absolute;top:185px;left:80px;white-space:nowrap" class="ft01">the&#160;right&#160;end&#160;as&#160;before&#160;to&#160;yield&#160;a&#160;total&#160;of&#160;2</p>
+<p style="position:absolute;top:185px;left:358px;white-space:nowrap" class="ft02">n</p>
+<p style="position:absolute;top:185px;left:370px;white-space:nowrap" class="ft01">+&#160;2&#160;elements.&#160;Genomes</p>
+<p style="position:absolute;top:185px;left:525px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:185px;left:540px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:185px;left:569px;white-space:nowrap" class="ft02">K</p>
+<p style="position:absolute;top:203px;left:80px;white-space:nowrap" class="ft01">are&#160;each&#160;represented&#160;by&#160;a&#160;particular&#160;permutation&#160;of&#160;the&#160;same&#160;2</p>
+<p style="position:absolute;top:203px;left:486px;white-space:nowrap" class="ft02">n</p>
+<p style="position:absolute;top:203px;left:497px;white-space:nowrap" class="ft01">+&#160;2&#160;elements,</p>
+<p style="position:absolute;top:221px;left:80px;white-space:nowrap" class="ft08">and&#160;the&#160;approaches&#160;described&#160;in&#160;the&#160;previous&#160;section&#160;can&#160;now&#160;be&#160;applied.&#160;Our<br/>example&#160;above&#160;now&#160;becomes</p>
+<p style="position:absolute;top:281px;left:147px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:281px;left:161px;white-space:nowrap" class="ft01">:</p>
+<p style="position:absolute;top:281px;left:184px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:281px;left:206px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:281px;left:214px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:281px;left:237px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:281px;left:244px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:281px;left:265px;white-space:nowrap" class="ft01">5</p>
+<p style="position:absolute;top:281px;left:273px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:281px;left:296px;white-space:nowrap" class="ft01">5</p>
+<p style="position:absolute;top:281px;left:303px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:281px;left:325px;white-space:nowrap" class="ft01">2</p>
+<p style="position:absolute;top:281px;left:332px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:281px;left:353px;white-space:nowrap" class="ft01">2</p>
+<p style="position:absolute;top:281px;left:361px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:281px;left:384px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:281px;left:391px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:281px;left:414px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:281px;left:422px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:281px;left:443px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:281px;left:450px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:281px;left:473px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:281px;left:481px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:281px;left:502px;white-space:nowrap" class="ft01">6</p>
+<p style="position:absolute;top:281px;left:509px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:303px;left:146px;white-space:nowrap" class="ft02">K</p>
+<p style="position:absolute;top:303px;left:164px;white-space:nowrap" class="ft01">:</p>
+<p style="position:absolute;top:303px;left:187px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:303px;left:210px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:303px;left:217px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:303px;left:240px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:303px;left:247px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:303px;left:269px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:303px;left:276px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:303px;left:297px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:303px;left:305px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:303px;left:328px;white-space:nowrap" class="ft01">2</p>
+<p style="position:absolute;top:303px;left:335px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:303px;left:358px;white-space:nowrap" class="ft01">2</p>
+<p style="position:absolute;top:303px;left:366px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:303px;left:387px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:303px;left:394px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:303px;left:417px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:303px;left:425px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:303px;left:446px;white-space:nowrap" class="ft01">5</p>
+<p style="position:absolute;top:303px;left:454px;white-space:nowrap" class="ft02">b</p>
+<p style="position:absolute;top:303px;left:475px;white-space:nowrap" class="ft01">5</p>
+<p style="position:absolute;top:303px;left:482px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:303px;left:505px;white-space:nowrap" class="ft01">6</p>
+<p style="position:absolute;top:303px;left:513px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:345px;left:103px;white-space:nowrap" class="ft01">Now&#160;we&#160;create&#160;an&#160;edge-colored&#160;graph,&#160;but&#160;we&#160;only&#160;draw&#160;edges&#160;where&#160;ad-</p>
+<p style="position:absolute;top:363px;left:80px;white-space:nowrap" class="ft08">jacent&#160;conserved&#160;segments&#160;are&#160;connected&#160;(i.e.,&#160;we&#160;won’t&#160;draw&#160;edges&#160;between<br/>the&#160;ends&#160;of&#160;the&#160;same&#160;conserved&#160;segment,</p>
+<p style="position:absolute;top:381px;left:354px;white-space:nowrap" class="ft02">ia</p>
+<p style="position:absolute;top:381px;left:373px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:381px;left:402px;white-space:nowrap" class="ft02">ib</p>
+<p style="position:absolute;top:381px;left:414px;white-space:nowrap" class="ft01">).&#160;We&#160;designate&#160;edges&#160;be-</p>
+<p style="position:absolute;top:399px;left:80px;white-space:nowrap" class="ft01">tween&#160;conserved&#160;segments&#160;in</p>
+<p style="position:absolute;top:399px;left:271px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:399px;left:286px;white-space:nowrap" class="ft01">with&#160;black&#160;lines&#160;and&#160;edges&#160;between&#160;conserved</p>
+<p style="position:absolute;top:417px;left:80px;white-space:nowrap" class="ft01">segments&#160;in</p>
+<p style="position:absolute;top:417px;left:161px;white-space:nowrap" class="ft02">K</p>
+<p style="position:absolute;top:417px;left:180px;white-space:nowrap" class="ft01">with&#160;grey&#160;lines.</p>
+<p style="position:absolute;top:468px;left:124px;white-space:nowrap" class="ft03">Γ</p>
+<p style="position:absolute;top:468px;left:133px;white-space:nowrap" class="ft04">(</p>
+<p style="position:absolute;top:468px;left:137px;white-space:nowrap" class="ft05"><i>J,K</i></p>
+<p style="position:absolute;top:468px;left:155px;white-space:nowrap" class="ft04">):</p>
+<p style="position:absolute;top:517px;left:124px;white-space:nowrap" class="ft06">&#160;0 &#160; 1a &#160;1b &#160; 5a &#160;5b &#160; 2b &#160;2a &#160; 3a &#160;3b &#160; 4a &#160;4b &#160; 6</p>
+<p style="position:absolute;top:552px;left:103px;white-space:nowrap" class="ft01">The&#160;decomposition&#160;of&#160;this&#160;graph&#160;into&#160;edge-disjoint&#160;alternating&#160;cycles&#160;is:</p>
+<p style="position:absolute;top:595px;left:132px;white-space:nowrap" class="ft06">0 &#160; 1a</p>
+<p style="position:absolute;top:595px;left:343px;white-space:nowrap" class="ft06">2a &#160; 3a</p>
+<p style="position:absolute;top:697px;left:124px;white-space:nowrap" class="ft06">&#160; &#160; &#160; &#160; &#160;1b &#160; 5a &#160;5b &#160; 2b &#160; &#160; &#160; &#160; &#160; 3b &#160; 4a &#160;4b &#160; 6</p>
+<p style="position:absolute;top:731px;left:80px;white-space:nowrap" class="ft08">We&#160;ﬁnd&#160;that&#160;there&#160;are&#160;three&#160;such&#160;cycles,&#160;and&#160;thus&#160;we&#160;calculate&#160;the&#160;reversal<br/>distance&#160;between</p>
+<p style="position:absolute;top:749px;left:196px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:749px;left:211px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:749px;left:240px;white-space:nowrap" class="ft02">K</p>
+<p style="position:absolute;top:749px;left:254px;white-space:nowrap" class="ft01">:</p>
+<p style="position:absolute;top:778px;left:195px;white-space:nowrap" class="ft01">˜</p>
+<p style="position:absolute;top:782px;left:192px;white-space:nowrap" class="ft02">d</p>
+<p style="position:absolute;top:782px;left:200px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:782px;left:206px;white-space:nowrap" class="ft02">J,&#160;K</p>
+<p style="position:absolute;top:782px;left:235px;white-space:nowrap" class="ft01">)&#160;=</p>
+<p style="position:absolute;top:782px;left:260px;white-space:nowrap" class="ft02">n</p>
+<p style="position:absolute;top:782px;left:273px;white-space:nowrap" class="ft01">+&#160;1</p>
+<p style="position:absolute;top:779px;left:298px;white-space:nowrap" class="ft07">−</p>
+<p style="position:absolute;top:782px;left:313px;white-space:nowrap" class="ft02">c</p>
+<p style="position:absolute;top:782px;left:320px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:782px;left:325px;white-space:nowrap" class="ft02">J,&#160;K</p>
+<p style="position:absolute;top:782px;left:354px;white-space:nowrap" class="ft01">)&#160;=&#160;5&#160;+&#160;1</p>
+<p style="position:absolute;top:779px;left:416px;white-space:nowrap" class="ft07">−</p>
+<p style="position:absolute;top:782px;left:431px;white-space:nowrap" class="ft01">3&#160;=&#160;3</p>
+<p style="position:absolute;top:782px;left:466px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:815px;left:80px;white-space:nowrap" class="ft01">We&#160;then&#160;expect&#160;to&#160;be&#160;able&#160;to&#160;transform</p>
+<p style="position:absolute;top:815px;left:361px;white-space:nowrap" class="ft02">J</p>
+<p style="position:absolute;top:815px;left:377px;white-space:nowrap" class="ft01">to</p>
+<p style="position:absolute;top:815px;left:397px;white-space:nowrap" class="ft02">K</p>
+<p style="position:absolute;top:815px;left:418px;white-space:nowrap" class="ft01">by&#160;using&#160;three&#160;reversals.</p>
+<p style="position:absolute;top:833px;left:80px;white-space:nowrap" class="ft08">These&#160;are&#160;shown&#160;in&#160;the&#160;following&#160;diagram&#160;(with&#160;[&#160;]&#160;indicating&#160;set&#160;of&#160;conserved<br/>segments&#160;being&#160;reversed):</p>
+</div>
+</body>
+</html>

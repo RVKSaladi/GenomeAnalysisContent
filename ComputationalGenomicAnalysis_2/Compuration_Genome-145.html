@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 145</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft05{font-size:16px;font-family:ADCACH+Symbol*1;color:#000000;}
+	.ft06{font-size:16px;font-family:ACNIID+TimesNewRomanPSMT*1;color:#000000;}
+	.ft07{font-size:16px;font-family:ADCADH+TimesNewRomanPS;color:#000000;}
+	.ft08{font-size:16px;font-family:ADCAEI+TimesNewRomanPSMT*2;color:#000000;}
+	.ft09{font-size:16px;font-family:ACNLID+Courier*1;color:#000000;}
+	.ft010{font-size:18px;font-family:ACNGDO+Courier*1;color:#000000;}
+	.ft011{font-size:10px;font-family:ACJNAH+FB;color:#000000;}
+	.ft012{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft013{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page145-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome145.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:428px;white-space:nowrap" class="ft00">5.2&#160;Permutations</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">131</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft01"><b>5.2.3&#160;Estimating&#160;Reversal&#160;Distances&#160;Between&#160;Two&#160;Permutations</b></p>
+<p style="position:absolute;top:146px;left:80px;white-space:nowrap" class="ft02">Up&#160;to&#160;now,&#160;we&#160;have&#160;been&#160;determining&#160;the&#160;reversal&#160;distance</p>
+<p style="position:absolute;top:146px;left:478px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:146px;left:486px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:146px;left:492px;white-space:nowrap" class="ft03">G,&#160;I</p>
+<p style="position:absolute;top:146px;left:518px;white-space:nowrap" class="ft02">)&#160;between</p>
+<p style="position:absolute;top:164px;left:80px;white-space:nowrap" class="ft02">permutation</p>
+<p style="position:absolute;top:164px;left:167px;white-space:nowrap" class="ft03">G</p>
+<p style="position:absolute;top:164px;left:185px;white-space:nowrap" class="ft02">and&#160;the&#160;identity&#160;permutation</p>
+<p style="position:absolute;top:164px;left:385px;white-space:nowrap" class="ft03">I</p>
+<p style="position:absolute;top:164px;left:393px;white-space:nowrap" class="ft02">.&#160;Now&#160;suppose&#160;that&#160;we&#160;have</p>
+<p style="position:absolute;top:182px;left:80px;white-space:nowrap" class="ft02">the&#160;two&#160;permutations</p>
+<p style="position:absolute;top:182px;left:226px;white-space:nowrap" class="ft03">F</p>
+<p style="position:absolute;top:182px;left:242px;white-space:nowrap" class="ft02">and</p>
+<p style="position:absolute;top:182px;left:271px;white-space:nowrap" class="ft03">H</p>
+<p style="position:absolute;top:182px;left:285px;white-space:nowrap" class="ft02">,&#160;with&#160;the&#160;following&#160;elements:</p>
+<p style="position:absolute;top:215px;left:202px;white-space:nowrap" class="ft03">F</p>
+<p style="position:absolute;top:215px;left:218px;white-space:nowrap" class="ft02">:</p>
+<p style="position:absolute;top:215px;left:241px;white-space:nowrap" class="ft02">1&#160;2&#160;4&#160;5&#160;3</p>
+<p style="position:absolute;top:215px;left:358px;white-space:nowrap" class="ft03">H</p>
+<p style="position:absolute;top:215px;left:376px;white-space:nowrap" class="ft02">:</p>
+<p style="position:absolute;top:215px;left:399px;white-space:nowrap" class="ft02">1&#160;4&#160;3&#160;5&#160;2</p>
+<p style="position:absolute;top:215px;left:456px;white-space:nowrap" class="ft03">.</p>
+<p style="position:absolute;top:248px;left:103px;white-space:nowrap" class="ft02">The&#160;distance&#160;between</p>
+<p style="position:absolute;top:248px;left:248px;white-space:nowrap" class="ft03">F</p>
+<p style="position:absolute;top:248px;left:264px;white-space:nowrap" class="ft02">and</p>
+<p style="position:absolute;top:248px;left:292px;white-space:nowrap" class="ft03">H</p>
+<p style="position:absolute;top:248px;left:306px;white-space:nowrap" class="ft02">,</p>
+<p style="position:absolute;top:248px;left:315px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:248px;left:322px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:248px;left:328px;white-space:nowrap" class="ft03">F,&#160;H</p>
+<p style="position:absolute;top:248px;left:358px;white-space:nowrap" class="ft02">)&#160;and&#160;˜</p>
+<p style="position:absolute;top:248px;left:397px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:248px;left:405px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:248px;left:411px;white-space:nowrap" class="ft03">F,&#160;H</p>
+<p style="position:absolute;top:248px;left:441px;white-space:nowrap" class="ft02">),&#160;is&#160;calculated&#160;just&#160;as</p>
+<p style="position:absolute;top:266px;left:80px;white-space:nowrap" class="ft013">was&#160;done&#160;above,&#160;except&#160;that&#160;this&#160;time&#160;the&#160;second&#160;set&#160;of&#160;edges&#160;will&#160;not&#160;be&#160;drawn<br/>connecting&#160;vertices&#160;in&#160;increasing&#160;numerical&#160;order&#160;but&#160;instead</p>
+<p style="position:absolute;top:284px;left:501px;white-space:nowrap" class="ft04">in&#160;the&#160;order</p>
+<p style="position:absolute;top:302px;left:80px;white-space:nowrap" class="ft04">in&#160;which&#160;these&#160;vertices&#160;appear&#160;in</p>
+<p style="position:absolute;top:302px;left:302px;white-space:nowrap" class="ft03">H</p>
+<p style="position:absolute;top:302px;left:316px;white-space:nowrap" class="ft02">.&#160;For&#160;simplicity,&#160;we&#160;again&#160;represent&#160;each</p>
+<p style="position:absolute;top:320px;left:80px;white-space:nowrap" class="ft013">element&#160;by&#160;its&#160;numerical&#160;index&#160;and,&#160;as&#160;before,&#160;we&#160;extend&#160;each&#160;permutation<br/>by&#160;preﬁxing&#160;it&#160;with&#160;0&#160;and&#160;by&#160;adding</p>
+<p style="position:absolute;top:338px;left:332px;white-space:nowrap" class="ft03">n</p>
+<p style="position:absolute;top:338px;left:346px;white-space:nowrap" class="ft02">+&#160;1&#160;at&#160;the&#160;end&#160;(6&#160;in&#160;this&#160;case).&#160;We</p>
+<p style="position:absolute;top:355px;left:80px;white-space:nowrap" class="ft02">connect&#160;the&#160;vertices&#160;of</p>
+<p style="position:absolute;top:355px;left:237px;white-space:nowrap" class="ft03">F</p>
+<p style="position:absolute;top:355px;left:255px;white-space:nowrap" class="ft02">with&#160;black&#160;edges,&#160;taking&#160;vertices&#160;in&#160;succession&#160;as</p>
+<p style="position:absolute;top:373px;left:80px;white-space:nowrap" class="ft02">they&#160;appear&#160;in</p>
+<p style="position:absolute;top:373px;left:183px;white-space:nowrap" class="ft03">F</p>
+<p style="position:absolute;top:373px;left:194px;white-space:nowrap" class="ft02">.&#160;Then&#160;we&#160;add&#160;grey&#160;edges&#160;between&#160;vertices,</p>
+<p style="position:absolute;top:373px;left:487px;white-space:nowrap" class="ft04">taking&#160;them&#160;in</p>
+<p style="position:absolute;top:391px;left:80px;white-space:nowrap" class="ft04">the&#160;order&#160;in&#160;which&#160;they&#160;appear&#160;in</p>
+<p style="position:absolute;top:391px;left:303px;white-space:nowrap" class="ft03">H</p>
+<p style="position:absolute;top:391px;left:316px;white-space:nowrap" class="ft02">.&#160;The&#160;result&#160;is:</p>
+<p style="position:absolute;top:483px;left:132px;white-space:nowrap" class="ft05">Γ</p>
+<p style="position:absolute;top:483px;left:141px;white-space:nowrap" class="ft06">(</p>
+<p style="position:absolute;top:483px;left:147px;white-space:nowrap" class="ft07"><i>F',H'</i></p>
+<p style="position:absolute;top:483px;left:179px;white-space:nowrap" class="ft08">):</p>
+<p style="position:absolute;top:489px;left:189px;white-space:nowrap" class="ft09">&#160;0</p>
+<p style="position:absolute;top:489px;left:277px;white-space:nowrap" class="ft09">1 2 4 5 3 6</p>
+<p style="position:absolute;top:519px;left:80px;white-space:nowrap" class="ft013">The&#160;decomposition&#160;of&#160;this&#160;graph&#160;into&#160;the&#160;maximum&#160;number&#160;of&#160;edge-disjoint<br/>cycles&#160;is:</p>
+<p style="position:absolute;top:706px;left:173px;white-space:nowrap" class="ft010">0</p>
+<p style="position:absolute;top:706px;left:224px;white-space:nowrap" class="ft010">1</p>
+<p style="position:absolute;top:762px;left:223px;white-space:nowrap" class="ft010">1</p>
+<p style="position:absolute;top:762px;left:274px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:762px;left:325px;white-space:nowrap" class="ft010">4</p>
+<p style="position:absolute;top:762px;left:377px;white-space:nowrap" class="ft010">5</p>
+<p style="position:absolute;top:706px;left:377px;white-space:nowrap" class="ft010">5</p>
+<p style="position:absolute;top:706px;left:427px;white-space:nowrap" class="ft010">3</p>
+<p style="position:absolute;top:655px;left:273px;white-space:nowrap" class="ft010">2</p>
+<p style="position:absolute;top:655px;left:324px;white-space:nowrap" class="ft010">4</p>
+<p style="position:absolute;top:655px;left:426px;white-space:nowrap" class="ft010">3</p>
+<p style="position:absolute;top:655px;left:478px;white-space:nowrap" class="ft010">6</p>
+<p style="position:absolute;top:803px;left:80px;white-space:nowrap" class="ft02">Since&#160;Γ(</p>
+<p style="position:absolute;top:803px;left:134px;white-space:nowrap" class="ft03">F</p>
+<p style="position:absolute;top:798px;left:145px;white-space:nowrap" class="ft011"></p>
+<p style="position:absolute;top:803px;left:150px;white-space:nowrap" class="ft03">,&#160;H</p>
+<p style="position:absolute;top:798px;left:170px;white-space:nowrap" class="ft011"></p>
+<p style="position:absolute;top:803px;left:174px;white-space:nowrap" class="ft02">)&#160;can&#160;be&#160;decomposed&#160;into&#160;a&#160;maximum&#160;of&#160;four&#160;cycles,&#160;˜</p>
+<p style="position:absolute;top:803px;left:517px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:803px;left:525px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:803px;left:530px;white-space:nowrap" class="ft03">F,&#160;H</p>
+<p style="position:absolute;top:803px;left:561px;white-space:nowrap" class="ft02">)&#160;=</p>
+<p style="position:absolute;top:821px;left:80px;white-space:nowrap" class="ft02">5&#160;+&#160;1</p>
+<p style="position:absolute;top:817px;left:114px;white-space:nowrap" class="ft012">−</p>
+<p style="position:absolute;top:821px;left:129px;white-space:nowrap" class="ft02">4&#160;=&#160;2,&#160;and&#160;we&#160;expect&#160;that</p>
+<p style="position:absolute;top:821px;left:317px;white-space:nowrap" class="ft03">F</p>
+<p style="position:absolute;top:821px;left:335px;white-space:nowrap" class="ft02">can&#160;be&#160;transformed&#160;into</p>
+<p style="position:absolute;top:821px;left:503px;white-space:nowrap" class="ft03">H</p>
+<p style="position:absolute;top:821px;left:523px;white-space:nowrap" class="ft02">with&#160;two</p>
+<p style="position:absolute;top:838px;left:80px;white-space:nowrap" class="ft02">reversals.&#160;This&#160;is&#160;shown&#160;in&#160;the&#160;following&#160;diagram:</p>
+</div>
+</body>
+</html>

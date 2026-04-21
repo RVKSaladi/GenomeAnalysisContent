@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 269</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page269-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome269.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">256</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">9&#160;Signals&#160;in&#160;DNA</p>
+<p style="position:absolute;top:127px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;mean(gata.motifs.score)<br/>[1]&#160;5.094539<br/>&gt;&#160;mean(gata.score)<br/>[1]&#160;6.07064</p>
+<p style="position:absolute;top:208px;left:80px;white-space:nowrap" class="ft06">At&#160;ﬁrst,&#160;it&#160;may&#160;seem&#160;strange&#160;that&#160;the&#160;simulated&#160;motif&#160;scores&#160;have&#160;a&#160;smaller<br/>average&#160;than&#160;those&#160;of&#160;the&#160;training&#160;set,&#160;but&#160;things&#160;become&#160;clearer&#160;when&#160;we&#160;ex-<br/>amine&#160;the&#160;score&#160;distributions.&#160;We&#160;produce&#160;a&#160;histogram&#160;of</p>
+<p style="position:absolute;top:245px;left:449px;white-space:nowrap" class="ft01">gata.motifs.score</p>
+<p style="position:absolute;top:261px;left:80px;white-space:nowrap" class="ft06">in&#160;the&#160;usual&#160;manner,&#160;with&#160;the&#160;result&#160;shown&#160;in&#160;Fig.&#160;9.8&#160;(solid&#160;lines:&#160;code&#160;sup-<br/>plied&#160;later).</p>
+<p style="position:absolute;top:298px;left:103px;white-space:nowrap" class="ft02">Notice&#160;that&#160;our&#160;simulated&#160;sites&#160;have&#160;a&#160;score&#160;distribution&#160;that&#160;is&#160;skewed</p>
+<p style="position:absolute;top:316px;left:80px;white-space:nowrap" class="ft06">left&#160;(as&#160;is&#160;the&#160;training&#160;set&#160;distribution),&#160;and&#160;note&#160;that&#160;the&#160;central&#160;part&#160;of&#160;the<br/>distribution&#160;has&#160;been&#160;ﬁlled&#160;in.&#160;This&#160;accounts&#160;for&#160;the&#160;lower&#160;mean&#160;value&#160;for&#160;the<br/>scores.&#160;Remember&#160;that&#160;the&#160;training&#160;set&#160;is&#160;a&#160;sample&#160;of&#160;the&#160;set&#160;of&#160;actual&#160;sites.<br/>As&#160;an&#160;exercise,&#160;you&#160;can&#160;test&#160;how&#160;much&#160;individual&#160;samples&#160;vary&#160;by&#160;repeatedly<br/>sampling&#160;49&#160;of&#160;the&#160;simulated&#160;set&#160;of&#160;5000&#160;motifs,&#160;recomputing&#160;the&#160;correspond-<br/>ing&#160;PWMs,&#160;and&#160;plotting&#160;the&#160;resulting&#160;scores&#160;for&#160;each&#160;sampling&#160;(see&#160;Exercise&#160;13<br/>at&#160;the&#160;end&#160;of&#160;this&#160;chapter)&#160;.</p>
+<p style="position:absolute;top:458px;left:80px;white-space:nowrap" class="ft03">Step&#160;3:&#160;Simulating&#160;the&#160;background</p>
+<p style="position:absolute;top:494px;left:80px;white-space:nowrap" class="ft02">We&#160;now&#160;simulate&#160;sequence&#160;strings&#160;of&#160;length</p>
+<p style="position:absolute;top:494px;left:361px;white-space:nowrap" class="ft04">N</p>
+<p style="position:absolute;top:494px;left:379px;white-space:nowrap" class="ft02">according&#160;to&#160;the&#160;iid&#160;background</p>
+<p style="position:absolute;top:512px;left:80px;white-space:nowrap" class="ft02">model.&#160;The&#160;function&#160;to&#160;do&#160;this&#160;is:</p>
+<p style="position:absolute;top:542px;left:103px;white-space:nowrap" class="ft05">simbg&lt;-function(bg,L){<br/>#bg&#160;is&#160;a&#160;vector&#160;of&#160;probabilities&#160;for&#160;A,&#160;C,&#160;G,&#160;T&#160;(1x4)<br/>#L&#160;=&#160;length&#160;of&#160;sites&#160;to&#160;be&#160;simulated<br/>seq&lt;-rep(0,L)<br/>dna&lt;-c(1,2,3,4)&#160;#Numeric&#160;codes&#160;for&#160;DNA<br/>seq&lt;-sample(dna,L,replace=T,p=bg)<br/>return(seq)<br/>}</p>
+<p style="position:absolute;top:694px;left:80px;white-space:nowrap" class="ft02">We&#160;apply&#160;this&#160;function&#160;5000&#160;times&#160;in&#160;the&#160;same&#160;manner&#160;as&#160;we&#160;did&#160;with</p>
+<p style="position:absolute;top:714px;left:80px;white-space:nowrap" class="ft01">simmotif</p>
+<p style="position:absolute;top:712px;left:144px;white-space:nowrap" class="ft02">,&#160;and&#160;examine&#160;the&#160;resulting&#160;score&#160;distribution.</p>
+<p style="position:absolute;top:743px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;for(i&#160;in&#160;1:N){<br/>+&#160;back.sim[i,]&lt;-simbg(bg,6)<br/>+&#160;}<br/>&gt;&#160;back.sim.score&lt;-rep(0,N)<br/>&gt;&#160;for(i&#160;in&#160;1:N){<br/>+&#160;back.sim.score[i]&lt;-calcscore(back.sim[i,],log2pwm)<br/>}</p>
+<p style="position:absolute;top:877px;left:103px;white-space:nowrap" class="ft02">Now&#160;we&#160;examine&#160;the&#160;score&#160;distribution&#160;for&#160;the&#160;background&#160;and&#160;compare</p>
+<p style="position:absolute;top:895px;left:80px;white-space:nowrap" class="ft02">it&#160;with&#160;the&#160;distribution&#160;for&#160;the&#160;simulated&#160;motifs:</p>
+</div>
+</body>
+</html>

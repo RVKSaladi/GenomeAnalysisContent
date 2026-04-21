@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 252</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKEO+FL;color:#000000;}
+	.ft04{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page252-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome252.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:190px;white-space:nowrap" class="ft00">9.2&#160;Representing&#160;Signals&#160;in&#160;DNA:&#160;Independent&#160;Positions</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">239</p>
+<p style="position:absolute;top:126px;left:103px;white-space:nowrap" class="ft04">&gt;&#160;bg<br/>[1]&#160;0.295&#160;0.205&#160;0.205&#160;0.295</p>
+<p style="position:absolute;top:167px;left:103px;white-space:nowrap" class="ft02">Now&#160;we&#160;write&#160;a&#160;function&#160;to&#160;compute&#160;the&#160;PWM,&#160;given&#160;a&#160;matrix&#160;of&#160;sites</p>
+<p style="position:absolute;top:185px;left:80px;white-space:nowrap" class="ft02">and&#160;the&#160;background&#160;probability&#160;distribution&#160;as&#160;input:</p>
+<p style="position:absolute;top:212px;left:103px;white-space:nowrap" class="ft04">makepwm&lt;-function(x,bg){<br/>#&#160;x&#160;=&#160;matrix&#160;of&#160;N&#160;aligned&#160;sites&#160;coded&#160;numerically<br/>#&#160;bg&#160;=&#160;vector&#160;(1x4)&#160;of&#160;background&#160;base&#160;frequencies</p>
+<p style="position:absolute;top:266px;left:111px;white-space:nowrap" class="ft04">L&lt;-length(x[1,])&#160;#&#160;Number&#160;of&#160;positions&#160;in&#160;each&#160;site<br/>N&lt;-length(x[,1])&#160;#&#160;Number&#160;of&#160;sites<br/>pwm&lt;-matrix(rep(1,4*L),nrow=4)</p>
+<p style="position:absolute;top:320px;left:103px;white-space:nowrap" class="ft01">#&#160;pwm&#160;initialized&#160;to&#160;1&#160;for&#160;each&#160;matrix&#160;element&#160;(pseudocounts)</p>
+<p style="position:absolute;top:338px;left:111px;white-space:nowrap" class="ft01">for&#160;(j&#160;in&#160;1:L){</p>
+<p style="position:absolute;top:356px;left:134px;white-space:nowrap" class="ft01">for&#160;(i&#160;in&#160;1:N){</p>
+<p style="position:absolute;top:373px;left:173px;white-space:nowrap" class="ft04">k&#160;&lt;-&#160;x[i,j]<br/>pwm[k,j]&#160;&lt;-&#160;pwm[k,j]+1<br/>}</p>
+<p style="position:absolute;top:427px;left:134px;white-space:nowrap" class="ft01">}</p>
+<p style="position:absolute;top:445px;left:111px;white-space:nowrap" class="ft04">N&#160;&lt;-&#160;N+4&#160;#&#160;Denominator&#160;for&#160;small&#160;sample&#160;correction<br/>pwm&lt;-pwm/N&#160;#&#160;PWM&#160;in&#160;terms&#160;of&#160;probabilities<br/>log2pwm&lt;-matrix(rep(0,4*L),nrow=4,ncol=L)</p>
+<p style="position:absolute;top:499px;left:103px;white-space:nowrap" class="ft04">#&#160;Initialize&#160;PWM&#160;in&#160;terms&#160;of&#160;log(base&#160;2)&#160;of&#160;p/q<br/>for(i&#160;in&#160;1:4){</p>
+<p style="position:absolute;top:535px;left:142px;white-space:nowrap" class="ft04">log2pwm[i,]&lt;-log2(pwm[i,]/bg[i])<br/>#&#160;Scores&#160;for&#160;each&#160;[nucleotide,&#160;position],&#160;base&#160;2<br/>}</p>
+<p style="position:absolute;top:589px;left:103px;white-space:nowrap" class="ft04">return(pwm,&#160;log2pwm)<br/>}</p>
+<p style="position:absolute;top:630px;left:103px;white-space:nowrap" class="ft02">The&#160;“guts”&#160;of&#160;this&#160;function&#160;are&#160;the&#160;lines</p>
+<p style="position:absolute;top:657px;left:103px;white-space:nowrap" class="ft01">for&#160;(i&#160;in&#160;1:N){</p>
+<p style="position:absolute;top:675px;left:197px;white-space:nowrap" class="ft04">k&#160;&lt;-&#160;x[i,j]<br/>pwm[k,j]&#160;&lt;-&#160;pwm[k,j]+1<br/>}</p>
+<p style="position:absolute;top:734px;left:103px;white-space:nowrap" class="ft02">Here&#160;we&#160;have&#160;used&#160;the&#160;numeric&#160;coding&#160;of&#160;the&#160;sequence&#160;to&#160;identify</p>
+<p style="position:absolute;top:736px;left:528px;white-space:nowrap" class="ft01">k</p>
+<p style="position:absolute;top:734px;left:536px;white-space:nowrap" class="ft02">,&#160;which</p>
+<p style="position:absolute;top:752px;left:80px;white-space:nowrap" class="ft02">in&#160;the&#160;second&#160;line&#160;after&#160;the</p>
+<p style="position:absolute;top:754px;left:262px;white-space:nowrap" class="ft01">for</p>
+<p style="position:absolute;top:752px;left:291px;white-space:nowrap" class="ft02">also&#160;speciﬁes&#160;the&#160;numeric&#160;row&#160;number&#160;corre-</p>
+<p style="position:absolute;top:770px;left:80px;white-space:nowrap" class="ft02">sponding&#160;to&#160;each&#160;base&#160;in&#160;object</p>
+<p style="position:absolute;top:772px;left:297px;white-space:nowrap" class="ft01">pwm</p>
+<p style="position:absolute;top:770px;left:321px;white-space:nowrap" class="ft02">.&#160;The&#160;vectorization&#160;in</p>
+<p style="position:absolute;top:770px;left:471px;white-space:nowrap" class="ft03">R</p>
+<p style="position:absolute;top:770px;left:486px;white-space:nowrap" class="ft02">avoids&#160;a&#160;set&#160;of</p>
+<p style="position:absolute;top:788px;left:80px;white-space:nowrap" class="ft02">commands&#160;such&#160;as</p>
+<p style="position:absolute;top:815px;left:103px;white-space:nowrap" class="ft01">if(x[i,j]==1)&#160;...pwm[1,j]&lt;-pwm[1,j]+1&#160;...elseif(x[i,j]==2)&#160;...</p>
+<p style="position:absolute;top:838px;left:80px;white-space:nowrap" class="ft05">Notice&#160;that&#160;we&#160;are&#160;returning&#160;two&#160;objects&#160;from&#160;this&#160;function.&#160;This&#160;produces<br/>an</p>
+<p style="position:absolute;top:856px;left:102px;white-space:nowrap" class="ft03">R</p>
+<p style="position:absolute;top:856px;left:118px;white-space:nowrap" class="ft02">“list”&#160;object,&#160;which&#160;we&#160;call</p>
+<p style="position:absolute;top:858px;left:304px;white-space:nowrap" class="ft01">tmp</p>
+<p style="position:absolute;top:856px;left:328px;white-space:nowrap" class="ft02">.&#160;Objects&#160;in&#160;the&#160;list</p>
+<p style="position:absolute;top:858px;left:466px;white-space:nowrap" class="ft01">tmp</p>
+<p style="position:absolute;top:856px;left:495px;white-space:nowrap" class="ft02">are&#160;extracted</p>
+<p style="position:absolute;top:874px;left:80px;white-space:nowrap" class="ft02">by&#160;entering</p>
+<p style="position:absolute;top:876px;left:158px;white-space:nowrap" class="ft01">tmp</p>
+<p style="position:absolute;top:874px;left:186px;white-space:nowrap" class="ft02">followed&#160;immediately&#160;by&#160;the&#160;object&#160;name&#160;preﬁxed&#160;with&#160;the</p>
+<p style="position:absolute;top:876px;left:575px;white-space:nowrap" class="ft01">$</p>
+<p style="position:absolute;top:892px;left:80px;white-space:nowrap" class="ft02">sign:</p>
+</div>
+</body>
+</html>

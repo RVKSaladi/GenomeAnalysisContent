@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 185</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft05{font-size:10px;font-family:ACJKIO+FJ;color:#000000;}
+	.ft06{font-size:7px;font-family:ACOKED+Fo;color:#000000;}
+	.ft07{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft08{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft09{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page185-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome185.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:406px;white-space:nowrap" class="ft00">7.2&#160;Search&#160;Strategies</p>
+<p style="position:absolute;top:82px;left:562px;white-space:nowrap" class="ft00">171</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft01"><b>7.2.2&#160;Binary&#160;Searches</b></p>
+<p style="position:absolute;top:146px;left:80px;white-space:nowrap" class="ft02">Suppose&#160;that&#160;I&#160;and&#160;J&#160;contain&#160;the</p>
+<p style="position:absolute;top:146px;left:300px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:146px;left:308px;white-space:nowrap" class="ft02">-words&#160;listed&#160;in&#160;Table&#160;7.1.&#160;How&#160;do&#160;we&#160;ﬁnd</p>
+<p style="position:absolute;top:164px;left:80px;white-space:nowrap" class="ft02">the&#160;ﬁrst&#160;word&#160;in&#160;list&#160;I,</p>
+<p style="position:absolute;top:166px;left:234px;white-space:nowrap" class="ft04">TGAT</p>
+<p style="position:absolute;top:164px;left:266px;white-space:nowrap" class="ft02">,&#160;within&#160;list&#160;J?&#160;In&#160;this&#160;example,&#160;we&#160;can&#160;ﬁnd&#160;the</p>
+<p style="position:absolute;top:182px;left:80px;white-space:nowrap" class="ft09">matches&#160;by&#160;inspection.&#160;But&#160;what&#160;would&#160;we&#160;do&#160;if&#160;the&#160;lists&#160;were&#160;500&#160;entries<br/>long,&#160;and&#160;composed&#160;of&#160;words&#160;of</p>
+<p style="position:absolute;top:200px;left:296px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:200px;left:310px;white-space:nowrap" class="ft02">=&#160;10?&#160;Rather&#160;than&#160;just&#160;scanning&#160;down&#160;a</p>
+<p style="position:absolute;top:218px;left:80px;white-space:nowrap" class="ft02">list&#160;from&#160;the&#160;top,&#160;a&#160;better&#160;way&#160;to&#160;ﬁnd&#160;matching&#160;entries&#160;is&#160;a</p>
+<p style="position:absolute;top:218px;left:477px;white-space:nowrap" class="ft01"><b>binary&#160;search</b></p>
+<p style="position:absolute;top:218px;left:578px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:236px;left:80px;white-space:nowrap" class="ft02">Since&#160;list&#160;J&#160;(of&#160;length</p>
+<p style="position:absolute;top:236px;left:229px;white-space:nowrap" class="ft03">m</p>
+<p style="position:absolute;top:236px;left:243px;white-space:nowrap" class="ft02">)&#160;is&#160;stored&#160;in&#160;a&#160;computer,&#160;we&#160;can&#160;extract&#160;the&#160;entry</p>
+<p style="position:absolute;top:254px;left:80px;white-space:nowrap" class="ft02">number</p>
+<p style="position:absolute;top:254px;left:136px;white-space:nowrap" class="ft03">m/</p>
+<p style="position:absolute;top:254px;left:156px;white-space:nowrap" class="ft02">2,&#160;which&#160;in&#160;this&#160;example&#160;is&#160;entry&#160;16,</p>
+<p style="position:absolute;top:256px;left:408px;white-space:nowrap" class="ft04">GACA</p>
+<p style="position:absolute;top:254px;left:440px;white-space:nowrap" class="ft02">.&#160;Then&#160;we&#160;proceed&#160;as</p>
+<p style="position:absolute;top:272px;left:80px;white-space:nowrap" class="ft02">follows:</p>
+<p style="position:absolute;top:299px;left:80px;white-space:nowrap" class="ft02">Step&#160;1:&#160;Does</p>
+<p style="position:absolute;top:301px;left:169px;white-space:nowrap" class="ft04">TGAT</p>
+<p style="position:absolute;top:299px;left:205px;white-space:nowrap" class="ft02">occur&#160;after&#160;entry&#160;16&#160;in&#160;the&#160;alphabetically&#160;sorted&#160;list?&#160;Since</p>
+<p style="position:absolute;top:317px;left:133px;white-space:nowrap" class="ft09">it&#160;occurs&#160;after&#160;entry&#160;16,&#160;we&#160;don’t&#160;need&#160;to&#160;look&#160;at&#160;the&#160;ﬁrst&#160;half&#160;of&#160;the<br/>list.</p>
+<p style="position:absolute;top:353px;left:80px;white-space:nowrap" class="ft02">Step&#160;2:&#160;In&#160;the&#160;second&#160;half&#160;of&#160;the&#160;list,&#160;does</p>
+<p style="position:absolute;top:354px;left:380px;white-space:nowrap" class="ft04">TGAT</p>
+<p style="position:absolute;top:353px;left:419px;white-space:nowrap" class="ft02">occur&#160;after&#160;the&#160;entry&#160;at</p>
+<p style="position:absolute;top:370px;left:133px;white-space:nowrap" class="ft02">position</p>
+<p style="position:absolute;top:370px;left:191px;white-space:nowrap" class="ft03">m/</p>
+<p style="position:absolute;top:370px;left:211px;white-space:nowrap" class="ft02">2&#160;+</p>
+<p style="position:absolute;top:370px;left:243px;white-space:nowrap" class="ft03">m/</p>
+<p style="position:absolute;top:370px;left:264px;white-space:nowrap" class="ft02">4?&#160;This&#160;is&#160;entry&#160;24,</p>
+<p style="position:absolute;top:372px;left:398px;white-space:nowrap" class="ft04">TCGA</p>
+<p style="position:absolute;top:370px;left:429px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:372px;left:439px;white-space:nowrap" class="ft04">TGAT</p>
+<p style="position:absolute;top:370px;left:476px;white-space:nowrap" class="ft02">occurs&#160;after&#160;this</p>
+<p style="position:absolute;top:388px;left:133px;white-space:nowrap" class="ft02">entry,&#160;so&#160;we&#160;have&#160;now&#160;eliminated&#160;the&#160;need&#160;to&#160;search&#160;in&#160;the&#160;ﬁrst&#160;3</p>
+<p style="position:absolute;top:388px;left:568px;white-space:nowrap" class="ft03">/</p>
+<p style="position:absolute;top:388px;left:575px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:406px;left:133px;white-space:nowrap" class="ft02">of&#160;the&#160;list&#160;after&#160;only&#160;two&#160;comparisons.</p>
+<p style="position:absolute;top:424px;left:80px;white-space:nowrap" class="ft02">Step&#160;3:&#160;Does</p>
+<p style="position:absolute;top:426px;left:171px;white-space:nowrap" class="ft04">TGAT</p>
+<p style="position:absolute;top:424px;left:208px;white-space:nowrap" class="ft02">occur&#160;after&#160;entry&#160;24&#160;but&#160;before&#160;entry&#160;29?&#160;(We&#160;have&#160;split</p>
+<p style="position:absolute;top:442px;left:133px;white-space:nowrap" class="ft02">the&#160;last&#160;1</p>
+<p style="position:absolute;top:442px;left:196px;white-space:nowrap" class="ft03">/</p>
+<p style="position:absolute;top:442px;left:203px;white-space:nowrap" class="ft02">4&#160;of&#160;the&#160;list&#160;into&#160;two</p>
+<p style="position:absolute;top:442px;left:345px;white-space:nowrap" class="ft03">m/</p>
+<p style="position:absolute;top:442px;left:365px;white-space:nowrap" class="ft02">8&#160;segments.)&#160;Since&#160;it&#160;is&#160;before&#160;29</p>
+<p style="position:absolute;top:460px;left:133px;white-space:nowrap" class="ft02">and&#160;after&#160;24,&#160;we&#160;only&#160;examine&#160;the&#160;four&#160;remaining&#160;entries.</p>
+<p style="position:absolute;top:478px;left:80px;white-space:nowrap" class="ft02">Steps&#160;4&#160;and&#160;5:&#160;Two&#160;more&#160;similar&#160;steps&#160;are&#160;needed&#160;to&#160;“zero&#160;in”&#160;on&#160;entry&#160;25.</p>
+<p style="position:absolute;top:505px;left:103px;white-space:nowrap" class="ft02">Had&#160;we&#160;gone&#160;through&#160;the&#160;whole&#160;list,&#160;25&#160;steps&#160;would&#160;have&#160;been&#160;required&#160;to</p>
+<p style="position:absolute;top:523px;left:80px;white-space:nowrap" class="ft09">ﬁnd&#160;the&#160;word.&#160;With&#160;the&#160;binary&#160;search,&#160;we&#160;used&#160;only&#160;ﬁve&#160;steps.&#160;This&#160;process<br/>is&#160;analogous&#160;to&#160;ﬁnding&#160;a&#160;word&#160;in&#160;a&#160;dictionary&#160;by&#160;successively&#160;splitting&#160;the<br/>remaining&#160;pages&#160;in&#160;half&#160;until&#160;we&#160;ﬁnd&#160;the&#160;page&#160;containing&#160;our&#160;word.&#160;(Try<br/>it!&#160;We&#160;found&#160;the&#160;page&#160;containing&#160;“quiescent”&#160;after&#160;ten&#160;splits&#160;of&#160;pages&#160;in&#160;a<br/>dictionary&#160;having&#160;864&#160;pages.)</p>
+<p style="position:absolute;top:613px;left:103px;white-space:nowrap" class="ft02">In&#160;general,&#160;if&#160;we&#160;are&#160;searching&#160;a&#160;list&#160;of&#160;length</p>
+<p style="position:absolute;top:613px;left:410px;white-space:nowrap" class="ft03">m</p>
+<p style="position:absolute;top:613px;left:429px;white-space:nowrap" class="ft02">starting&#160;at&#160;the&#160;top&#160;and</p>
+<p style="position:absolute;top:631px;left:80px;white-space:nowrap" class="ft09">going&#160;item&#160;by&#160;item,&#160;on&#160;average&#160;we&#160;will&#160;need&#160;to&#160;search&#160;half&#160;the&#160;list&#160;before&#160;we&#160;ﬁnd<br/>the&#160;matching&#160;word&#160;(if&#160;it&#160;is&#160;present).&#160;If&#160;we&#160;perform&#160;a&#160;binary&#160;search&#160;as&#160;above,&#160;we<br/>will&#160;need&#160;only&#160;log</p>
+<p style="position:absolute;top:673px;left:195px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:666px;left:202px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:666px;left:208px;white-space:nowrap" class="ft03">m</p>
+<p style="position:absolute;top:666px;left:221px;white-space:nowrap" class="ft02">)&#160;steps&#160;in&#160;our&#160;search.&#160;This&#160;is&#160;because</p>
+<p style="position:absolute;top:666px;left:467px;white-space:nowrap" class="ft03">m</p>
+<p style="position:absolute;top:666px;left:484px;white-space:nowrap" class="ft02">=&#160;2</p>
+<p style="position:absolute;top:664px;left:507px;white-space:nowrap" class="ft05">log</p>
+<p style="position:absolute;top:667px;left:523px;white-space:nowrap" class="ft06">2</p>
+<p style="position:absolute;top:664px;left:528px;white-space:nowrap" class="ft05">(</p>
+<p style="position:absolute;top:664px;left:533px;white-space:nowrap" class="ft07">m</p>
+<p style="position:absolute;top:664px;left:544px;white-space:nowrap" class="ft05">)</p>
+<p style="position:absolute;top:666px;left:549px;white-space:nowrap" class="ft02">,&#160;and</p>
+<p style="position:absolute;top:684px;left:80px;white-space:nowrap" class="ft02">we&#160;can&#160;think&#160;of&#160;all&#160;positions&#160;in&#160;our&#160;list&#160;of&#160;length</p>
+<p style="position:absolute;top:684px;left:400px;white-space:nowrap" class="ft03">m</p>
+<p style="position:absolute;top:684px;left:418px;white-space:nowrap" class="ft02">as&#160;having&#160;been&#160;generated</p>
+<p style="position:absolute;top:702px;left:80px;white-space:nowrap" class="ft02">by&#160;log</p>
+<p style="position:absolute;top:709px;left:120px;white-space:nowrap" class="ft05">2</p>
+<p style="position:absolute;top:702px;left:127px;white-space:nowrap" class="ft02">(</p>
+<p style="position:absolute;top:702px;left:132px;white-space:nowrap" class="ft03">m</p>
+<p style="position:absolute;top:702px;left:146px;white-space:nowrap" class="ft02">)&#160;doublings&#160;of&#160;an&#160;initial&#160;position.&#160;In&#160;the&#160;example&#160;above,&#160;32&#160;=&#160;2</p>
+<p style="position:absolute;top:700px;left:554px;white-space:nowrap" class="ft05">5</p>
+<p style="position:absolute;top:702px;left:560px;white-space:nowrap" class="ft02">,&#160;so</p>
+<p style="position:absolute;top:720px;left:80px;white-space:nowrap" class="ft09">we&#160;should&#160;ﬁnd&#160;any&#160;entry&#160;after&#160;ﬁve&#160;binary&#160;steps.&#160;In&#160;the&#160;dictionary&#160;experiment,<br/>ﬁnding&#160;the&#160;entry&#160;should&#160;have&#160;required&#160;ten&#160;steps&#160;(nine-letter&#160;word,&#160;2</p>
+<p style="position:absolute;top:736px;left:528px;white-space:nowrap" class="ft05">9</p>
+<p style="position:absolute;top:738px;left:540px;white-space:nowrap" class="ft02">=&#160;512,</p>
+<p style="position:absolute;top:756px;left:80px;white-space:nowrap" class="ft02">and&#160;2</p>
+<p style="position:absolute;top:754px;left:117px;white-space:nowrap" class="ft05">10</p>
+<p style="position:absolute;top:756px;left:134px;white-space:nowrap" class="ft02">=&#160;1024—nine&#160;“splits”&#160;are&#160;not&#160;enough&#160;since&#160;864</p>
+<p style="position:absolute;top:756px;left:447px;white-space:nowrap" class="ft03">&gt;</p>
+<p style="position:absolute;top:756px;left:463px;white-space:nowrap" class="ft02">512).</p>
+<p style="position:absolute;top:799px;left:80px;white-space:nowrap" class="ft01"><b>7.2.3&#160;Rare&#160;Words&#160;and&#160;Sequence&#160;Similarity</b></p>
+<p style="position:absolute;top:832px;left:80px;white-space:nowrap" class="ft02">For&#160;the&#160;method&#160;described&#160;in&#160;Section&#160;7.2.1,&#160;if</p>
+<p style="position:absolute;top:832px;left:392px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:832px;left:407px;white-space:nowrap" class="ft02">is&#160;large&#160;the&#160;table&#160;size&#160;can</p>
+<p style="position:absolute;top:850px;left:80px;white-space:nowrap" class="ft02">be&#160;enormous,&#160;and&#160;it&#160;will&#160;be&#160;mostly&#160;empty.&#160;For&#160;large</p>
+<p style="position:absolute;top:850px;left:435px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:850px;left:443px;white-space:nowrap" class="ft02">,&#160;another&#160;method&#160;for</p>
+<p style="position:absolute;top:868px;left:80px;white-space:nowrap" class="ft02">detecting&#160;sequence&#160;similarity&#160;is&#160;to&#160;put&#160;the</p>
+<p style="position:absolute;top:868px;left:360px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:868px;left:368px;white-space:nowrap" class="ft02">-words&#160;in&#160;an&#160;ordered&#160;list.</p>
+<p style="position:absolute;top:886px;left:103px;white-space:nowrap" class="ft02">To&#160;ﬁnd</p>
+<p style="position:absolute;top:886px;left:155px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:886px;left:163px;white-space:nowrap" class="ft02">-word&#160;matches&#160;between&#160;I&#160;and&#160;J,&#160;ﬁrst&#160;break&#160;I&#160;down&#160;into&#160;a&#160;list&#160;of</p>
+<p style="position:absolute;top:904px;left:80px;white-space:nowrap" class="ft03">n</p>
+<p style="position:absolute;top:900px;left:92px;white-space:nowrap" class="ft08">−</p>
+<p style="position:absolute;top:904px;left:107px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:904px;left:118px;white-space:nowrap" class="ft02">+&#160;1</p>
+<p style="position:absolute;top:904px;left:144px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:904px;left:152px;white-space:nowrap" class="ft02">-words&#160;and&#160;J&#160;into&#160;a&#160;list&#160;of</p>
+<p style="position:absolute;top:904px;left:325px;white-space:nowrap" class="ft03">m</p>
+<p style="position:absolute;top:900px;left:341px;white-space:nowrap" class="ft08">−</p>
+<p style="position:absolute;top:904px;left:355px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:904px;left:366px;white-space:nowrap" class="ft02">+&#160;1</p>
+<p style="position:absolute;top:904px;left:393px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:904px;left:401px;white-space:nowrap" class="ft02">-words.&#160;Then&#160;put&#160;the&#160;words</p>
+</div>
+</body>
+</html>

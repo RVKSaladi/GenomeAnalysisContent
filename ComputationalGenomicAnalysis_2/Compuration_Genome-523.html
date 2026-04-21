@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 523</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft05{font-size:18px;font-family:ACJJPN+FN;color:#000000;}
+	.ft06{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft07{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+	.ft08{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page523-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome523.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:471px;white-space:nowrap" class="ft00">References</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">515</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft01">Now&#160;we&#160;can&#160;ﬁnd&#160;the&#160;global&#160;normalization&#160;factor:</p>
+<p style="position:absolute;top:142px;left:103px;white-space:nowrap" class="ft07">&gt;&#160;mean(m[])<br/>[1]&#160;0.2903073<br/>&gt;&#160;2^mean(m[])<br/>[1]&#160;1.222901</p>
+<p style="position:absolute;top:221px;left:80px;white-space:nowrap" class="ft01">This&#160;means&#160;that&#160;for&#160;all&#160;spots&#160;taken&#160;as&#160;a&#160;whole,</p>
+<p style="position:absolute;top:221px;left:397px;white-space:nowrap" class="ft03">R</p>
+<p style="position:absolute;top:221px;left:414px;white-space:nowrap" class="ft01">is&#160;1.22&#160;times&#160;greater&#160;than</p>
+<p style="position:absolute;top:239px;left:80px;white-space:nowrap" class="ft03">G</p>
+<p style="position:absolute;top:239px;left:92px;white-space:nowrap" class="ft01">.&#160;Normalization&#160;of&#160;this&#160;type&#160;would&#160;correct&#160;the</p>
+<p style="position:absolute;top:239px;left:403px;white-space:nowrap" class="ft03">R</p>
+<p style="position:absolute;top:239px;left:420px;white-space:nowrap" class="ft01">values&#160;by&#160;multiplying&#160;by</p>
+<p style="position:absolute;top:257px;left:80px;white-space:nowrap" class="ft01">1/1.22,&#160;or&#160;0.8177.</p>
+<p style="position:absolute;top:275px;left:103px;white-space:nowrap" class="ft01">Remove&#160;row&#160;2096&#160;from</p>
+<p style="position:absolute;top:277px;left:257px;white-space:nowrap" class="ft02">array.dat.r</p>
+<p style="position:absolute;top:275px;left:345px;white-space:nowrap" class="ft01">,&#160;and&#160;ﬁnally&#160;combine&#160;the&#160;data&#160;into&#160;a</p>
+<p style="position:absolute;top:293px;left:80px;white-space:nowrap" class="ft01">larger&#160;matrix.</p>
+<p style="position:absolute;top:321px;left:103px;white-space:nowrap" class="ft07">&gt;&#160;array.dat.r2&lt;-array.dat.r[c(1:2095,2097:5641),]<br/>&gt;&#160;array.a.m&lt;-cbind(array.dat.r2,a,m)<br/>&gt;&#160;array.a.m[1:10,]</p>
+<p style="position:absolute;top:375px;left:165px;white-space:nowrap" class="ft02">V1</p>
+<p style="position:absolute;top:375px;left:213px;white-space:nowrap" class="ft02">V2</p>
+<p style="position:absolute;top:375px;left:252px;white-space:nowrap" class="ft02">V3&#160;V4</p>
+<p style="position:absolute;top:375px;left:362px;white-space:nowrap" class="ft02">a</p>
+<p style="position:absolute;top:375px;left:448px;white-space:nowrap" class="ft02">m</p>
+<p style="position:absolute;top:393px;left:103px;white-space:nowrap" class="ft02">1</p>
+<p style="position:absolute;top:393px;left:126px;white-space:nowrap" class="ft02">GH01040&#160;19404&#160;6040</p>
+<p style="position:absolute;top:393px;left:283px;white-space:nowrap" class="ft02">0&#160;13.402200</p>
+<p style="position:absolute;top:393px;left:385px;white-space:nowrap" class="ft02">1.6837336</p>
+<p style="position:absolute;top:411px;left:103px;white-space:nowrap" class="ft02">2</p>
+<p style="position:absolute;top:411px;left:126px;white-space:nowrap" class="ft02">GH01059&#160;12628&#160;3352</p>
+<p style="position:absolute;top:411px;left:283px;white-space:nowrap" class="ft02">0&#160;12.667572</p>
+<p style="position:absolute;top:411px;left:385px;white-space:nowrap" class="ft02">1.9135321</p>
+<p style="position:absolute;top:429px;left:103px;white-space:nowrap" class="ft02">3</p>
+<p style="position:absolute;top:429px;left:126px;white-space:nowrap" class="ft02">GH01066</p>
+<p style="position:absolute;top:429px;left:197px;white-space:nowrap" class="ft02">2236</p>
+<p style="position:absolute;top:429px;left:244px;white-space:nowrap" class="ft02">893</p>
+<p style="position:absolute;top:429px;left:283px;white-space:nowrap" class="ft02">0&#160;10.464610</p>
+<p style="position:absolute;top:429px;left:385px;white-space:nowrap" class="ft02">1.3241881</p>
+<p style="position:absolute;top:447px;left:103px;white-space:nowrap" class="ft02">4</p>
+<p style="position:absolute;top:447px;left:126px;white-space:nowrap" class="ft02">GH01085</p>
+<p style="position:absolute;top:447px;left:205px;white-space:nowrap" class="ft02">474</p>
+<p style="position:absolute;top:447px;left:244px;white-space:nowrap" class="ft02">801</p>
+<p style="position:absolute;top:447px;left:283px;white-space:nowrap" class="ft02">0</p>
+<p style="position:absolute;top:447px;left:307px;white-space:nowrap" class="ft02">9.267201&#160;-0.7569152</p>
+<p style="position:absolute;top:465px;left:103px;white-space:nowrap" class="ft02">5</p>
+<p style="position:absolute;top:465px;left:126px;white-space:nowrap" class="ft02">GH01088</p>
+<p style="position:absolute;top:465px;left:205px;white-space:nowrap" class="ft02">820&#160;1062</p>
+<p style="position:absolute;top:465px;left:283px;white-space:nowrap" class="ft02">0</p>
+<p style="position:absolute;top:465px;left:307px;white-space:nowrap" class="ft02">9.866024&#160;-0.3730880</p>
+<p style="position:absolute;top:483px;left:103px;white-space:nowrap" class="ft02">6</p>
+<p style="position:absolute;top:483px;left:126px;white-space:nowrap" class="ft02">GH01132</p>
+<p style="position:absolute;top:483px;left:197px;white-space:nowrap" class="ft02">3054&#160;2032</p>
+<p style="position:absolute;top:483px;left:283px;white-space:nowrap" class="ft02">0&#160;11.282585</p>
+<p style="position:absolute;top:483px;left:385px;white-space:nowrap" class="ft02">0.5877997</p>
+<p style="position:absolute;top:501px;left:103px;white-space:nowrap" class="ft02">7</p>
+<p style="position:absolute;top:501px;left:126px;white-space:nowrap" class="ft02">GH01314</p>
+<p style="position:absolute;top:501px;left:197px;white-space:nowrap" class="ft02">3104&#160;1507</p>
+<p style="position:absolute;top:501px;left:283px;white-space:nowrap" class="ft02">0&#160;11.078688</p>
+<p style="position:absolute;top:501px;left:385px;white-space:nowrap" class="ft02">1.0424491</p>
+<p style="position:absolute;top:519px;left:103px;white-space:nowrap" class="ft02">8</p>
+<p style="position:absolute;top:519px;left:126px;white-space:nowrap" class="ft02">GH01331</p>
+<p style="position:absolute;top:519px;left:205px;white-space:nowrap" class="ft02">479</p>
+<p style="position:absolute;top:519px;left:244px;white-space:nowrap" class="ft02">683</p>
+<p style="position:absolute;top:519px;left:283px;white-space:nowrap" class="ft02">0</p>
+<p style="position:absolute;top:519px;left:307px;white-space:nowrap" class="ft02">9.159812&#160;-0.5118599</p>
+<p style="position:absolute;top:537px;left:103px;white-space:nowrap" class="ft02">9</p>
+<p style="position:absolute;top:537px;left:126px;white-space:nowrap" class="ft02">GH01338</p>
+<p style="position:absolute;top:537px;left:197px;white-space:nowrap" class="ft02">2469</p>
+<p style="position:absolute;top:537px;left:244px;white-space:nowrap" class="ft02">784</p>
+<p style="position:absolute;top:537px;left:283px;white-space:nowrap" class="ft02">0&#160;10.442210</p>
+<p style="position:absolute;top:537px;left:385px;white-space:nowrap" class="ft02">1.6550013</p>
+<p style="position:absolute;top:555px;left:103px;white-space:nowrap" class="ft02">10&#160;GH01353</p>
+<p style="position:absolute;top:555px;left:205px;white-space:nowrap" class="ft02">903</p>
+<p style="position:absolute;top:555px;left:244px;white-space:nowrap" class="ft02">560</p>
+<p style="position:absolute;top:555px;left:283px;white-space:nowrap" class="ft02">0</p>
+<p style="position:absolute;top:555px;left:307px;white-space:nowrap" class="ft02">9.473933</p>
+<p style="position:absolute;top:555px;left:385px;white-space:nowrap" class="ft02">0.6892992</p>
+<p style="position:absolute;top:580px;left:80px;white-space:nowrap" class="ft01">This&#160;matrix&#160;(5640</p>
+<p style="position:absolute;top:576px;left:207px;white-space:nowrap" class="ft04">×</p>
+<p style="position:absolute;top:580px;left:224px;white-space:nowrap" class="ft01">6)&#160;contains&#160;the&#160;data&#160;necessary&#160;for&#160;generating&#160;the&#160;MA</p>
+<p style="position:absolute;top:598px;left:80px;white-space:nowrap" class="ft01">plot.</p>
+<p style="position:absolute;top:616px;left:103px;white-space:nowrap" class="ft01">A&#160;text&#160;version&#160;of&#160;this&#160;ﬁle&#160;is&#160;available&#160;for&#160;download&#160;at</p>
+<p style="position:absolute;top:617px;left:437px;white-space:nowrap" class="ft02">http://www.cmb.usc.</p>
+<p style="position:absolute;top:635px;left:80px;white-space:nowrap" class="ft02">edu</p>
+<p style="position:absolute;top:633px;left:104px;white-space:nowrap" class="ft01">.</p>
+<p style="position:absolute;top:688px;left:80px;white-space:nowrap" class="ft05"><b>References</b></p>
+<p style="position:absolute;top:726px;left:80px;white-space:nowrap" class="ft01">Cho&#160;RJ,&#160;Campbell&#160;MJ,&#160;Winzeler&#160;EA,&#160;Steinmetz&#160;L,&#160;Conway&#160;A,&#160;Wodicka&#160;L,</p>
+<p style="position:absolute;top:744px;left:103px;white-space:nowrap" class="ft08">Wolfsberg&#160;TG,&#160;Gabrielian&#160;AE,&#160;Landsman&#160;D,&#160;Lockhart&#160;DJ,&#160;Davis&#160;RW<br/>(1998)&#160;A&#160;genome-wide&#160;transcriptional&#160;analysis&#160;of&#160;the&#160;mitotic&#160;cell&#160;cycle.</p>
+<p style="position:absolute;top:780px;left:103px;white-space:nowrap" class="ft06">Molecular&#160;Cell</p>
+<p style="position:absolute;top:780px;left:203px;white-space:nowrap" class="ft01">2:65–73.</p>
+<p style="position:absolute;top:798px;left:80px;white-space:nowrap" class="ft01">Hershberg&#160;R,&#160;Bejerano&#160;G,&#160;Santos-Zavaleta&#160;A,&#160;Margalit&#160;H&#160;(2001)&#160;PromEC:</p>
+<p style="position:absolute;top:816px;left:103px;white-space:nowrap" class="ft01">An&#160;updated&#160;database&#160;of</p>
+<p style="position:absolute;top:816px;left:269px;white-space:nowrap" class="ft06">Escherichia&#160;coli</p>
+<p style="position:absolute;top:816px;left:380px;white-space:nowrap" class="ft01">promoters&#160;with&#160;experimentally</p>
+<p style="position:absolute;top:834px;left:103px;white-space:nowrap" class="ft01">identiﬁed&#160;transcriptional&#160;start&#160;sites.</p>
+<p style="position:absolute;top:834px;left:342px;white-space:nowrap" class="ft06">Nucleic&#160;Acids&#160;Research</p>
+<p style="position:absolute;top:834px;left:498px;white-space:nowrap" class="ft01">29:277.</p>
+</div>
+</body>
+</html>

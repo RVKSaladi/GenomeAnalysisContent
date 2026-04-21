@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 268</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJMPH+FC;color:#000000;}
+	.ft05{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+	.ft07{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page268-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome268.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:327px;white-space:nowrap" class="ft00">9.6&#160;Using&#160;Scores&#160;for&#160;Classiﬁcation</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">255</p>
+<p style="position:absolute;top:127px;left:103px;white-space:nowrap" class="ft01">for&#160;(j&#160;in&#160;1:L){</p>
+<p style="position:absolute;top:145px;left:134px;white-space:nowrap" class="ft06">motif[j]&lt;-sample(dna,1,p=pwm[,j])<br/>}</p>
+<p style="position:absolute;top:181px;left:103px;white-space:nowrap" class="ft06">return(motif)<br/>}</p>
+<p style="position:absolute;top:226px;left:103px;white-space:nowrap" class="ft02">We&#160;have&#160;used</p>
+<p style="position:absolute;top:228px;left:197px;white-space:nowrap" class="ft01">sample</p>
+<p style="position:absolute;top:226px;left:249px;white-space:nowrap" class="ft02">before,&#160;so&#160;this&#160;function&#160;should&#160;be&#160;clear&#160;to&#160;you.&#160;The</p>
+<p style="position:absolute;top:244px;left:80px;white-space:nowrap" class="ft02">only&#160;wrinkle&#160;is&#160;that&#160;for&#160;each&#160;cycle&#160;of&#160;the</p>
+<p style="position:absolute;top:246px;left:347px;white-space:nowrap" class="ft01">for</p>
+<p style="position:absolute;top:244px;left:375px;white-space:nowrap" class="ft02">loop,&#160;a&#160;diﬀerent&#160;probability&#160;dis-</p>
+<p style="position:absolute;top:262px;left:80px;white-space:nowrap" class="ft02">tribution&#160;is&#160;used,&#160;corresponding&#160;to&#160;each&#160;column&#160;of</p>
+<p style="position:absolute;top:264px;left:424px;white-space:nowrap" class="ft01">pwm</p>
+<p style="position:absolute;top:262px;left:447px;white-space:nowrap" class="ft02">.&#160;The&#160;need&#160;for&#160;these</p>
+<p style="position:absolute;top:280px;left:80px;white-space:nowrap" class="ft02">probability&#160;distributions&#160;was&#160;anticipated&#160;when&#160;we&#160;devised&#160;the</p>
+<p style="position:absolute;top:282px;left:490px;white-space:nowrap" class="ft01">makepwm</p>
+<p style="position:absolute;top:280px;left:550px;white-space:nowrap" class="ft02">func-</p>
+<p style="position:absolute;top:298px;left:80px;white-space:nowrap" class="ft02">tion.&#160;To&#160;simulate</p>
+<p style="position:absolute;top:298px;left:194px;white-space:nowrap" class="ft03">N</p>
+<p style="position:absolute;top:298px;left:211px;white-space:nowrap" class="ft02">sites,&#160;we&#160;make&#160;an</p>
+<p style="position:absolute;top:298px;left:327px;white-space:nowrap" class="ft03">N</p>
+<p style="position:absolute;top:295px;left:342px;white-space:nowrap" class="ft04">×</p>
+<p style="position:absolute;top:298px;left:355px;white-space:nowrap" class="ft02">6&#160;matrix&#160;and&#160;then&#160;run</p>
+<p style="position:absolute;top:300px;left:502px;white-space:nowrap" class="ft01">simmotif</p>
+<p style="position:absolute;top:298px;left:569px;white-space:nowrap" class="ft03">N</p>
+<p style="position:absolute;top:316px;left:80px;white-space:nowrap" class="ft02">times.&#160;Remember&#160;that&#160;the</p>
+<p style="position:absolute;top:318px;left:257px;white-space:nowrap" class="ft01">pwm</p>
+<p style="position:absolute;top:316px;left:286px;white-space:nowrap" class="ft02">argument&#160;that&#160;we&#160;need&#160;is&#160;in</p>
+<p style="position:absolute;top:318px;left:474px;white-space:nowrap" class="ft01">tmp</p>
+<p style="position:absolute;top:316px;left:503px;white-space:nowrap" class="ft02">as</p>
+<p style="position:absolute;top:318px;left:521px;white-space:nowrap" class="ft01">tmp$pwm</p>
+<p style="position:absolute;top:316px;left:577px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:347px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;N&lt;-5000<br/>&gt;&#160;gata.motifs&lt;-matrix(nrow=N,ncol=6)<br/>&gt;&#160;for(i&#160;in&#160;1:N){<br/>+</p>
+<p style="position:absolute;top:401px;left:134px;white-space:nowrap" class="ft01">gata.motifs[i,]&lt;-simmotif(tmp$pwm)</p>
+<p style="position:absolute;top:419px;left:103px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:419px;left:134px;white-space:nowrap" class="ft01">}</p>
+<p style="position:absolute;top:446px;left:80px;white-space:nowrap" class="ft07">We&#160;check&#160;some&#160;of&#160;the&#160;simulated&#160;sites&#160;to&#160;make&#160;sure&#160;that&#160;they&#160;look&#160;reasonable<br/>(compared&#160;with&#160;the</p>
+<p style="position:absolute;top:466px;left:214px;white-space:nowrap" class="ft01">gata</p>
+<p style="position:absolute;top:464px;left:250px;white-space:nowrap" class="ft02">object).</p>
+<p style="position:absolute;top:496px;left:103px;white-space:nowrap" class="ft01">&gt;&#160;gata.motifs[1:5,]</p>
+<p style="position:absolute;top:514px;left:142px;white-space:nowrap" class="ft01">[,1]&#160;[,2]&#160;[,3]&#160;[,4]&#160;[,5]&#160;[,6]</p>
+<p style="position:absolute;top:532px;left:103px;white-space:nowrap" class="ft01">[1,]</p>
+<p style="position:absolute;top:532px;left:165px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:532px;left:205px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:532px;left:244px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:532px;left:283px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:532px;left:322px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:532px;left:362px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:550px;left:103px;white-space:nowrap" class="ft01">[2,]</p>
+<p style="position:absolute;top:550px;left:165px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:550px;left:205px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:550px;left:244px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:550px;left:283px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:550px;left:322px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:550px;left:362px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:568px;left:103px;white-space:nowrap" class="ft01">[3,]</p>
+<p style="position:absolute;top:568px;left:165px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:568px;left:205px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:568px;left:244px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:568px;left:283px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:568px;left:322px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:568px;left:362px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:586px;left:103px;white-space:nowrap" class="ft01">[4,]</p>
+<p style="position:absolute;top:586px;left:165px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:586px;left:205px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:586px;left:244px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:586px;left:283px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:586px;left:322px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:586px;left:362px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:604px;left:103px;white-space:nowrap" class="ft01">[5,]</p>
+<p style="position:absolute;top:604px;left:165px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:604px;left:205px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:604px;left:244px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:604px;left:283px;white-space:nowrap" class="ft01">4</p>
+<p style="position:absolute;top:604px;left:322px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:604px;left:362px;white-space:nowrap" class="ft01">3</p>
+<p style="position:absolute;top:638px;left:80px;white-space:nowrap" class="ft05">Step&#160;2:&#160;Scoring&#160;simulated&#160;sites</p>
+<p style="position:absolute;top:675px;left:80px;white-space:nowrap" class="ft07">We&#160;now&#160;wish&#160;to&#160;generate&#160;the&#160;score&#160;distribution&#160;for&#160;the&#160;simulated&#160;sites.<br/>What&#160;would&#160;we&#160;predict&#160;for&#160;this&#160;distribution,&#160;based&#160;on&#160;the&#160;training&#160;set&#160;scores<br/>(Fig.&#160;9.3)?&#160;We&#160;can&#160;employ&#160;the</p>
+<p style="position:absolute;top:712px;left:285px;white-space:nowrap" class="ft01">calcscore</p>
+<p style="position:absolute;top:710px;left:361px;white-space:nowrap" class="ft02">function&#160;operating&#160;on&#160;each&#160;row&#160;of</p>
+<p style="position:absolute;top:730px;left:80px;white-space:nowrap" class="ft01">gata.motifs</p>
+<p style="position:absolute;top:728px;left:172px;white-space:nowrap" class="ft02">to&#160;obtain&#160;the&#160;scores:</p>
+<p style="position:absolute;top:760px;left:103px;white-space:nowrap" class="ft06">&gt;&#160;gata.motifs.score&lt;-rep(0,N)<br/>#vector&#160;to&#160;hold&#160;the&#160;results&#160;of&#160;computation<br/>&gt;&#160;for(i&#160;in&#160;1:N){<br/>+&#160;gata.motifs.score[i]&lt;-<br/>+&#160;calcscore(gata.motifs[i,],log2pwm)<br/>}</p>
+<p style="position:absolute;top:877px;left:103px;white-space:nowrap" class="ft02">We&#160;can&#160;compare&#160;this&#160;set&#160;of&#160;scores&#160;to&#160;the&#160;training&#160;set&#160;by&#160;looking&#160;at&#160;the</p>
+<p style="position:absolute;top:895px;left:80px;white-space:nowrap" class="ft02">means:</p>
+</div>
+</body>
+</html>

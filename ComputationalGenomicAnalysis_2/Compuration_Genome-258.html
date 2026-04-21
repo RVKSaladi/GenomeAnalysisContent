@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 258</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKEN+FM;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKEO+FL;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page258-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome258.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:232px;white-space:nowrap" class="ft00">9.3&#160;Representing&#160;Signals&#160;in&#160;DNA:&#160;Markov&#160;Chains</p>
+<p style="position:absolute;top:82px;left:561px;white-space:nowrap" class="ft00">245</p>
+<p style="position:absolute;top:127px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;length(gata[gata[,1]==1,1])<br/>[1]&#160;29<br/>&gt;&#160;length(gata[gata[,1]==2,1])<br/>[1]&#160;2<br/>&gt;&#160;length(gata[gata[,1]==3,1])<br/>[1]&#160;1<br/>&gt;&#160;length(gata[gata[,1]==4,1])<br/>[1]&#160;17<br/>&gt;&#160;vectorn&lt;-c(29,2,1,17)<br/>&gt;&#160;vectorn<br/>[1]&#160;29&#160;2&#160;1&#160;17</p>
+<p style="position:absolute;top:333px;left:103px;white-space:nowrap" class="ft02">Now,&#160;applying&#160;the&#160;small&#160;sample&#160;correction,&#160;we&#160;estimate&#160;the&#160;probabilities</p>
+<p style="position:absolute;top:351px;left:80px;white-space:nowrap" class="ft06">from&#160;the&#160;frequencies&#160;and&#160;check&#160;that&#160;the&#160;probabilities&#160;sum&#160;to&#160;unity,&#160;as&#160;they<br/>should:</p>
+<p style="position:absolute;top:399px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;vector1[]&lt;-(vectorn[]+1)/(49+4)<br/>&gt;&#160;vector1<br/>[1]&#160;0.56603774&#160;0.05660377&#160;0.03773585&#160;0.33962264<br/>&gt;&#160;sum(vector1[])<br/>[1]&#160;1</p>
+<p style="position:absolute;top:499px;left:80px;white-space:nowrap" class="ft01">vector1</p>
+<p style="position:absolute;top:497px;left:141px;white-space:nowrap" class="ft02">represents&#160;the&#160;probability&#160;distribution&#160;for&#160;the&#160;ﬁrst&#160;position&#160;of&#160;this</p>
+<p style="position:absolute;top:515px;left:80px;white-space:nowrap" class="ft02">collection&#160;of&#160;GATA-1&#160;binding&#160;sites.</p>
+<p style="position:absolute;top:550px;left:80px;white-space:nowrap" class="ft03">Step&#160;4:&#160;Produce&#160;the&#160;transition&#160;matrices</p>
+<p style="position:absolute;top:585px;left:80px;white-space:nowrap" class="ft02">We&#160;indicate&#160;how&#160;this&#160;is&#160;done&#160;for</p>
+<p style="position:absolute;top:587px;left:312px;white-space:nowrap" class="ft01">matrix2</p>
+<p style="position:absolute;top:585px;left:374px;white-space:nowrap" class="ft02">(used&#160;to&#160;create&#160;the&#160;probability</p>
+<p style="position:absolute;top:603px;left:80px;white-space:nowrap" class="ft02">distribution&#160;of&#160;sites&#160;at&#160;position&#160;2&#160;given</p>
+<p style="position:absolute;top:605px;left:337px;white-space:nowrap" class="ft01">vector1</p>
+<p style="position:absolute;top:603px;left:392px;white-space:nowrap" class="ft02">).&#160;In&#160;general,&#160;we&#160;need&#160;to&#160;read</p>
+<p style="position:absolute;top:621px;left:80px;white-space:nowrap" class="ft02">down&#160;each&#160;column&#160;of</p>
+<p style="position:absolute;top:623px;left:226px;white-space:nowrap" class="ft01">gata</p>
+<p style="position:absolute;top:621px;left:263px;white-space:nowrap" class="ft02">for&#160;columns&#160;2&#160;through&#160;6,&#160;evaluating&#160;the&#160;number</p>
+<p style="position:absolute;top:639px;left:80px;white-space:nowrap" class="ft06">of&#160;times&#160;that&#160;1,&#160;2,&#160;3,&#160;or&#160;4&#160;appears&#160;in&#160;a&#160;column&#160;(except&#160;the&#160;ﬁrst)&#160;given&#160;that<br/>each&#160;instance&#160;is&#160;preceded&#160;by&#160;1,&#160;2,&#160;3,&#160;or&#160;4&#160;in&#160;the&#160;previous&#160;column.&#160;We&#160;ﬁrst<br/>do&#160;this&#160;by&#160;hand,&#160;to&#160;see&#160;how&#160;it&#160;works,&#160;and&#160;then&#160;by&#160;using&#160;an</p>
+<p style="position:absolute;top:675px;left:473px;white-space:nowrap" class="ft04">R</p>
+<p style="position:absolute;top:675px;left:488px;white-space:nowrap" class="ft02">function.&#160;(You</p>
+<p style="position:absolute;top:693px;left:80px;white-space:nowrap" class="ft02">may&#160;wish&#160;to&#160;revisit&#160;Section&#160;2.6,&#160;where&#160;we&#160;used</p>
+<p style="position:absolute;top:693px;left:396px;white-space:nowrap" class="ft04">R</p>
+<p style="position:absolute;top:693px;left:411px;white-space:nowrap" class="ft02">to&#160;implement&#160;a&#160;ﬁrst-order</p>
+<p style="position:absolute;top:711px;left:80px;white-space:nowrap" class="ft06">Markov&#160;process&#160;that&#160;generated&#160;a&#160;sequence&#160;having&#160;predetermined&#160;dinucleotide<br/>frequencies.)</p>
+<p style="position:absolute;top:757px;left:80px;white-space:nowrap" class="ft02">[a.]&#160;Initialize&#160;a&#160;matrix&#160;to&#160;hold&#160;counts,</p>
+<p style="position:absolute;top:758px;left:331px;white-space:nowrap" class="ft01">matrix0</p>
+<p style="position:absolute;top:757px;left:386px;white-space:nowrap" class="ft02">.</p>
+<p style="position:absolute;top:787px;left:103px;white-space:nowrap" class="ft05">&gt;&#160;matrix0&lt;-matrix(nrow=4,ncol=4,rep(0,16))<br/>&gt;&#160;matrix0</p>
+<p style="position:absolute;top:823px;left:142px;white-space:nowrap" class="ft01">[,1]&#160;[,2]&#160;[,3]&#160;[,4]</p>
+<p style="position:absolute;top:841px;left:103px;white-space:nowrap" class="ft01">[1,]</p>
+<p style="position:absolute;top:841px;left:165px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:841px;left:205px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:841px;left:244px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:841px;left:283px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:859px;left:103px;white-space:nowrap" class="ft01">[2,]</p>
+<p style="position:absolute;top:859px;left:165px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:859px;left:205px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:859px;left:244px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:859px;left:283px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:877px;left:103px;white-space:nowrap" class="ft01">[3,]</p>
+<p style="position:absolute;top:877px;left:165px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:877px;left:205px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:877px;left:244px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:877px;left:283px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:895px;left:103px;white-space:nowrap" class="ft01">[4,]</p>
+<p style="position:absolute;top:895px;left:165px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:895px;left:205px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:895px;left:244px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:895px;left:283px;white-space:nowrap" class="ft01">0</p>
+</div>
+</body>
+</html>

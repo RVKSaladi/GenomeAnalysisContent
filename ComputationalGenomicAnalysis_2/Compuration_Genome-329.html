@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 329</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:15px;font-family:ACJKLA+FH;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft04{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+	.ft05{font-size:15px;line-height:17px;font-family:ACJKLA+FH;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page329-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome329.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:383px;white-space:nowrap" class="ft00">11.5&#160;Data&#160;Interpretation</p>
+<p style="position:absolute;top:82px;left:562px;white-space:nowrap" class="ft00">317</p>
+<p style="position:absolute;top:125px;left:103px;white-space:nowrap" class="ft01">As&#160;we&#160;indicated&#160;in&#160;Chapter&#160;9,</p>
+<p style="position:absolute;top:127px;left:296px;white-space:nowrap" class="ft02">$</p>
+<p style="position:absolute;top:125px;left:307px;white-space:nowrap" class="ft01">is&#160;used&#160;as&#160;a&#160;preﬁx&#160;to&#160;indicate&#160;each&#160;item&#160;in&#160;a</p>
+<p style="position:absolute;top:143px;left:80px;white-space:nowrap" class="ft04">list&#160;of&#160;objects&#160;that&#160;are&#160;not&#160;necessarily&#160;of&#160;the&#160;same&#160;type:&#160;scalar,&#160;vector,&#160;matrix,<br/>or&#160;data&#160;frame.</p>
+<p style="position:absolute;top:163px;left:180px;white-space:nowrap" class="ft02">kmeans</p>
+<p style="position:absolute;top:161px;left:232px;white-space:nowrap" class="ft01">produces&#160;ﬁve&#160;quantities&#160;as&#160;output.</p>
+<p style="position:absolute;top:163px;left:465px;white-space:nowrap" class="ft02">cluster</p>
+<p style="position:absolute;top:161px;left:525px;white-space:nowrap" class="ft01">indicates</p>
+<p style="position:absolute;top:179px;left:80px;white-space:nowrap" class="ft01">the&#160;cluster&#160;to&#160;which&#160;each&#160;row&#160;belongs.</p>
+<p style="position:absolute;top:181px;left:337px;white-space:nowrap" class="ft02">centers</p>
+<p style="position:absolute;top:179px;left:398px;white-space:nowrap" class="ft01">contains&#160;two&#160;16-dimensional</p>
+<p style="position:absolute;top:197px;left:80px;white-space:nowrap" class="ft01">vectors,&#160;which&#160;are&#160;the&#160;coordinates&#160;of&#160;the&#160;two&#160;cluster&#160;centers.</p>
+<p style="position:absolute;top:199px;left:479px;white-space:nowrap" class="ft02">withinss</p>
+<p style="position:absolute;top:197px;left:547px;white-space:nowrap" class="ft01">is&#160;the</p>
+<p style="position:absolute;top:215px;left:80px;white-space:nowrap" class="ft04">within-cluster&#160;sum&#160;of&#160;squares,&#160;a&#160;measure&#160;of&#160;how&#160;close&#160;the&#160;members&#160;of&#160;each<br/>cluster&#160;are&#160;to&#160;the&#160;cluster&#160;centers.</p>
+<p style="position:absolute;top:235px;left:296px;white-space:nowrap" class="ft02">size</p>
+<p style="position:absolute;top:233px;left:332px;white-space:nowrap" class="ft01">summarizes&#160;the&#160;number&#160;of&#160;members&#160;in</p>
+<p style="position:absolute;top:251px;left:80px;white-space:nowrap" class="ft01">each&#160;cluster.&#160;In&#160;this&#160;case,&#160;cluster&#160;1&#160;has&#160;eight&#160;members,&#160;and&#160;from&#160;the</p>
+<p style="position:absolute;top:253px;left:520px;white-space:nowrap" class="ft02">withinss</p>
+<p style="position:absolute;top:269px;left:80px;white-space:nowrap" class="ft04">values&#160;it&#160;appears&#160;that&#160;they&#160;are&#160;on&#160;average&#160;more&#160;diﬀusely&#160;distributed&#160;than&#160;are<br/>the&#160;members&#160;of&#160;cluster&#160;2.</p>
+<p style="position:absolute;top:306px;left:103px;white-space:nowrap" class="ft01">For&#160;subsequent&#160;iterations,&#160;we&#160;omit</p>
+<p style="position:absolute;top:307px;left:334px;white-space:nowrap" class="ft02">centers</p>
+<p style="position:absolute;top:306px;left:393px;white-space:nowrap" class="ft01">to&#160;conserve&#160;space:</p>
+<p style="position:absolute;top:338px;left:103px;white-space:nowrap" class="ft05">#&#160;k=3<br/>&gt;&#160;ckm3&lt;-kmeans(syeast.dat,3,iter.max=10)<br/>&gt;&#160;ckm3<br/>$cluster</p>
+<p style="position:absolute;top:409px;left:111px;white-space:nowrap" class="ft02">[1]&#160;2&#160;1&#160;2&#160;3&#160;1&#160;1&#160;3&#160;3&#160;2&#160;1&#160;2&#160;3</p>
+<p style="position:absolute;top:445px;left:103px;white-space:nowrap" class="ft05">$centers<br/>...<br/>$withinss<br/>[1]</p>
+<p style="position:absolute;top:499px;left:142px;white-space:nowrap" class="ft02">5.776459&#160;17.329197&#160;10.343858</p>
+<p style="position:absolute;top:517px;left:103px;white-space:nowrap" class="ft05">$size<br/>[1]&#160;4&#160;4&#160;4</p>
+<p style="position:absolute;top:562px;left:80px;white-space:nowrap" class="ft01">Since&#160;the</p>
+<p style="position:absolute;top:564px;left:148px;white-space:nowrap" class="ft02">withinss</p>
+<p style="position:absolute;top:562px;left:217px;white-space:nowrap" class="ft01">for&#160;the&#160;third&#160;cluster&#160;is&#160;the&#160;same&#160;as&#160;for&#160;the&#160;last&#160;cluster</p>
+<p style="position:absolute;top:580px;left:80px;white-space:nowrap" class="ft01">with</p>
+<p style="position:absolute;top:580px;left:115px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:580px;left:128px;white-space:nowrap" class="ft01">=&#160;2,&#160;it&#160;is&#160;evident&#160;that&#160;the&#160;ﬁrst&#160;cluster&#160;obtained&#160;with</p>
+<p style="position:absolute;top:580px;left:482px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:580px;left:495px;white-space:nowrap" class="ft01">=&#160;2&#160;has&#160;been</p>
+<p style="position:absolute;top:598px;left:80px;white-space:nowrap" class="ft01">split&#160;in&#160;two.&#160;Notice&#160;how&#160;the&#160;sum&#160;of&#160;all&#160;three</p>
+<p style="position:absolute;top:600px;left:377px;white-space:nowrap" class="ft02">withinss</p>
+<p style="position:absolute;top:598px;left:444px;white-space:nowrap" class="ft01">values&#160;has&#160;fallen&#160;as&#160;a</p>
+<p style="position:absolute;top:616px;left:80px;white-space:nowrap" class="ft01">consequence&#160;of&#160;proceeding&#160;from&#160;k=2&#160;to&#160;k=3.</p>
+<p style="position:absolute;top:648px;left:103px;white-space:nowrap" class="ft05">#k=4<br/>&gt;&#160;ckm4&lt;-kmeans(syeast.dat,4,iter.max=10)<br/>&gt;&#160;ckm4<br/>$cluster</p>
+<p style="position:absolute;top:720px;left:111px;white-space:nowrap" class="ft02">[1]&#160;4&#160;1&#160;4&#160;2&#160;1&#160;1&#160;3&#160;3&#160;4&#160;1&#160;4&#160;3</p>
+<p style="position:absolute;top:738px;left:103px;white-space:nowrap" class="ft05">$centers<br/>...<br/>$withinss</p>
+<p style="position:absolute;top:792px;left:111px;white-space:nowrap" class="ft02">[1]</p>
+<p style="position:absolute;top:792px;left:150px;white-space:nowrap" class="ft02">5.776459</p>
+<p style="position:absolute;top:792px;left:228px;white-space:nowrap" class="ft02">0.000000</p>
+<p style="position:absolute;top:792px;left:307px;white-space:nowrap" class="ft02">6.407072&#160;17.329197</p>
+<p style="position:absolute;top:810px;left:103px;white-space:nowrap" class="ft05">$size<br/>[1]&#160;4&#160;1&#160;3&#160;4</p>
+<p style="position:absolute;top:855px;left:80px;white-space:nowrap" class="ft04">By&#160;adding&#160;a&#160;fourth&#160;cluster,&#160;all&#160;that&#160;has&#160;happened&#160;is&#160;that&#160;one&#160;of&#160;the&#160;members<br/>of&#160;cluster&#160;2&#160;from</p>
+<p style="position:absolute;top:873px;left:191px;white-space:nowrap" class="ft03">k</p>
+<p style="position:absolute;top:873px;left:203px;white-space:nowrap" class="ft01">=&#160;3&#160;has&#160;been&#160;deﬁned&#160;as&#160;a&#160;cluster&#160;having&#160;only&#160;one&#160;member.</p>
+<p style="position:absolute;top:891px;left:80px;white-space:nowrap" class="ft01">(Note&#160;that</p>
+<p style="position:absolute;top:893px;left:155px;white-space:nowrap" class="ft02">withinss</p>
+<p style="position:absolute;top:891px;left:222px;white-space:nowrap" class="ft01">=&#160;0.0.)</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 281</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:13px;font-family:ACJKGO+FK;color:#000000;}
+	.ft01{font-size:15px;font-family:ACJKAN+FO;color:#000000;}
+	.ft02{font-size:18px;font-family:ACJJPN+FN;color:#000000;}
+	.ft03{font-size:15px;font-family:ACJKPP+FG;color:#000000;}
+	.ft04{font-size:15px;font-family:ACJKKP+FI;color:#000000;}
+	.ft05{font-size:10px;font-family:ACNMLM+Fv;color:#000000;}
+	.ft06{font-size:15px;line-height:17px;font-family:ACJKAN+FO;color:#000000;}
+	.ft07{font-size:15px;line-height:18px;font-family:ACJKAN+FO;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page281-div" style="position:relative;width:661px;height:999px;">
+<img width="661" height="999" src="Compuration_Genome281.png" alt="background image"/>
+<p style="position:absolute;top:82px;left:80px;white-space:nowrap" class="ft00">268</p>
+<p style="position:absolute;top:82px;left:128px;white-space:nowrap" class="ft00">10&#160;Similarity,&#160;Distance,&#160;and&#160;Clustering</p>
+<p style="position:absolute;top:113px;left:80px;white-space:nowrap" class="ft06">upon&#160;protein&#160;sequence,&#160;and&#160;easier&#160;still&#160;to&#160;recognize&#160;based&#160;on&#160;protein&#160;structure<br/>(determined&#160;by&#160;physical&#160;properties&#160;of&#160;constituent&#160;amino&#160;acids).</p>
+<p style="position:absolute;top:186px;left:80px;white-space:nowrap" class="ft02"><b>10.3&#160;Similarity&#160;and&#160;Distance</b></p>
+<p style="position:absolute;top:224px;left:80px;white-space:nowrap" class="ft06">Similarity&#160;and&#160;distance&#160;are&#160;measures&#160;of&#160;how&#160;closely-&#160;or&#160;distantly-related&#160;ob-<br/>jects&#160;are&#160;based&#160;upon&#160;a&#160;collection&#160;of&#160;characters&#160;that&#160;describe&#160;those&#160;objects.<br/>To&#160;illustrate&#160;these&#160;concepts,&#160;we&#160;consider&#160;an&#160;example&#160;with&#160;which&#160;we&#160;are&#160;all<br/>familiar:&#160;relationships&#160;among&#160;some&#160;common&#160;animals.&#160;Each&#160;animal&#160;type&#160;is&#160;an<br/>OTU.&#160;Consider&#160;the&#160;set&#160;of&#160;OTUs&#160;shown&#160;below.&#160;They&#160;have&#160;been&#160;scored&#160;for<br/>dichotomous&#160;characters&#160;(1&#160;=&#160;present,&#160;0&#160;=&#160;absent).</p>
+<p style="position:absolute;top:340px;left:325px;white-space:nowrap" class="ft01">Characters</p>
+<p style="position:absolute;top:358px;left:212px;white-space:nowrap" class="ft01">OTU</p>
+<p style="position:absolute;top:358px;left:270px;white-space:nowrap" class="ft01">Hair&#160;Lungs&#160;Egg-laying&#160;Milk</p>
+<p style="position:absolute;top:377px;left:212px;white-space:nowrap" class="ft01">Dog</p>
+<p style="position:absolute;top:377px;left:281px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:377px;left:319px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:377px;left:378px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:377px;left:432px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:395px;left:212px;white-space:nowrap" class="ft01">Turtle</p>
+<p style="position:absolute;top:395px;left:281px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:395px;left:319px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:395px;left:378px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:395px;left:432px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:413px;left:212px;white-space:nowrap" class="ft01">Canary</p>
+<p style="position:absolute;top:413px;left:281px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:413px;left:319px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:413px;left:378px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:413px;left:432px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:431px;left:212px;white-space:nowrap" class="ft01">Goldﬁsh</p>
+<p style="position:absolute;top:431px;left:281px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:431px;left:319px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:431px;left:378px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:431px;left:432px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:458px;left:80px;white-space:nowrap" class="ft01">One&#160;measure&#160;of&#160;similarity&#160;between&#160;OTUs</p>
+<p style="position:absolute;top:458px;left:366px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:458px;left:378px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:458px;left:408px;white-space:nowrap" class="ft03">j</p>
+<p style="position:absolute;top:458px;left:422px;white-space:nowrap" class="ft01">employs&#160;the&#160;numbers&#160;of</p>
+<p style="position:absolute;top:475px;left:80px;white-space:nowrap" class="ft06">matches&#160;and&#160;mismatches&#160;between&#160;their&#160;character&#160;states.&#160;In&#160;this&#160;case,&#160;there<br/>are&#160;four&#160;characters,&#160;and&#160;the&#160;states&#160;for&#160;each&#160;character&#160;may&#160;be&#160;0&#160;or&#160;1.&#160;The<br/>matches&#160;and&#160;mismatches&#160;are&#160;conveniently&#160;represented&#160;in&#160;a&#160;table:</p>
+<p style="position:absolute;top:537px;left:339px;white-space:nowrap" class="ft01">OTU</p>
+<p style="position:absolute;top:537px;left:377px;white-space:nowrap" class="ft03">j</p>
+<p style="position:absolute;top:555px;left:339px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:555px;left:364px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:574px;left:278px;white-space:nowrap" class="ft01">OTU</p>
+<p style="position:absolute;top:574px;left:317px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:574px;left:327px;white-space:nowrap" class="ft01">1</p>
+<p style="position:absolute;top:574px;left:339px;white-space:nowrap" class="ft03">a</p>
+<p style="position:absolute;top:574px;left:365px;white-space:nowrap" class="ft03">b</p>
+<p style="position:absolute;top:592px;left:327px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:592px;left:339px;white-space:nowrap" class="ft03">c</p>
+<p style="position:absolute;top:592px;left:364px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:618px;left:80px;white-space:nowrap" class="ft01">In&#160;this&#160;table,</p>
+<p style="position:absolute;top:645px;left:103px;white-space:nowrap" class="ft03">a</p>
+<p style="position:absolute;top:645px;left:116px;white-space:nowrap" class="ft01">=&#160;the&#160;number&#160;of&#160;characters&#160;for&#160;which&#160;OTUs</p>
+<p style="position:absolute;top:645px;left:411px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:645px;left:421px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:645px;left:450px;white-space:nowrap" class="ft03">j</p>
+<p style="position:absolute;top:645px;left:462px;white-space:nowrap" class="ft01">are&#160;both&#160;1,</p>
+<p style="position:absolute;top:663px;left:103px;white-space:nowrap" class="ft03">b</p>
+<p style="position:absolute;top:663px;left:114px;white-space:nowrap" class="ft01">=&#160;the&#160;number&#160;of&#160;characters&#160;for&#160;which&#160;OTU</p>
+<p style="position:absolute;top:663px;left:403px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:663px;left:413px;white-space:nowrap" class="ft01">is&#160;1&#160;and&#160;OTU</p>
+<p style="position:absolute;top:663px;left:508px;white-space:nowrap" class="ft03">j</p>
+<p style="position:absolute;top:663px;left:521px;white-space:nowrap" class="ft01">is&#160;0,</p>
+<p style="position:absolute;top:681px;left:103px;white-space:nowrap" class="ft03">c</p>
+<p style="position:absolute;top:681px;left:114px;white-space:nowrap" class="ft01">=&#160;the&#160;number&#160;of&#160;characters&#160;for&#160;which&#160;OTU</p>
+<p style="position:absolute;top:681px;left:403px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:681px;left:413px;white-space:nowrap" class="ft01">is&#160;0&#160;and&#160;OTU</p>
+<p style="position:absolute;top:681px;left:509px;white-space:nowrap" class="ft03">j</p>
+<p style="position:absolute;top:681px;left:521px;white-space:nowrap" class="ft01">is&#160;1,</p>
+<p style="position:absolute;top:699px;left:103px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:699px;left:115px;white-space:nowrap" class="ft01">=&#160;the&#160;number&#160;of&#160;characters&#160;for&#160;which&#160;OTUs</p>
+<p style="position:absolute;top:699px;left:411px;white-space:nowrap" class="ft03">i</p>
+<p style="position:absolute;top:699px;left:421px;white-space:nowrap" class="ft01">and</p>
+<p style="position:absolute;top:699px;left:450px;white-space:nowrap" class="ft03">j</p>
+<p style="position:absolute;top:699px;left:462px;white-space:nowrap" class="ft01">are&#160;both&#160;0.</p>
+<p style="position:absolute;top:725px;left:80px;white-space:nowrap" class="ft01">Note&#160;that&#160;the&#160;number&#160;of&#160;characters&#160;equals</p>
+<p style="position:absolute;top:725px;left:354px;white-space:nowrap" class="ft03">a</p>
+<p style="position:absolute;top:725px;left:363px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:725px;left:376px;white-space:nowrap" class="ft03">b</p>
+<p style="position:absolute;top:725px;left:383px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:725px;left:396px;white-space:nowrap" class="ft03">c</p>
+<p style="position:absolute;top:725px;left:403px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:725px;left:416px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:725px;left:423px;white-space:nowrap" class="ft01">.&#160;The</p>
+<p style="position:absolute;top:725px;left:461px;white-space:nowrap" class="ft04"><b>simple&#160;matching</b></p>
+<p style="position:absolute;top:743px;left:80px;white-space:nowrap" class="ft04"><b>coeﬃcient</b></p>
+<p style="position:absolute;top:743px;left:160px;white-space:nowrap" class="ft01">is&#160;deﬁned&#160;as</p>
+<p style="position:absolute;top:776px;left:237px;white-space:nowrap" class="ft03">s</p>
+<p style="position:absolute;top:782px;left:244px;white-space:nowrap" class="ft05">ij</p>
+<p style="position:absolute;top:776px;left:258px;white-space:nowrap" class="ft01">=&#160;(</p>
+<p style="position:absolute;top:776px;left:280px;white-space:nowrap" class="ft03">a</p>
+<p style="position:absolute;top:776px;left:291px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:776px;left:306px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:776px;left:314px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:776px;left:319px;white-space:nowrap" class="ft03">/</p>
+<p style="position:absolute;top:776px;left:327px;white-space:nowrap" class="ft01">(</p>
+<p style="position:absolute;top:776px;left:333px;white-space:nowrap" class="ft03">a</p>
+<p style="position:absolute;top:776px;left:344px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:776px;left:359px;white-space:nowrap" class="ft03">b</p>
+<p style="position:absolute;top:776px;left:369px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:776px;left:384px;white-space:nowrap" class="ft03">c</p>
+<p style="position:absolute;top:776px;left:393px;white-space:nowrap" class="ft01">+</p>
+<p style="position:absolute;top:776px;left:408px;white-space:nowrap" class="ft03">d</p>
+<p style="position:absolute;top:776px;left:416px;white-space:nowrap" class="ft01">)</p>
+<p style="position:absolute;top:776px;left:422px;white-space:nowrap" class="ft03">.</p>
+<p style="position:absolute;top:809px;left:80px;white-space:nowrap" class="ft01">For&#160;the&#160;particular&#160;comparison&#160;of&#160;the&#160;canary&#160;and&#160;goldﬁsh,&#160;the&#160;table&#160;becomes</p>
+<p style="position:absolute;top:835px;left:343px;white-space:nowrap" class="ft07">canary<br/>1</p>
+<p style="position:absolute;top:853px;left:367px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:872px;left:276px;white-space:nowrap" class="ft01">goldﬁsh&#160;1&#160;1</p>
+<p style="position:absolute;top:872px;left:367px;white-space:nowrap" class="ft01">0</p>
+<p style="position:absolute;top:889px;left:331px;white-space:nowrap" class="ft01">0&#160;1</p>
+<p style="position:absolute;top:889px;left:367px;white-space:nowrap" class="ft01">2</p>
+</div>
+</body>
+</html>
